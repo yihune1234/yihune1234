@@ -73,9 +73,17 @@
 </p>
 
 <!-- Optional fun addition: Visitors badge -->
+<!-- Centered Clickable GitHub Profile Badge -->
 <p align="center">
-  <a href="https://github.com/yihune1234" target="_blank">
-    <img src="https://komarev.com/ghpvc/?username=yihune1234&label=Profile%20views&color=0e75b6&style=flat" alt="Profile views"/>
+  <a href="https://bit.ly/ghprofile123" target="_blank" style="text-decoration: none;">
+    <img 
+      src="https://komarev.com/ghpvc/?username=yihune1234&label=Profile%20views&color=0e75b6&style=flat" 
+      alt="Profile views" 
+      style="border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.2s;" 
+      onmouseover="this.style.transform='scale(1.05)'" 
+      onmouseout="this.style.transform='scale(1)'"
+    />
   </a>
 </p>
+
 
