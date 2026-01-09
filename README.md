@@ -75,13 +75,18 @@
 <!-- Optional fun addition: Visitors badge -->
 <!-- Centered Clickable GitHub Profile Badge -->
 <p align="center">
-  <a href="https://bit.ly/ghprofile123" target="_blank" style="text-decoration: none;">
-    <img 
-      src="https://komarev.com/ghpvc/?username=yihune1234&label=Profile%20views&color=0e75b6&style=flat" 
-      alt="Profile views" 
-      style="border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.2s;" 
-      onmouseover="this.style.transform='scale(1.05)'" 
-      onmouseout="this.style.transform='scale(1)'"
+  <a href="https://bit.ly/ghprofile123">
+    <img
+      src="https://komarev.com/ghpvc/?username=yihune1234&label=Profile%20Views&color=6366f1&labelColor=1e293b&style=for-the-badge"
+      alt="Views"
+      style="
+        border-radius: 10px;
+        box-shadow: 0 10px 30px -15px rgba(99,102,241,0.5);
+        transform: translateY(0);
+        transition: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+      "
+      onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 20px 40px -10px rgba(99,102,241,0.6)'"
+      onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 10px 30px -15px rgba(99,102,241,0.5)'"
     />
   </a>
 </p>
