@@ -61,7 +61,7 @@
 <p align="center">
   • Clean, scalable Node.js + Express architecture<br>
   • Advanced React patterns & TypeScript<br>
-  • Modern database optimization (MongoDB + Prisma)
+  • Modern database optimization (MongoDB + MySQL)
 </p>
 
 <h2 align="center">📬 Let's Connect!</h2>
