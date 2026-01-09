@@ -5,17 +5,17 @@
 <h1 align="center">Hi 👋, I’m Yihune Belay</h1>
 
 <p align="center">
-I’m a fourth-year <strong>Software Engineering student at Haramaya University</strong> who loves building modern and efficient web applications.  
-I enjoy learning by building projects, exploring new technologies, and improving my skills every day.
+I’m a fourth-year <strong>Software Engineering student at Haramaya University</strong> passionate about building modern, efficient, and scalable web applications.  
+I enjoy learning by building projects, experimenting with new technologies, and improving my skills every day.
 </p>
 
 <p align="center">
 <a href="https://your-portfolio-link.com">
-  <img src="https://img.shields.io/badge/🌐-Portfolio-4c1?style=for-the-badge" alt="Portfolio Badge"/>
+  <img src="https://img.shields.io/badge/🌐-Portfolio-4c1?style=for-the-badge&logo=firefox&logoColor=white" alt="Portfolio Badge"/>
 </a>
 </p>
 
-<h2 align="center">💻 My Tech Stack</h2>
+<h2 align="center">💻 Tech Stack</h2>
 
 <p align="center">
 <strong>Languages:</strong><br>
