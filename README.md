@@ -1,57 +1,81 @@
-# 👋 Hi, I’m Yihune Belay
+<p align="center">
+  <img src="https://img.shields.io/badge/Software_Engineering-Student-blue?style=for-the-badge&logo=university&logoColor=white" alt="Student Badge"/>
+</p>
 
-I’m a fourth-year **Software Engineering student at Haramaya University** who loves building real-world projects.  
-I enjoy solving problems, learning by doing, and slowly getting better at writing clean, reliable code.
+<h1 align="center">Hi 👋, I’m Yihune Belay</h1>
 
-[🌐 **Check Out My Portfolio**](https://your-portfolio-link.com](https://yihunebelayportfolio.onrender.com/))  
+<p align="center">
+I’m a fourth-year <strong>Software Engineering student</strong> at Haramaya University passionate about building modern, efficient, and scalable web applications.  
+I love learning by doing, improving my skills, and experimenting with new technologies.
+</p>
 
----
-
-## 💡 About Me
-- Backend enthusiast with a focus on databases  
-- Love building projects, breaking them, and fixing them again  
-- Curious, growth-focused, and always learning  
-
----
-
-## 🛠️ Tech Stack
-
-**Languages:**  
-![PHP](https://img.shields.io/badge/PHP-777BB4?style=flat&logo=php&logoColor=white)  
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)  
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)  
-![Java](https://img.shields.io/badge/Java-007396?style=flat&logo=java&logoColor=white)  
-
-**Frontend:**  
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)  
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)  
-![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?style=flat&logo=bootstrap&logoColor=white)  
-
-**Backend & Tools:**  
-![PHP](https://img.shields.io/badge/PHP-777BB4?style=flat&logo=php&logoColor=white)  
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat&logo=node.js&logoColor=white) *(learning)*  
-![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat&logo=mysql&logoColor=white)  
-![Git](https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white)  
+<p align="center">
+<a href="[https://your-portfolio-link.com](https://yihunebelayportfolio.onrender.com/)">
+  <img src="https://img.shields.io/badge/🌐-Portfolio-4c1?style=for-the-badge" alt="Portfolio Badge"/>
+</a>
+</p>
 
 ---
 
-## 📌 Projects I’m Proud Of
-- **Event Management System** – PHP & MySQL system with user/manager roles, registration, and CSV export  
-- **Student Contact Management System (HUSCMS)** – SQL Server project with views & stored procedures  
-- **HIV/AIDS Club Website** – Event and member management platform with admin control  
-- **Students’ Academic Performance Prediction System** – ML group project predicting student outcomes  
+<h2 align="center">💻 My Tech Stack</h2>
 
-Every project taught me something new — especially how to think, not just code.
+<table align="center">
+<tr>
+  <td align="center">
+    <strong>Languages</strong><br>
+    <img src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white" alt="PHP"/>
+    <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript"/>
+    <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python"/>
+    <img src="https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=java&logoColor=white" alt="Java"/>
+  </td>
+</tr>
+<tr>
+  <td align="center">
+    <strong>Frontend</strong><br>
+    <img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black" alt="React"/>
+    <img src="https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="Tailwind CSS"/>
+    <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5"/>
+    <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3"/>
+  </td>
+</tr>
+<tr>
+  <td align="center">
+    <strong>Backend</strong><br>
+    <img src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white" alt="PHP"/>
+    <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white" alt="Node.js"/>
+    <img src="https://img.shields.io/badge/Express-000000?style=for-the-badge&logo=express&logoColor=white" alt="Express"/>
+  </td>
+</tr>
+<tr>
+  <td align="center">
+    <strong>Databases</strong><br>
+    <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL"/>
+    <img src="https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white" alt="MongoDB"/>
+  </td>
+</tr>
+<tr>
+  <td align="center">
+    <strong>Other Tools</strong><br>
+    <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git"/>
+    <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
+    <img src="https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white" alt="VS Code"/>
+  </td>
+</tr>
+</table>
 
 ---
 
-## 🌱 Currently Learning
-- Writing cleaner and more organized backend code  
-- Node.js & modern web development workflows  
+<h2 align="center">🌱 Currently Learning</h2>
+<p align="center">
+- Writing cleaner and scalable backend with Node.js & Express<br>
+- Modern frontend workflows with React.js & Tailwind CSS<br>
+- Advanced database design & NoSQL solutions
+</p>
 
 ---
 
-## 📫 Let’s Connect
-- 📧 Email:yihunebelay859@gmail.com
-- 🌍 Location: Ethiopia  
-
+<h2 align="center">📫 Let’s Connect</h2>
+<p align="center">
+- 📧 Email:yihunebelay859@gmail.com<br>
+- 🌍 Based in Ethiopia
+</p>
