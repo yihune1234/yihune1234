@@ -74,5 +74,8 @@
 
 <!-- Optional fun addition: Visitors badge -->
 <p align="center">
-  <img src="https://komarev.com/ghpvc/?username=yihune1234&label=Profile%20views&color=0e75b6&style=flat" alt="Profile views"/>
+  <a href="https://github.com/yihune1234" target="_blank">
+    <img src="https://komarev.com/ghpvc/?username=yihune1234&label=Profile%20views&color=0e75b6&style=flat" alt="Profile views"/>
+  </a>
 </p>
+
