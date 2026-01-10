@@ -12,6 +12,13 @@
   Always learning, always building.
 </p>
 
+<!-- 🧠 Architecture Mindset -->
+<p align="center" style="margin-top:10px; font-family: Inter, system-ui; color:#94A3B8;">
+  Designing systems with <strong>clean architecture</strong>, <strong>modular topology</strong>, and
+  <strong>scalable backend flows</strong><br>
+  Frontend ↔ API ↔ Database — built for growth, performance, and clarity ⚙️
+</p>
+
 <!-- 🎓 Status Badges -->
 <p align="center">
   <img src="https://img.shields.io/badge/Software%20Engineering-4th%20Year%20Student-7C3AED?style=for-the-badge&logo=graduation-cap&logoColor=white" alt="Student" />
@@ -95,12 +102,16 @@
     min-width:260px;
   ">
     <p style="margin:0 0 10px 0; font-weight:600; letter-spacing:0.08em; font-size:12px; color:#A5B4FC;">
-      BACKEND & DATABASES
+      BACKEND • APIs • DATABASES
     </p>
+    <img src="https://img.shields.io/badge/PHP-777BB4?style=flat-square&logo=php&logoColor=white" alt="PHP"/>
+    <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python"/>
     <img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white" alt="Node"/>
     <img src="https://img.shields.io/badge/Express-000000?style=flat-square&logo=express&logoColor=white" alt="Express"/>
+    <br><br>
+    <img src="https://img.shields.io/badge/REST%20APIs-0EA5E9?style=flat-square&logo=postman&logoColor=white" alt="REST"/>
     <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white" alt="MySQL"/>
-    <img src="https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white" alt="Mongo"/>
+    <img src="https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white" alt="MongoDB"/>
   </div>
 
   <!-- Tools Card -->
@@ -124,6 +135,12 @@
 
 </div>
 
+<!-- 🔄 System Flow -->
+<p align="center" style="font-family: Inter, system-ui; color:#CBD5F5; margin-top:6px;">
+  UI Components → State Management → API Layer → Business Logic → Data Persistence<br>
+  <em style="color:#A5B4FC;">Built with performance, maintainability, and clean separation of concerns.</em>
+</p>
+
 <br>
 
 <!-- 🌱 Currently Exploring -->
@@ -132,8 +149,9 @@
 </h2>
 
 <p align="center" style="font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; color:#CBD5F5;">
-  • Clean, scalable Node.js + Express architecture<br>
-  • Advanced React patterns & TypeScript<br>
+  • Backend architecture with <strong>PHP & Python</strong> (clean logic, reusable services)<br>
+  • Scalable REST API design & data flow optimization<br>
+  • Advanced React patterns with strong frontend–backend separation<br>
   • Modern database optimization (MongoDB + MySQL)
 </p>
 
