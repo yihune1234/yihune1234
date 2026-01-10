@@ -59,16 +59,16 @@
 <h2 align="center">🌱 Currently Exploring</h2>
 
 <p align="center">
-  • Clean, scalable Node.js + Express architecture<br>
-  • Advanced React patterns & TypeScript<br>
-  • Modern database optimization (MongoDB + MySQL)
+  -  Clean, scalable Node.js + Express architecture<br>
+  -  Advanced React patterns & TypeScript<br>
+  -  Modern database optimization (MongoDB + MySQL)
 </p>
 
 <h2 align="center">📬 Let's Connect!</h2>
 
 <p align="center">
   <strong>📧</strong> yihunebelay859@gmail.com<br>
-  <strong>🌍</strong> Ethiopia • Open to collaborations & opportunities!<br>
+  <strong>🌍</strong> Ethiopia -  Open to collaborations & opportunities!<br>
   <em>"Code is poetry – let's write something beautiful together." ✨</em>
 </p>
 
@@ -90,5 +90,3 @@
     />
   </a>
 </p>
-
-
