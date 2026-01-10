@@ -149,7 +149,7 @@
 </h2>
 
 <p align="center" style="font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; color:#CBD5F5;">
-  • Backend architecture with <strong>PHP & Python</strong> (clean logic, reusable services)<br>
+  • Backend architecture with <strong>PHP ,Node.js & Python</strong> (clean logic, reusable services)<br>
   • Scalable REST API design & data flow optimization<br>
   • Advanced React patterns with strong frontend–backend separation<br>
   • Modern database optimization (MongoDB + MySQL)
