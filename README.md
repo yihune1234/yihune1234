@@ -1,10 +1,14 @@
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=32&duration=4000&pause=1000&color=00A676&center=true&vCenter=true&width=600&lines=Hi+There!+👋;I'm+Yihune+Belay;Full-Stack+Web+Developer" alt="Typing SVG" />
+  <img 
+    src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=700&size=34&duration=3500&pause=900&color=00A676&center=true&vCenter=true&width=700&lines=Hi+There!+👋;I'm+Yihune+Belay;Full-Stack+Web+Developer;Crafting+Clean+%26+Scalable+Web+Experiences" 
+    alt="Typing SVG" 
+  />
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Software%20Engineering-4th%20Year%20Student-blueviolet?style=for-the-badge&logo=graduation-cap&logoColor=white" alt="Student" />
-  <img src="https://img.shields.io/badge/Passion-Web%20Development-orange?style=for-the-badge&logo=react&logoColor=white" alt="Passion" />
+  <img src="https://img.shields.io/badge/Software%20Engineering-4th%20Year%20Student-7C3AED?style=for-the-badge&logo=graduation-cap&logoColor=white" alt="Student" />
+  <img src="https://img.shields.io/badge/Passion-Web%20Development-F97316?style=for-the-badge&logo=react&logoColor=white" alt="Passion" />
+  <img src="https://img.shields.io/badge/Focus-Full%20Stack%20Apps-0EA5E9?style=for-the-badge&logo=vercel&logoColor=white" alt="Focus" />
 </p>
 
 <p align="center">
@@ -15,10 +19,16 @@
 
 <div align="center">
   <a href="https://yihunebelayportfolio.onrender.com/">
-    <img src="https://img.shields.io/badge/Explore%20My%20Portfolio-00C853?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio"/>
+    <img 
+      src="https://img.shields.io/badge/🔗%20Explore%20My%20Portfolio-00C853?style=for-the-badge&logo=vercel&logoColor=white" 
+      alt="Portfolio"
+    />
   </a>
   <a href="mailto:yihunebelay859@gmail.com">
-    <img src="https://img.shields.io/badge/📧%20Get%20in%20Touch-0288D1?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/>
+    <img 
+      src="https://img.shields.io/badge/📧%20Get%20in%20Touch-0288D1?style=for-the-badge&logo=gmail&logoColor=white" 
+      alt="Email"
+    />
   </a>
 </div>
 
@@ -29,14 +39,14 @@
 <p align="center">
   <strong>Languages</strong><br>
   <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black" alt="JS"/>
-  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TS"/> <!-- added TS as suggestion -->
+  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TS"/>
   <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python"/>
   <img src="https://img.shields.io/badge/PHP-777BB4?style=flat-square&logo=php&logoColor=white" alt="PHP"/>
 </p>
 
 <p align="center">
   <strong>Frontend</strong><br>
-  <img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black" alt="React"/>
+  <img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=000000" alt="React"/>
   <img src="https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white" alt="Tailwind"/>
 </p>
 
@@ -52,41 +62,38 @@
   <strong>Tools & Others</strong><br>
   <img src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white" alt="Git"/>
   <img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white" alt="GitHub"/>
-  <img src="https://img.shields.io/badge/VS_Code-007ACC?style=flat-square&logo=visualstudiocode&logoColor=white" alt="VS Code"/>
+  <img src="https://img.shields.io/badge/VS%20Code-007ACC?style=flat-square&logo=visualstudiocode&logoColor=white" alt="VS Code"/>
 </p>
-
 
 <h2 align="center">🌱 Currently Exploring</h2>
 
 <p align="center">
-  -  Clean, scalable Node.js + Express architecture<br>
-  -  Advanced React patterns & TypeScript<br>
-  -  Modern database optimization (MongoDB + MySQL)
+  • Clean, scalable Node.js + Express architecture<br>
+  • Advanced React patterns & TypeScript<br>
+  • Modern database optimization (MongoDB + MySQL)
 </p>
 
 <h2 align="center">📬 Let's Connect!</h2>
 
 <p align="center">
   <strong>📧</strong> yihunebelay859@gmail.com<br>
-  <strong>🌍</strong> Ethiopia -  Open to collaborations & opportunities!<br>
+  <strong>🌍</strong> Ethiopia • Open to collaborations & opportunities!<br>
   <em>"Code is poetry – let's write something beautiful together." ✨</em>
 </p>
 
-<!-- Optional fun addition: Visitors badge -->
-<!-- Centered Clickable GitHub Profile Badge -->
 <p align="center">
   <a href="https://bit.ly/ghprofile123">
     <img
-      src="https://komarev.com/ghpvc/?username=yihune1234&label=Profile%20Views&color=6366f1&labelColor=1e293b&style=for-the-badge"
+      src="https://komarev.com/ghpvc/?username=yihune1234&label=Profile%20Views&color=6366F1&labelColor=020617&style=for-the-badge"
       alt="Views"
       style="
-        border-radius: 10px;
-        box-shadow: 0 10px 30px -15px rgba(99,102,241,0.5);
+        border-radius: 14px;
+        box-shadow: 0 18px 45px -18px rgba(99,102,241,0.75);
         transform: translateY(0);
-        transition: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+        transition: all 0.45s cubic-bezier(0.34, 1.56, 0.64, 1);
       "
-      onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 20px 40px -10px rgba(99,102,241,0.6)'"
-      onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 10px 30px -15px rgba(99,102,241,0.5)'"
+      onmouseover="this.style.transform='translateY(-6px) scale(1.02)'; this.style.boxShadow='0 26px 60px -20px rgba(99,102,241,0.90)'"
+      onmouseout="this.style.transform='translateY(0) scale(1)'; this.style.boxShadow='0 18px 45px -18px rgba(99,102,241,0.75)'"
     />
   </a>
 </p>
