@@ -1,22 +1,25 @@
+<!-- 🧑‍💻 Hero / Intro -->
 <p align="center">
   <img 
-    src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=700&size=34&duration=3500&pause=900&color=00A676&center=true&vCenter=true&width=700&lines=Hi+There!+👋;I'm+Yihune+Belay;Full-Stack+Web+Developer;Crafting+Clean+%26+Scalable+Web+Experiences" 
+    src="https://readme-typing-svg.herokuapp.com?font=Poppins&weight=700&size=34&duration=3500&pause=900&color=00A676&center=true&vCenter=true&width=700&lines=Hi+There!+👋;I'm+Yihune+Belay;Full-Stack+Web+Developer;Crafting+Clean+%26+Scalable+Web+Experiences" 
     alt="Typing SVG" 
   />
 </p>
 
+<p align="center" style="font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; color:#E5E7EB;">
+  Building <strong>modern</strong>, <strong>scalable</strong>, and <strong>user-friendly</strong> web applications.<br>
+  I turn coffee into code and ideas into reality 🚀<br>
+  Always learning, always building.
+</p>
+
+<!-- 🎓 Status Badges -->
 <p align="center">
   <img src="https://img.shields.io/badge/Software%20Engineering-4th%20Year%20Student-7C3AED?style=for-the-badge&logo=graduation-cap&logoColor=white" alt="Student" />
   <img src="https://img.shields.io/badge/Passion-Web%20Development-F97316?style=for-the-badge&logo=react&logoColor=white" alt="Passion" />
   <img src="https://img.shields.io/badge/Focus-Full%20Stack%20Apps-0EA5E9?style=for-the-badge&logo=vercel&logoColor=white" alt="Focus" />
 </p>
 
-<p align="center">
-  Building <strong>modern</strong>, <strong>scalable</strong>, and <strong>user-friendly</strong> web applications.<br>
-  I turn coffee into code and ideas into reality 🚀<br>
-  Always learning, always building.
-</p>
-
+<!-- 🔗 CTA Buttons -->
 <div align="center">
   <a href="https://yihunebelayportfolio.onrender.com/">
     <img 
@@ -34,53 +37,118 @@
 
 <br>
 
-<h2 align="center">🛠️ Tech Stack</h2>
+<!-- 🛠️ Tech Stack Heading -->
+<h2 align="center" style="font-family: Poppins, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; color:#E5E7EB; letter-spacing:0.08em;">
+  🛠️ TECH STACK
+</h2>
 
-<p align="center">
-  <strong>Languages</strong><br>
-  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black" alt="JS"/>
-  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TS"/>
-  <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python"/>
-  <img src="https://img.shields.io/badge/PHP-777BB4?style=flat-square&logo=php&logoColor=white" alt="PHP"/>
-</p>
+<!-- 🧱 Tech Cards Wrapper -->
+<div align="center" style="font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;">
 
-<p align="center">
-  <strong>Frontend</strong><br>
-  <img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=000000" alt="React"/>
-  <img src="https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white" alt="Tailwind"/>
-</p>
+  <!-- Languages Card -->
+  <div style="
+    display:inline-block;
+    padding:16px 20px;
+    margin:8px;
+    border-radius:16px;
+    background:rgba(15,23,42,0.96);
+    border:1px solid rgba(148,163,184,0.4);
+    box-shadow:0 18px 45px -18px rgba(15,23,42,0.9);
+    min-width:260px;
+  ">
+    <p style="margin:0 0 10px 0; font-weight:600; letter-spacing:0.08em; font-size:12px; color:#A5B4FC;">
+      LANGUAGES
+    </p>
+    <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=000000" alt="JS"/>
+    <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TS"/>
+    <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python"/>
+    <img src="https://img.shields.io/badge/PHP-777BB4?style=flat-square&logo=php&logoColor=white" alt="PHP"/>
+  </div>
 
-<p align="center">
-  <strong>Backend & Databases</strong><br>
-  <img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white" alt="Node"/>
-  <img src="https://img.shields.io/badge/Express-000000?style=flat-square&logo=express&logoColor=white" alt="Express"/>
-  <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white" alt="MySQL"/>
-  <img src="https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white" alt="Mongo"/>
-</p>
+  <!-- Frontend Card -->
+  <div style="
+    display:inline-block;
+    padding:16px 20px;
+    margin:8px;
+    border-radius:16px;
+    background:rgba(15,23,42,0.96);
+    border:1px solid rgba(148,163,184,0.4);
+    box-shadow:0 18px 45px -18px rgba(15,23,42,0.9);
+    min-width:260px;
+  ">
+    <p style="margin:0 0 10px 0; font-weight:600; letter-spacing:0.08em; font-size:12px; color:#A5B4FC;">
+      FRONTEND
+    </p>
+    <img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=000000" alt="React"/>
+    <img src="https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white" alt="Tailwind"/>
+  </div>
 
-<p align="center">
-  <strong>Tools & Others</strong><br>
-  <img src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white" alt="Git"/>
-  <img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white" alt="GitHub"/>
-  <img src="https://img.shields.io/badge/VS%20Code-007ACC?style=flat-square&logo=visualstudiocode&logoColor=white" alt="VS Code"/>
-</p>
+  <!-- Backend & DB Card -->
+  <div style="
+    display:inline-block;
+    padding:16px 20px;
+    margin:8px;
+    border-radius:16px;
+    background:rgba(15,23,42,0.96);
+    border:1px solid rgba(148,163,184,0.4);
+    box-shadow:0 18px 45px -18px rgba(15,23,42,0.9);
+    min-width:260px;
+  ">
+    <p style="margin:0 0 10px 0; font-weight:600; letter-spacing:0.08em; font-size:12px; color:#A5B4FC;">
+      BACKEND & DATABASES
+    </p>
+    <img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white" alt="Node"/>
+    <img src="https://img.shields.io/badge/Express-000000?style=flat-square&logo=express&logoColor=white" alt="Express"/>
+    <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white" alt="MySQL"/>
+    <img src="https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white" alt="Mongo"/>
+  </div>
 
-<h2 align="center">🌱 Currently Exploring</h2>
+  <!-- Tools Card -->
+  <div style="
+    display:inline-block;
+    padding:16px 20px;
+    margin:8px;
+    border-radius:16px;
+    background:rgba(15,23,42,0.96);
+    border:1px solid rgba(148,163,184,0.4);
+    box-shadow:0 18px 45px -18px rgba(15,23,42,0.9);
+    min-width:260px;
+  ">
+    <p style="margin:0 0 10px 0; font-weight:600; letter-spacing:0.08em; font-size:12px; color:#A5B4FC;">
+      TOOLS & OTHERS
+    </p>
+    <img src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white" alt="Git"/>
+    <img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white" alt="GitHub"/>
+    <img src="https://img.shields.io/badge/VS%20Code-007ACC?style=flat-square&logo=visualstudiocode&logoColor=white" alt="VS Code"/>
+  </div>
 
-<p align="center">
+</div>
+
+<br>
+
+<!-- 🌱 Currently Exploring -->
+<h2 align="center" style="font-family: Poppins, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; color:#E5E7EB; letter-spacing:0.08em;">
+  🌱 CURRENTLY EXPLORING
+</h2>
+
+<p align="center" style="font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; color:#CBD5F5;">
   • Clean, scalable Node.js + Express architecture<br>
   • Advanced React patterns & TypeScript<br>
   • Modern database optimization (MongoDB + MySQL)
 </p>
 
-<h2 align="center">📬 Let's Connect!</h2>
+<!-- 📬 Contact -->
+<h2 align="center" style="font-family: Poppins, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; color:#E5E7EB; letter-spacing:0.08em;">
+  📬 LET'S CONNECT
+</h2>
 
-<p align="center">
+<p align="center" style="font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; color:#E5E7EB;">
   <strong>📧</strong> yihunebelay859@gmail.com<br>
   <strong>🌍</strong> Ethiopia • Open to collaborations & opportunities!<br>
-  <em>"Code is poetry – let's write something beautiful together." ✨</em>
+  <em style="color:#A5B4FC;">"Code is poetry – let's write something beautiful together." ✨</em>
 </p>
 
+<!-- 👁️ Profile Views Badge -->
 <p align="center">
   <a href="https://bit.ly/ghprofile123">
     <img
