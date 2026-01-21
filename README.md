@@ -1,4 +1,4 @@
-<!-- 🌟 HEADER WITH ANIMATED TYPING -->
+
 <div align="center">
   <img 
     src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=700&size=38&duration=4000&pause=1000&color=10B981&center=true&vCenter=true&width=800&lines=Hello+👋+I'm+Yihune+Belay;Full-Stack+Web+Developer;Building+Modern+Web+Solutions;Clean+Code+•+Scalable+Architecture" 
