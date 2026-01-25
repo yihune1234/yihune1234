@@ -24,7 +24,6 @@
   <img src="https://img.shields.io/badge/📍-Ethiopia-0EA5E9?style=for-the-badge&logo=location&logoColor=white" alt="Location" />
 </p>
 
-<!-- 🚀 QUICK ACTION BUTTONS -->
 <p align="center" style="margin: 40px 0;">
   <a href="https://yihunebelayportfolio.onrender.com/" target="_blank">
     <img src="https://img.shields.io/badge/📁_View_Portfolio-10B981?style=for-the-badge&logo=vercel&logoColor=white&labelColor=0F172A" alt="Portfolio" />
