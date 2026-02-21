@@ -76,7 +76,8 @@
     <img src="https://img.shields.io/badge/VS_Code-007ACC?style=flat-square&logo=visualstudiocode&logoColor=white" alt="VS Code" />
   </p>
 </div>
-<!-- 📚 CURRENTLY LEARNING -->
+
+<!-- 📚 CURRENTLY LEARNING (FIXED SECTION) -->
 <h2 align="center" style="color: #0F172A; margin: 60px 0 30px 0; border-bottom: 2px solid #E2E8F0; padding-bottom: 10px;">📚 Currently Learning</h2>
 
 <div align="center" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; max-width: 1000px; margin: 0 auto;">
@@ -106,6 +107,7 @@
     </ul>
   </div>
 </div>
+
 <!-- DEVELOPMENT APPROACH (simple visual) -->
 <h2 align="center" style="color: #0F172A; margin: 60px 0 30px 0; border-bottom: 2px solid #E2E8F0; padding-bottom: 10px;">🏗️ My Development Approach</h2>
 
