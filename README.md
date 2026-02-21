@@ -1,189 +1,180 @@
-
 <div align="center">
+  <!-- TYPING ANIMATION -->
   <img 
-    src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=700&size=38&duration=4000&pause=1000&color=10B981&center=true&vCenter=true&width=800&lines=Hello+👋+I'm+Yihune+Belay;Full-Stack+Web+Developer;Building+Modern+Web+Solutions;Clean+Code+•+Scalable+Architecture" 
+    src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=36&duration=3500&pause=700&color=10B981&center=true&vCenter=true&width=700&lines=Hello+👋+I'm+Yihune+Belay;Full-Stack+Web+Developer;Building+Modern+Web+Solutions;Clean+Code+•+Scalable+Architecture" 
     alt="Typing Animation" 
   />
 </div>
 
-<!-- 🎯 INTRODUCTION -->
-<p align="center" style="color: #CBD5E1; font-size: 18px; line-height: 1.6; margin: 25px 0;">
-  I build <strong style="color: #10B981">scalable web applications</strong> with clean architecture and great user experience.<br>
-  Passionate about solving real-world problems through code. 💻
-</p>
+<!-- SHORT BIO / VALUE PROPOSITION -->
+<div align="center" style="margin: 30px auto; max-width: 700px; color: #334155; font-size: 18px; line-height: 1.6;">
+  <p>
+    I craft <strong style="color: #10B981;">scalable web applications</strong> with a focus on clean architecture, 
+    maintainable code, and exceptional user experiences.  
+    I turn complex problems into elegant solutions. ✨
+  </p>
+</div>
 
-<!-- 📍 STATUS BADGES -->
-<p align="center" style="margin: 30px 0;">
-  <!-- Student Badge -->
-  <img src="https://img.shields.io/badge/🎓-4th_Year_Software_Engineering-7C3AED?style=for-the-badge&logo=bookstack&logoColor=white" alt="Student" />
-  
-  <!-- Passion Badge -->
-  <img src="https://img.shields.io/badge/🔥-Full_Stack_Development-F59E0B?style=for-the-badge&logo=react&logoColor=white" alt="Passion" />
-  
-  <!-- Location Badge -->
-  <img src="https://img.shields.io/badge/📍-Ethiopia-0EA5E9?style=for-the-badge&logo=location&logoColor=white" alt="Location" />
-</p>
+<!-- STATUS BADGES (more consistent style) -->
+<div align="center" style="margin: 30px 0;">
+  <img src="https://img.shields.io/badge/🎓-4th_Year_Software_Engineering-1E293B?style=flat-square&logo=bookstack&logoColor=white&labelColor=0F172A" alt="Student" />
+  <img src="https://img.shields.io/badge/🔥-Full_Stack_Developer-1E293B?style=flat-square&logo=react&logoColor=white&labelColor=0F172A" alt="Full Stack" style="margin-left: 8px;" />
+  <img src="https://img.shields.io/badge/📍-Ethiopia-1E293B?style=flat-square&logo=googlemaps&logoColor=white&labelColor=0F172A" alt="Location" style="margin-left: 8px;" />
+</div>
 
-<p align="center" style="margin: 40px 0;">
+<!-- CALL TO ACTION BUTTONS -->
+<div align="center" style="margin: 35px 0;">
   <a href="https://yihunebelayportfolio.onrender.com/" target="_blank">
-    <img src="https://img.shields.io/badge/📁_View_Portfolio-10B981?style=for-the-badge&logo=vercel&logoColor=white&labelColor=0F172A" alt="Portfolio" />
+    <img src="https://img.shields.io/badge/📁-View_Portfolio-0F172A?style=for-the-badge&logo=vercel&logoColor=white&labelColor=10B981" alt="Portfolio" />
   </a>
-  <a href="mailto:yihunebelay859@gmail.com" style="margin-left: 10px;">
-    <img src="https://img.shields.io/badge/📧_Contact_Me-3B82F6?style=for-the-badge&logo=gmail&logoColor=white&labelColor=0F172A" alt="Email" />
+  <a href="mailto:yihunebelay859@gmail.com" style="margin-left: 12px;">
+    <img src="https://img.shields.io/badge/📧-Contact_Me-0F172A?style=for-the-badge&logo=gmail&logoColor=white&labelColor=3B82F6" alt="Email" />
   </a>
-</p>
+</div>
 
-<!-- 📊 TECH STACK SECTION -->
-<h2 align="center" style="color: #F8FAFC; margin: 50px 0 30px 0;">
-  🛠️ MY TECH STACK
-</h2>
+<!-- TECH STACK SECTION -->
+<h2 align="center" style="color: #0F172A; margin: 50px 0 30px 0; border-bottom: 2px solid #E2E8F0; padding-bottom: 10px;">🛠️ Tech Stack</h2>
 
-<!-- Languages Card -->
-<h3 align="center" style="color: #10B981; margin: 30px 0 15px 0;">💻 Languages</h3>
-<p align="center">
-  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JS" />
-  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TS" />
-  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
-  <img src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white" alt="PHP" />
-</p>
-
-<!-- Frontend Card -->
-<h3 align="center" style="color: #3B82F6; margin: 30px 0 15px 0;">🎨 Frontend</h3>
-<p align="center">
-  <img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black" alt="React" />
-  <img src="https://img.shields.io/badge/Tailwind-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white" alt="Tailwind" />
-</p>
-
-<!-- Backend Card -->
-<h3 align="center" style="color: #8B5CF6; margin: 30px 0 15px 0;">⚙️ Backend</h3>
-<p align="center">
-  <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" alt="Node" />
-  <img src="https://img.shields.io/badge/Express-000000?style=for-the-badge&logo=express&logoColor=white" alt="Express" />
-  <img src="https://img.shields.io/badge/REST_API-FF6B6B?style=for-the-badge&logo=postman&logoColor=white" alt="REST" />
-</p>
-
-<!-- Databases Card -->
-<h3 align="center" style="color: #F59E0B; margin: 30px 0 15px 0;">🗄️ Databases</h3>
-<p align="center">
-  <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL" />
-  <img src="https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white" alt="MongoDB" />
-</p>
-
-<!-- Tools Card -->
-<h3 align="center" style="color: #EF4444; margin: 30px 0 15px 0;">🔧 Tools</h3>
-<p align="center">
-  <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git" />
-  <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
-  <img src="https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white" alt="VS Code" />
-</p>
-
-<!-- 🏗️ ARCHITECTURE SECTION -->
-<div align="center">
-  <h2 style="color: #F8FAFC; margin: 50px 0 30px 0;">🏗️ MY DEVELOPMENT APPROACH</h2>
-  
-  <p align="center" style="margin: 20px 0;">
-    <img src="https://img.shields.io/badge/Frontend-10B981?style=for-the-badge" alt="Frontend" />
-    <span style="color: #3B82F6; font-size: 20px;">→</span>
-    <img src="https://img.shields.io/badge/APIs-3B82F6?style=for-the-badge" alt="APIs" />
-    <span style="color: #8B5CF6; font-size: 20px;">→</span>
-    <img src="https://img.shields.io/badge/Backend-8B5CF6?style=for-the-badge" alt="Backend" />
-    <span style="color: #F59E0B; font-size: 20px;">→</span>
-    <img src="https://img.shields.io/badge/Database-F59E0B?style=for-the-badge" alt="Database" />
-  </p>
-  
-  <p style="color: #CBD5E1; font-size: 16px; line-height: 1.6; max-width: 800px; margin: 0 auto;">
-    I focus on <strong>clean architecture</strong>, <strong>scalable design</strong>, and <strong>maintainable code</strong>.<br>
-    Every layer is built with performance and future growth in mind.
+<!-- Languages -->
+<div align="center" style="margin: 30px 0;">
+  <h3 style="color: #10B981; margin-bottom: 12px;">💻 Languages</h3>
+  <p>
+    <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black" alt="JavaScript" />
+    <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" />
+    <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python" />
+    <img src="https://img.shields.io/badge/PHP-777BB4?style=flat-square&logo=php&logoColor=white" alt="PHP" />
   </p>
 </div>
 
-<!-- 📚 CURRENTLY LEARNING -->
-<h2 align="center" style="color: #F8FAFC; margin: 50px 0 30px 0;">
-  📚 CURRENTLY LEARNING
-</h2>
-
-<!-- Learning Topics -->
-<div align="center">
-  <table>
-    <tr>
-      <td align="center" width="300">
-        <h4 style="color: #10B981;">🎯 Backend Systems</h4>
-        <p style="color: #CBD5E1;">
-          • Advanced Node.js<br>
-          • Python backend<br>
-          • API optimization
-        </p>
-      </td>
-      <td align="center" width="300">
-        <h4 style="color: #3B82F6;">⚡ Performance</h4>
-        <p style="color: #CBD5E1;">
-          • Database optimization<br>
-          • React performance<br>
-          • Load balancing
-        </p>
-      </td>
-      <td align="center" width="300">
-        <h4 style="color: #8B5CF6;">🔐 Best Practices</h4>
-        <p style="color: #CBD5E1;">
-          • Security patterns<br>
-          • Testing strategies<br>
-          • Code architecture
-        </p>
-      </td>
-    </tr>
-  </table>
-</div>
-
-<!-- 📞 CONTACT SECTION -->
-<div align="center" style="margin: 60px 0;">
-  <h2 style="color: #F8FAFC; margin-bottom: 30px;">📞 LET'S CONNECT</h2>
-  
-  <p style="color: #CBD5E1; font-size: 18px; margin: 20px 0; max-width: 800px;">
-    I'm always open to discussing new opportunities, collaborations, or just chatting about tech!
-  </p>
-  
-  <!-- Contact Info -->
-  <table>
-    <tr>
-      <td align="center" width="250">
-        <h4 style="color: #10B981;">📧 Email</h4>
-        <p style="color: #94A3B8;">yihunebelay859@gmail.com</p>
-      </td>
-      <td align="center" width="250">
-        <h4 style="color: #3B82F6;">🌍 Location</h4>
-        <p style="color: #94A3B8;">Ethiopia</p>
-      </td>
-      <td align="center" width="250">
-        <h4 style="color: #8B5CF6;">🤝 Availability</h4>
-        <p style="color: #94A3B8;">Open to opportunities</p>
-      </td>
-    </tr>
-  </table>
-  
-  <!-- Contact Button -->
-  <p style="margin-top: 30px;">
-    <a href="mailto:yihunebelay859@gmail.com">
-      <img src="https://img.shields.io/badge/SEND_MESSAGE-10B981?style=for-the-badge&logo=gmail&logoColor=white" alt="Send Message" />
-    </a>
+<!-- Frontend -->
+<div align="center" style="margin: 30px 0;">
+  <h3 style="color: #3B82F6; margin-bottom: 12px;">🎨 Frontend</h3>
+  <p>
+    <img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black" alt="React" />
+    <img src="https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white" alt="Tailwind" />
   </p>
 </div>
 
-<!-- 📊 PROFILE STATS -->
-<div align="center" style="margin: 40px 0;">
-  <h3 style="color: #F8FAFC; margin-bottom: 20px;">📊 PROFILE VISITS</h3>
+<!-- Backend & Databases -->
+<div align="center" style="margin: 30px 0;">
+  <h3 style="color: #8B5CF6; margin-bottom: 12px;">⚙️ Backend & Databases</h3>
+  <p>
+    <img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white" alt="Node.js" />
+    <img src="https://img.shields.io/badge/Express-000000?style=flat-square&logo=express&logoColor=white" alt="Express" />
+    <img src="https://img.shields.io/badge/REST_API-FF6B6B?style=flat-square&logo=postman&logoColor=white" alt="REST API" />
+    <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white" alt="MySQL" />
+    <img src="https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white" alt="MongoDB" />
+  </p>
+</div>
+
+<!-- Tools -->
+<div align="center" style="margin: 30px 0;">
+  <h3 style="color: #F59E0B; margin-bottom: 12px;">🔧 Tools</h3>
+  <p>
+    <img src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white" alt="Git" />
+    <img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white" alt="GitHub" />
+    <img src="https://img.shields.io/badge/VS_Code-007ACC?style=flat-square&logo=visualstudiocode&logoColor=white" alt="VS Code" />
+  </p>
+</div>
+
+<!-- CURRENTLY LEARNING (card layout) -->
+<h2 align="center" style="color: #0F172A; margin: 60px 0 30px 0; border-bottom: 2px solid #E2E8F0; padding-bottom: 10px;">📚 Currently Learning</h2>
+
+<div align="center" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; max-width: 1000px; margin: 0 auto;">
+  <!-- Card 1 -->
+  <div style="background-color: #F8FAFC; border-radius: 16px; padding: 24px 20px; width: 260px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); border: 1px solid #E2E8F0;">
+    <h4 style="color: #10B981; margin: 0 0 12px 0;">🎯 Backend Systems</h4>
+    <ul style="list-style: none; padding: 0; margin: 0; color: #334155; text-align: left;">
+      <li>✓ Advanced Node.js</li>
+      <li>✓ Python backend</li>
+      <li>✓ API optimization</li>
+    </ul>
+  </div>
+  <!-- Card 2 -->
+  <div style="background-color: #F8FAFC; border-radius: 16px; padding: 24px 20px; width: 260px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); border: 1px solid #E2E8F0;">
+    <h4 style="color: #3B82F6; margin: 0 0 12px 0;">⚡ Performance</h4>
+    <ul style="list-style: none; padding: 0; margin: 0; color: #334155; text-align: left;">
+      <li>✓ Database optimization</li>
+      <li>✓ React performance</li>
+      <li>✓ Load balancing</li>
+    </ul>
+  </div>
+  <!-- Card 3 -->
+  <div style="background-color: #F8FAFC; border-radius: 16px; padding: 24px 20px; width: 260px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); border: 1px solid #E2E8F0;">
+    <h4 style="color: #8B5CF6; margin: 0 0 12px 0;">🔐 Best Practices</h4>
+    <ul style="list-style: none; padding: 0; margin: 0; color: #334155; text-align: left;">
+      <li>✓ Security patterns</li>
+      <li>✓ Testing strategies</li>
+      <li>✓ Code architecture</li>
+    </ul>
+  </div>
+</div>
+
+<!-- DEVELOPMENT APPROACH (simple visual) -->
+<h2 align="center" style="color: #0F172A; margin: 60px 0 30px 0; border-bottom: 2px solid #E2E8F0; padding-bottom: 10px;">🏗️ My Development Approach</h2>
+
+<div align="center" style="margin: 30px 0;">
+  <p style="font-size: 20px; color: #334155;">
+    <span style="background: #10B981; color: white; padding: 6px 18px; border-radius: 30px; font-weight: 600;">Frontend</span>
+    <span style="color: #94A3B8; margin: 0 10px;">→</span>
+    <span style="background: #3B82F6; color: white; padding: 6px 18px; border-radius: 30px; font-weight: 600;">APIs</span>
+    <span style="color: #94A3B8; margin: 0 10px;">→</span>
+    <span style="background: #8B5CF6; color: white; padding: 6px 18px; border-radius: 30px; font-weight: 600;">Backend</span>
+    <span style="color: #94A3B8; margin: 0 10px;">→</span>
+    <span style="background: #F59E0B; color: white; padding: 6px 18px; border-radius: 30px; font-weight: 600;">Database</span>
+  </p>
+  <p style="color: #475569; max-width: 600px; margin: 25px auto 0;">
+    Every layer is crafted with scalability, maintainability, and performance in mind.
+  </p>
+</div>
+
+<!-- CONNECT SECTION (cards) -->
+<h2 align="center" style="color: #0F172A; margin: 60px 0 30px 0; border-bottom: 2px solid #E2E8F0; padding-bottom: 10px;">📬 Let's Connect</h2>
+
+<div align="center" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; max-width: 900px; margin: 0 auto;">
+  <!-- Email card -->
+  <div style="background-color: #F8FAFC; border-radius: 16px; padding: 20px 30px; width: 200px; border: 1px solid #E2E8F0;">
+    <h4 style="color: #10B981; margin: 0 0 8px 0;">📧 Email</h4>
+    <p style="color: #334155; margin: 0; word-break: break-all;">yihunebelay859@gmail.com</p>
+  </div>
+  <!-- Location card -->
+  <div style="background-color: #F8FAFC; border-radius: 16px; padding: 20px 30px; width: 200px; border: 1px solid #E2E8F0;">
+    <h4 style="color: #3B82F6; margin: 0 0 8px 0;">📍 Location</h4>
+    <p style="color: #334155; margin: 0;">Ethiopia</p>
+  </div>
+  <!-- Availability card -->
+  <div style="background-color: #F8FAFC; border-radius: 16px; padding: 20px 30px; width: 200px; border: 1px solid #E2E8F0;">
+    <h4 style="color: #8B5CF6; margin: 0 0 8px 0;">🤝 Availability</h4>
+    <p style="color: #334155; margin: 0;">Open to opportunities</p>
+  </div>
+</div>
+
+<!-- GITHUB STATS (professional developer touch) -->
+<h2 align="center" style="color: #0F172A; margin: 60px 0 30px 0; border-bottom: 2px solid #E2E8F0; padding-bottom: 10px;">📊 GitHub Analytics</h2>
+
+<div align="center" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
   <a href="https://github.com/yihune1234">
-    <img src="https://komarev.com/ghpvc/?username=yihune1234&label=Profile%20Views&color=6366F1&style=for-the-badge&labelColor=0F172A" alt="Profile Views" />
+    <img height="180em" src="https://github-readme-stats.vercel.app/api?username=yihune1234&show_icons=true&theme=graywhite&hide_border=true&count_private=true&include_all_commits=true&bg_color=FFFFFF00&title_color=10B981&text_color=334155&icon_color=3B82F6" alt="GitHub Stats" />
+  </a>
+  <a href="https://github.com/yihune1234">
+    <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=yihune1234&layout=compact&langs_count=8&theme=graywhite&hide_border=true&bg_color=FFFFFF00&title_color=10B981&text_color=334155" alt="Top Languages" />
   </a>
 </div>
 
-<!-- ✨ QUOTE -->
-<div align="center" style="margin: 50px 0; padding: 25px;">
-  <p style="color: #94A3B8; font-size: 18px; font-style: italic; max-width: 800px;">
-    "Good code is like a good story - it should be clean, structured, and easy to follow." ✨
+<!-- PROFILE VISITS & QUOTE -->
+<div align="center" style="margin: 40px 0;">
+  <a href="https://github.com/yihune1234">
+    <img src="https://komarev.com/ghpvc/?username=yihune1234&label=Profile%20Views&color=6366F1&style=flat-square&labelColor=0F172A" alt="Profile Views" />
+  </a>
+</div>
+
+<div align="center" style="margin: 50px auto; max-width: 700px; padding: 20px; border-left: 4px solid #10B981; background-color: #F8FAFC; border-radius: 8px;">
+  <p style="color: #334155; font-size: 18px; font-style: italic;">
+    “Good code is like a good story — it should be clean, structured, and easy to follow.” ✨
   </p>
 </div>
 
-<!-- 🏁 FOOTER -->
-<div align="center" style="margin-top: 50px; color: #64748B; font-size: 14px;">
-  <p>Thanks for visiting! Have a great day! 😊</p>
+<!-- FOOTER -->
+<div align="center" style="margin-top: 60px; color: #94A3B8; font-size: 14px;">
+  <p>Thanks for stopping by! Have a great day 😊</p>
 </div>
