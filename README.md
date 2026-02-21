@@ -76,12 +76,11 @@
     <img src="https://img.shields.io/badge/VS_Code-007ACC?style=flat-square&logo=visualstudiocode&logoColor=white" alt="VS Code" />
   </p>
 </div>
-
-<!-- CURRENTLY LEARNING (card layout) -->
+<!-- 📚 CURRENTLY LEARNING -->
 <h2 align="center" style="color: #0F172A; margin: 60px 0 30px 0; border-bottom: 2px solid #E2E8F0; padding-bottom: 10px;">📚 Currently Learning</h2>
 
 <div align="center" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; max-width: 1000px; margin: 0 auto;">
-  <!-- Card 1 -->
+  <!-- Backend Systems -->
   <div style="background-color: #F8FAFC; border-radius: 16px; padding: 24px 20px; width: 260px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); border: 1px solid #E2E8F0;">
     <h4 style="color: #10B981; margin: 0 0 12px 0;">🎯 Backend Systems</h4>
     <ul style="list-style: none; padding: 0; margin: 0; color: #334155; text-align: left;">
@@ -90,7 +89,7 @@
       <li>✓ API optimization</li>
     </ul>
   </div>
-  <!-- Card 2 -->
+  <!-- Performance -->
   <div style="background-color: #F8FAFC; border-radius: 16px; padding: 24px 20px; width: 260px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); border: 1px solid #E2E8F0;">
     <h4 style="color: #3B82F6; margin: 0 0 12px 0;">⚡ Performance</h4>
     <ul style="list-style: none; padding: 0; margin: 0; color: #334155; text-align: left;">
@@ -99,17 +98,14 @@
       <li>✓ Load balancing</li>
     </ul>
   </div>
-  <!-- Card 3 -->
+  <!-- Best Practices -->
   <div style="background-color: #F8FAFC; border-radius: 16px; padding: 24px 20px; width: 260px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); border: 1px solid #E2E8F0;">
     <h4 style="color: #8B5CF6; margin: 0 0 12px 0;">🔐 Best Practices</h4>
     <ul style="list-style: none; padding: 0; margin: 0; color: #334155; text-align: left;">
       <li>✓ Security patterns</li>
-      <li>✓ Testing strategies</li>
-      <li>✓ Code architecture</li>
     </ul>
   </div>
 </div>
-
 <!-- DEVELOPMENT APPROACH (simple visual) -->
 <h2 align="center" style="color: #0F172A; margin: 60px 0 30px 0; border-bottom: 2px solid #E2E8F0; padding-bottom: 10px;">🏗️ My Development Approach</h2>
 
