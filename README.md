@@ -147,17 +147,8 @@
   </div>
 </div>
 
-<!-- GITHUB STATS (professional developer touch) -->
-<h2 align="center" style="color: #0F172A; margin: 60px 0 30px 0; border-bottom: 2px solid #E2E8F0; padding-bottom: 10px;">📊 GitHub Analytics</h2>
 
-<div align="center" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
-  <a href="https://github.com/yihune1234">
-    <img height="180em" src="https://github-readme-stats.vercel.app/api?username=yihune1234&show_icons=true&theme=graywhite&hide_border=true&count_private=true&include_all_commits=true&bg_color=FFFFFF00&title_color=10B981&text_color=334155&icon_color=3B82F6" alt="GitHub Stats" />
-  </a>
-  <a href="https://github.com/yihune1234">
-    <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=yihune1234&layout=compact&langs_count=8&theme=graywhite&hide_border=true&bg_color=FFFFFF00&title_color=10B981&text_color=334155" alt="Top Languages" />
-  </a>
-</div>
+
 
 <!-- PROFILE VISITS & QUOTE -->
 <div align="center" style="margin: 40px 0;">
