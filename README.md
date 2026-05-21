@@ -24,7 +24,7 @@
 
 <!-- CALL TO ACTION BUTTONS -->
 <div align="center" style="margin: 35px 0;">
-  <a href="[https://myportfolio-1-01m7.onrender.com/](https://myportfolio-1-01m7.onrender.com/)" target="_blank">
+  <a href="[https://myportfolio-1-01m7.onrender.com/]" target="_blank">
     <img src="https://img.shields.io/badge/📁-View_Portfolio-0F172A?style=for-the-badge&logo=vercel&logoColor=white&labelColor=10B981" alt="Portfolio" />
   </a>
   <a href="mailto:yihunebelay859@gmail.com" style="margin-left: 12px;">
