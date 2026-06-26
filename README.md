@@ -267,7 +267,7 @@
 
 <div align="center">
 
-[![Trophies](https://github-profile-trophy.vercel.app/?username=yihune1234&theme=matrix&no-frame=true&no-bg=true&column=7&margin-w=6&margin-h=6)](https://github.com/yihune1234)
+[![Trophies](https://github-profile-trophy.vercel.app/?username=yihune1234&theme=tokyonight&no-frame=true&no-bg=false&column=4&margin-w=12&margin-h=12)](https://github.com/yihune1234)
 
 </div>
 
