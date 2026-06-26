@@ -21,7 +21,6 @@
 <td width="30" valign="middle"></td>
 <td valign="middle">
 
-<!-- TYPING ANIMATION - simple ASCII-safe lines only -->
 <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=22&duration=3000&pause=800&color=10B981&vCenter=true&width=560&lines=Hi+there%2C+I%27m+Yihune+Belay+%F0%9F%91%8B;Full-Stack+Web+Developer+%F0%9F%9A%80;React+%7C+Django+%7C+Node.js+%7C+Laravel+%F0%9F%9B%A0%EF%B8%8F;Open+to+Opportunities+%7C+Remote-Friendly+%F0%9F%8C%8D" alt="Typing SVG" />
 
 <br/><br/>
@@ -34,7 +33,7 @@ I build **scalable, production-ready web applications** end-to-end — from pixe
 
 <br/>
 
-[![Portfolio](https://img.shields.io/badge/🌐_Portfolio-View_My_Work-10B981?style=for-the-badge&labelColor=0F172A)]([https://myportfolio-1-01m7.onrender.com/](https://yihune-software.vercel.app/))
+[![Portfolio](https://img.shields.io/badge/🌐_Portfolio-View_My_Work-10B981?style=for-the-badge&labelColor=0F172A)](https://yihune-software.vercel.app/)
 &nbsp;
 [![Email](https://img.shields.io/badge/📧_Email_Me-EA4335?style=for-the-badge&logo=gmail&logoColor=white&labelColor=0F172A)](mailto:yihunebelay859@gmail.com)
 
@@ -85,7 +84,7 @@ const yihune: Developer = {
 
 ### 🔥 GitHub Streak
 
-[![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=yihune1234&theme=tokyonight_duo&hide_border=true&background=0D1117&stroke=10B981&ring=10B981&fire=F59E0B&currStreakLabel=10B981&sideNums=FFFFFF&dates=94A3B8&sideLabels=94A3B8)](https://github.com/yihune1234)
+[![GitHub Streak](https://streak-stats.demolab.com?user=yihune1234&theme=tokyonight-duo&hide_border=true&background=0D1117&stroke=10B981&ring=10B981&fire=F59E0B&currStreakLabel=10B981&sideNums=FFFFFF&dates=94A3B8&sideLabels=94A3B8)](https://github.com/yihune1234)
 
 <br/>
 
@@ -149,6 +148,14 @@ const yihune: Developer = {
 
 </div>
 
+<br/>
+
+<div align="center">
+
+[![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=yihune1234&bg_color=0D1117&color=10B981&line=3B82F6&point=F59E0B&area=true&hide_border=true)](https://github.com/yihune1234)
+
+</div>
+
 ---
 
 ## 🏗️ Full-Stack Architecture
@@ -160,7 +167,7 @@ const yihune: Developer = {
 ║  🎨 Frontend  ║  🐍 Python    ║  🐘 PHP        ║  🟢 Node.js   ║  🗄️ Database       ║
 ╠═══════════════╬═══════════════╬════════════════╬═══════════════╬════════════════════╣
 ║  React        ║  Django       ║  Laravel       ║  Express.js   ║  PostgreSQL        ║
-║  TypeScript   ║  Django REST  ║  Blade/API     ║  REST APIs    ║  MySQL             ║
+║  TypeScript   ║  Django REST  ║  Blade / API   ║  REST APIs    ║  MySQL             ║
 ║  Tailwind CSS ║  Celery       ║  Eloquent ORM  ║  JWT Auth     ║  MongoDB           ║
 ╠═══════════════╬═══════════════╬════════════════╬═══════════════╬════════════════════╣
 ║  Component    ║  Scalable     ║  MVC Pattern   ║  Lightweight  ║  Optimized         ║
@@ -192,7 +199,7 @@ const yihune: Developer = {
 
 <div align="center">
 
-[![Portfolio](https://img.shields.io/badge/🌐_Live_Portfolio-Explore_My_Projects-10B981?style=for-the-badge&labelColor=0F172A)](https://myportfolio-1-01m7.onrender.com/)
+[![Portfolio](https://img.shields.io/badge/🌐_Live_Portfolio-Explore_My_Projects-10B981?style=for-the-badge&labelColor=0F172A)](https://yihune-software.vercel.app/)
 
 *Explore pinned repositories below ↓ — each one demonstrates real-world problem solving.*
 
@@ -210,7 +217,7 @@ const yihune: Developer = {
 &nbsp;&nbsp;
 [![GitHub](https://img.shields.io/badge/GitHub-@yihune1234-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/yihune1234)
 &nbsp;&nbsp;
-[![Portfolio](https://img.shields.io/badge/Portfolio-Visit_Site-10B981?style=for-the-badge&logo=vercel&logoColor=white)](https://myportfolio-1-01m7.onrender.com/)
+[![Portfolio](https://img.shields.io/badge/Portfolio-yihune--software.vercel.app-10B981?style=for-the-badge&logo=vercel&logoColor=white)](https://yihune-software.vercel.app/)
 
 <br/><br/>
 
