@@ -34,7 +34,7 @@ I build **scalable, production-ready web applications** end-to-end — from pixe
 
 <br/>
 
-[![Portfolio](https://img.shields.io/badge/🌐_Portfolio-View_My_Work-10B981?style=for-the-badge&labelColor=0F172A)](https://myportfolio-1-01m7.onrender.com/)
+[![Portfolio](https://img.shields.io/badge/🌐_Portfolio-View_My_Work-10B981?style=for-the-badge&labelColor=0F172A)]([https://myportfolio-1-01m7.onrender.com/](https://yihune-software.vercel.app/))
 &nbsp;
 [![Email](https://img.shields.io/badge/📧_Email_Me-EA4335?style=for-the-badge&logo=gmail&logoColor=white&labelColor=0F172A)](mailto:yihunebelay859@gmail.com)
 
