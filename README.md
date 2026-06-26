@@ -1,7 +1,7 @@
 <div align="center">
 
 <!-- ANIMATED WAVE HEADER -->
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=200&section=header&text=Yihune%20Belay&fontSize=56&fontColor=fff&animation=twinkling&fontAlignY=36&desc=Full-Stack%20Web%20Developer%20%7C%20Software%20Engineering%20Student&descAlignY=58&descSize=19" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=200&section=header&text=Yihune%20Belay&fontSize=56&fontColor=fff&animation=twinkling&fontAlignY=36&desc=Full-Stack%20Web%20%26%20Mobile%20Developer%20%7C%20Software%20Engineering%20Student&descAlignY=58&descSize=17" width="100%"/>
 
 </div>
 
@@ -11,7 +11,7 @@
 <tr>
 <td align="center" width="220" valign="middle">
 
-<img src="https://res.cloudinary.com/dqcrqtzz6/image/upload/v1782462896/917ecb6b-ccf4-473f-8d82-a5492208bb8e_sysrgb.jpg" width="180" height="180" alt="Yihune Belay"/>
+<img src="https://res.cloudinary.com/dqcrqtzz6/image/upload/w_180,h_180,c_fill,r_max/v1782461598/3a397351-7f31-456f-a694-ed80dc5a4fbc_uywoim.jpg" width="180" height="180" alt="Yihune Belay"/>
 
 <br/><br/>
 
@@ -21,7 +21,7 @@
 <td width="30" valign="middle"></td>
 <td valign="middle">
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=22&duration=3000&pause=800&color=10B981&vCenter=true&width=560&lines=Hi+there%2C+I%27m+Yihune+Belay+%F0%9F%91%8B;Full-Stack+Web+Developer+%F0%9F%9A%80;React+%7C+Django+%7C+Node.js+%7C+Laravel+%F0%9F%9B%A0%EF%B8%8F;Open+to+Opportunities+%7C+Remote-Friendly+%F0%9F%8C%8D" alt="Typing SVG" />
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=22&duration=3000&pause=800&color=10B981&vCenter=true&width=580&lines=Hi+there%2C+I%27m+Yihune+Belay+%F0%9F%91%8B;Full-Stack+Web+%26+Mobile+Developer+%F0%9F%9A%80;React+%7C+React+Native+%7C+Django+%7C+Laravel+%F0%9F%9B%A0%EF%B8%8F;Building+for+Web+%26+Mobile+Platforms+%F0%9F%93%B1;Open+to+Opportunities+%7C+Remote-Friendly+%F0%9F%8C%8D" alt="Typing SVG" />
 
 <br/><br/>
 
@@ -29,7 +29,7 @@
 
 <br/>
 
-I build **scalable, production-ready web applications** end-to-end — from pixel-perfect UIs to robust backends and optimized databases. Great software should be **readable, maintainable, and built to last**.
+I build **scalable, production-ready web & mobile applications** end-to-end — from pixel-perfect UIs and cross-platform mobile apps to robust backends and optimized databases. Great software should be **readable, maintainable, and built to last**.
 
 <br/>
 
@@ -54,23 +54,24 @@ I build **scalable, production-ready web applications** end-to-end — from pixe
 ```typescript
 const yihune: Developer = {
   name:      "Yihune Belay",
-  role:      "Full-Stack Web Developer",
+  role:      "Full-Stack Web & Mobile Developer",
   education: "4th Year Software Engineering",
   location:  "Addis Ababa, Ethiopia 🇪🇹",
   timezone:  "EAT (UTC+3)",
 
   stack: {
     languages: ["JavaScript", "TypeScript", "Python", "PHP"],
-    frontend:  ["React", "Tailwind CSS", "HTML5", "CSS3"],
+    web:       ["React", "Tailwind CSS", "HTML5", "CSS3"],
+    mobile:    ["React Native", "Expo", "Android", "iOS"],
     backend:   ["Django", "DRF", "Node.js", "Express", "Laravel"],
-    databases: ["MySQL", "PostgreSQL", "MongoDB"],
-    tools:     ["Git", "Docker", "Postman", "VS Code"],
+    databases: ["MySQL", "PostgreSQL", "MongoDB", "SQLite"],
+    tools:     ["Git", "Docker", "Postman", "VS Code", "Expo Go"],
   },
 
   currentlyLearning: [
+    "React Native advanced patterns",
     "Django REST Framework & Celery",
     "Docker & CI/CD pipelines",
-    "System design & microservices",
   ],
 
   openTo:  ["Freelance", "Full-time", "Remote"],
@@ -108,11 +109,17 @@ const yihune: Developer = {
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
 
-### 🎨 Frontend
+### 🌐 Web Frontend
 ![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+
+### 📱 Mobile Development
+![React Native](https://img.shields.io/badge/React_Native-61DAFB?style=for-the-badge&logo=react&logoColor=black)
+![Expo](https://img.shields.io/badge/Expo-000020?style=for-the-badge&logo=expo&logoColor=white)
+![Android](https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white)
+![iOS](https://img.shields.io/badge/iOS-000000?style=for-the-badge&logo=apple&logoColor=white)
 
 ### ⚙️ Backend Frameworks
 ![Django](https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white)
@@ -125,6 +132,7 @@ const yihune: Developer = {
 ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
 ![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
+![SQLite](https://img.shields.io/badge/SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=white)
 
 ### 🔧 Tools & DevOps
 ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
@@ -163,17 +171,17 @@ const yihune: Developer = {
 <div align="center">
 
 ```
-╔═══════════════╦═══════════════╦════════════════╦═══════════════╦════════════════════╗
-║  🎨 Frontend  ║  🐍 Python    ║  🐘 PHP        ║  🟢 Node.js   ║  🗄️ Database       ║
-╠═══════════════╬═══════════════╬════════════════╬═══════════════╬════════════════════╣
-║  React        ║  Django       ║  Laravel       ║  Express.js   ║  PostgreSQL        ║
-║  TypeScript   ║  Django REST  ║  Blade / API   ║  REST APIs    ║  MySQL             ║
-║  Tailwind CSS ║  Celery       ║  Eloquent ORM  ║  JWT Auth     ║  MongoDB           ║
-╠═══════════════╬═══════════════╬════════════════╬═══════════════╬════════════════════╣
-║  Component    ║  Scalable     ║  MVC Pattern   ║  Lightweight  ║  Optimized         ║
-║  Architecture ║  & Secure     ║  & Elegant     ║  & Fast       ║  Queries           ║
-╚═══════════════╩═══════════════╩════════════════╩═══════════════╩════════════════════╝
-                     ✅ Scalable  ✅ Maintainable  ✅ Production-Ready
+╔══════════════╦══════════════╦══════════════╦══════════════╦══════════════╦══════════════════╗
+║  🌐 Web UI   ║  📱 Mobile   ║  🐍 Python   ║  🐘 PHP      ║  🟢 Node.js  ║  🗄️ Database     ║
+╠══════════════╬══════════════╬══════════════╬══════════════╬══════════════╬══════════════════╣
+║  React       ║ React Native ║  Django      ║  Laravel     ║  Express.js  ║  PostgreSQL      ║
+║  TypeScript  ║  Expo SDK    ║  Django REST ║  Blade/API   ║  REST APIs   ║  MySQL           ║
+║  Tailwind    ║  Android/iOS ║  Celery      ║  Eloquent    ║  JWT Auth    ║  MongoDB         ║
+╠══════════════╬══════════════╬══════════════╬══════════════╬══════════════╬══════════════════╣
+║  Component   ║  Cross-      ║  Scalable    ║  MVC         ║  Lightweight ║  Optimized       ║
+║  Architecture║  Platform    ║  & Secure    ║  & Elegant   ║  & Fast      ║  Queries         ║
+╚══════════════╩══════════════╩══════════════╩══════════════╩══════════════╩══════════════════╝
+               ✅ Web  ✅ Mobile  ✅ Scalable  ✅ Maintainable  ✅ Production-Ready
 ```
 
 </div>
@@ -184,12 +192,12 @@ const yihune: Developer = {
 
 <div align="center">
 
-| 🐍 Django & Python | 🐘 PHP & Laravel | 🐳 DevOps | 🏛️ Architecture |
+| 📱 Mobile Dev | 🐍 Django & Python | 🐘 PHP & Laravel | 🐳 DevOps |
 |:---:|:---:|:---:|:---:|
-| Django REST Framework | Laravel advanced features | Docker & containers | Microservices design |
-| Celery task queues | Laravel Queues & Jobs | CI/CD pipelines | System design patterns |
-| Django Channels (WebSockets) | Livewire & Inertia.js | Nginx & deployment | Event-driven systems |
-| ORM & query optimization | Laravel Sanctum/Passport | Cloud platforms | Database sharding |
+| React Native navigation | Django REST Framework | Laravel advanced features | Docker & containers |
+| Expo push notifications | Celery task queues | Laravel Queues & Jobs | CI/CD pipelines |
+| Offline-first with SQLite | Django Channels (WS) | Livewire & Inertia.js | Nginx & deployment |
+| App Store & Play Store | ORM optimization | Laravel Sanctum/Passport | Cloud platforms |
 
 </div>
 
@@ -201,7 +209,7 @@ const yihune: Developer = {
 
 [![Portfolio](https://img.shields.io/badge/🌐_Live_Portfolio-Explore_My_Projects-10B981?style=for-the-badge&labelColor=0F172A)](https://yihune-software.vercel.app/)
 
-*Explore pinned repositories below ↓ — each one demonstrates real-world problem solving.*
+*Explore pinned repositories below ↓ — web & mobile projects that solve real-world problems.*
 
 </div>
 
