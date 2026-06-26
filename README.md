@@ -11,7 +11,7 @@
 <tr>
 <td align="center" width="220" valign="middle">
 
-<img src="https://res.cloudinary.com/dqcrqtzz6/image/upload/v1782462773/917ecb6b-ccf4-473f-8d82-a5492208bb8e_sysrgb.jpg" width="180" height="180" alt="Yihune Belay"/>
+<img src="https://res.cloudinary.com/dqcrqtzz6/image/upload/v1782462896/917ecb6b-ccf4-473f-8d82-a5492208bb8e_sysrgb.jpg" width="180" height="180" alt="Yihune Belay"/>
 
 <br/><br/>
 
