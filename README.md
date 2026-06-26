@@ -7,16 +7,11 @@
 
 <br/>
 
-<!-- PROFILE PHOTO + INTRO SIDE BY SIDE -->
 <table align="center" border="0" cellpadding="0" cellspacing="20">
 <tr>
 <td align="center" width="220" valign="middle">
 
-<img src="https://res.cloudinary.com/dqcrqtzz6/image/upload/v1782461598/3a397351-7f31-456f-a694-ed80dc5a4fbc_uywoim.jpg" 
-     width="180" 
-     height="180" 
-     style="border-radius: 50%; border: 4px solid #10B981;"
-     alt="Yihune Belay" />
+<img src="https://res.cloudinary.com/dqcrqtzz6/image/upload/w_180,h_180,c_fill,r_max/v1782461598/3a397351-7f31-456f-a694-ed80dc5a4fbc_uywoim.jpg" width="180" height="180" alt="Yihune Belay"/>
 
 <br/><br/>
 
@@ -26,21 +21,22 @@
 <td width="30" valign="middle"></td>
 <td valign="middle">
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=24&duration=3000&pause=800&color=10B981&vCenter=true&width=560&lines=Hi+there%2C+I'm+Yihune+Belay+👋;Full-Stack+Web+Developer+🚀;Clean+Code+%2B+Elegant+Architecture+✨;React+%7C+Node.js+%7C+Django+%7C+Python+🛠️;Open+to+Opportunities+%7C+Remote-Friendly+🌍" alt="Typing SVG" />
+<!-- TYPING ANIMATION - simple ASCII-safe lines only -->
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=22&duration=3000&pause=800&color=10B981&vCenter=true&width=560&lines=Hi+there%2C+I%27m+Yihune+Belay+%F0%9F%91%8B;Full-Stack+Web+Developer+%F0%9F%9A%80;React+%7C+Django+%7C+Node.js+%7C+Laravel+%F0%9F%9B%A0%EF%B8%8F;Open+to+Opportunities+%7C+Remote-Friendly+%F0%9F%8C%8D" alt="Typing SVG" />
+
+<br/><br/>
+
+> 🎓 **4th Year Software Engineering** · 📍 Addis Ababa, Ethiopia · 🤝 Open to Work
 
 <br/>
 
-> 🎓 **4th Year Software Engineering Student** · 📍 Ethiopia · 🤝 Open to Work
-
-<br/>
-
-I craft **scalable, production-ready web applications** end-to-end — from pixel-perfect UIs to robust backends and optimized databases. I believe great software is **readable, maintainable, and built to last**.
+I build **scalable, production-ready web applications** end-to-end — from pixel-perfect UIs to robust backends and optimized databases. Great software should be **readable, maintainable, and built to last**.
 
 <br/>
 
 [![Portfolio](https://img.shields.io/badge/🌐_Portfolio-View_My_Work-10B981?style=for-the-badge&labelColor=0F172A)](https://myportfolio-1-01m7.onrender.com/)
 &nbsp;
-[![Email](https://img.shields.io/badge/📧_Email_Me-yihunebelay859-EA4335?style=for-the-badge&logo=gmail&logoColor=white&labelColor=0F172A)](mailto:yihunebelay859@gmail.com)
+[![Email](https://img.shields.io/badge/📧_Email_Me-EA4335?style=for-the-badge&logo=gmail&logoColor=white&labelColor=0F172A)](mailto:yihunebelay859@gmail.com)
 
 </td>
 </tr>
@@ -54,37 +50,38 @@ I craft **scalable, production-ready web applications** end-to-end — from pixe
 
 <table align="center" border="0" cellpadding="0" cellspacing="0">
 <tr>
-<td width="60%" valign="top">
+<td width="58%" valign="top">
 
 ```typescript
 const yihune: Developer = {
   name:      "Yihune Belay",
   role:      "Full-Stack Web Developer",
   education: "4th Year Software Engineering",
-  location:  "🇪🇹 Addis Ababa, Ethiopia",
+  location:  "Addis Ababa, Ethiopia 🇪🇹",
   timezone:  "EAT (UTC+3)",
 
   stack: {
-    frontend:  ["React", "TypeScript", "Tailwind CSS"],
-    backend:   ["Node.js", "Express", "Django", "Python"],
-    databases: ["MySQL", "MongoDB", "PostgreSQL"],
-    tools:     ["Git", "REST APIs", "Postman", "VS Code"],
+    languages: ["JavaScript", "TypeScript", "Python", "PHP"],
+    frontend:  ["React", "Tailwind CSS", "HTML5", "CSS3"],
+    backend:   ["Django", "DRF", "Node.js", "Express", "Laravel"],
+    databases: ["MySQL", "PostgreSQL", "MongoDB"],
+    tools:     ["Git", "Docker", "Postman", "VS Code"],
   },
 
   currentlyLearning: [
-    "Django REST Framework (DRF)",
+    "Django REST Framework & Celery",
+    "Docker & CI/CD pipelines",
     "System design & microservices",
-    "Docker & deployment pipelines",
   ],
 
   openTo:  ["Freelance", "Full-time", "Remote"],
-  funFact: "I debug with console.log and I'm not ashamed 😄",
+  funFact: "I debug with console.log & I'm proud of it 😄",
 };
 ```
 
 </td>
-<td width="5%"></td>
-<td width="35%" valign="top">
+<td width="4%"></td>
+<td width="38%" valign="top">
 
 ### 🔥 GitHub Streak
 
@@ -118,11 +115,12 @@ const yihune: Developer = {
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 
-### ⚙️ Backend
+### ⚙️ Backend Frameworks
 ![Django](https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white)
-![Django REST](https://img.shields.io/badge/Django_REST-ff1709?style=for-the-badge&logo=django&logoColor=white)
+![Django REST](https://img.shields.io/badge/Django_REST_Framework-ff1709?style=for-the-badge&logo=django&logoColor=white)
+![Laravel](https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white)
 ![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
-![Express](https://img.shields.io/badge/Express-000000?style=for-the-badge&logo=express&logoColor=white)
+![Express](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white)
 
 ### 🗄️ Databases
 ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
@@ -145,7 +143,7 @@ const yihune: Developer = {
 
 <div align="center">
 
-<img height="185em" src="https://github-readme-stats.vercel.app/api?username=yihune1234&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=true&bg_color=0D1117&title_color=10B981&icon_color=3B82F6&text_color=FFFFFF&ring_color=10B981" />
+<img height="185em" src="https://github-readme-stats.vercel.app/api?username=yihune1234&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=true&bg_color=0D1117&title_color=10B981&icon_color=3B82F6&text_color=FFFFFF" />
 &nbsp;&nbsp;
 <img height="185em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=yihune1234&layout=compact&langs_count=8&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=10B981&text_color=FFFFFF" />
 
@@ -158,19 +156,17 @@ const yihune: Developer = {
 <div align="center">
 
 ```
-╔══════════════════════════════════════════════════════════════════════════╗
-║                    YIHUNE'S FULL-STACK WORKFLOW                         ║
-╠════════════════╦═══════════════╦════════════════╦════════════════════════╣
-║  🎨 Frontend   ║  🔌 API Layer ║  ⚙️ Backend    ║  🗄️ Database           ║
-║                ║               ║                ║                        ║
-║  React         ║  REST APIs    ║  Django / DRF  ║  PostgreSQL            ║
-║  TypeScript    ║  JWT Auth     ║  Node.js       ║  MySQL                 ║
-║  Tailwind CSS  ║  Express      ║  Python        ║  MongoDB               ║
-║                ║               ║                ║                        ║
-║  Component     ║  Secure &     ║  Business      ║  Optimized             ║
-║  Architecture  ║  Documented   ║  Logic Layer   ║  Queries               ║
-╚════════════════╩═══════════════╩════════════════╩════════════════════════╝
-              ✅ Scalable   ✅ Maintainable   ✅ Production-Ready
+╔═══════════════╦═══════════════╦════════════════╦═══════════════╦════════════════════╗
+║  🎨 Frontend  ║  🐍 Python    ║  🐘 PHP        ║  🟢 Node.js   ║  🗄️ Database       ║
+╠═══════════════╬═══════════════╬════════════════╬═══════════════╬════════════════════╣
+║  React        ║  Django       ║  Laravel       ║  Express.js   ║  PostgreSQL        ║
+║  TypeScript   ║  Django REST  ║  Blade/API     ║  REST APIs    ║  MySQL             ║
+║  Tailwind CSS ║  Celery       ║  Eloquent ORM  ║  JWT Auth     ║  MongoDB           ║
+╠═══════════════╬═══════════════╬════════════════╬═══════════════╬════════════════════╣
+║  Component    ║  Scalable     ║  MVC Pattern   ║  Lightweight  ║  Optimized         ║
+║  Architecture ║  & Secure     ║  & Elegant     ║  & Fast       ║  Queries           ║
+╚═══════════════╩═══════════════╩════════════════╩═══════════════╩════════════════════╝
+                     ✅ Scalable  ✅ Maintainable  ✅ Production-Ready
 ```
 
 </div>
@@ -181,12 +177,12 @@ const yihune: Developer = {
 
 <div align="center">
 
-| 🐍 Django & Python | 🐳 DevOps | 🔐 Security | 🏛️ Architecture |
+| 🐍 Django & Python | 🐘 PHP & Laravel | 🐳 DevOps | 🏛️ Architecture |
 |:---:|:---:|:---:|:---:|
-| Django REST Framework | Docker & containers | JWT & OAuth 2.0 | Microservices design |
-| Celery task queues | CI/CD pipelines | OWASP best practices | System design patterns |
-| Django Channels (WebSockets) | Nginx & deployment | Rate limiting & throttling | Database sharding |
-| ORM optimization | Cloud platforms (AWS/GCP) | Secure headers & HTTPS | Event-driven architecture |
+| Django REST Framework | Laravel advanced features | Docker & containers | Microservices design |
+| Celery task queues | Laravel Queues & Jobs | CI/CD pipelines | System design patterns |
+| Django Channels (WebSockets) | Livewire & Inertia.js | Nginx & deployment | Event-driven systems |
+| ORM & query optimization | Laravel Sanctum/Passport | Cloud platforms | Database sharding |
 
 </div>
 
@@ -196,9 +192,9 @@ const yihune: Developer = {
 
 <div align="center">
 
-[![Portfolio](https://img.shields.io/badge/🌐_Live_Portfolio-Explore_My_Projects-10B981?style=for-the-badge&labelColor=0F172A&logoColor=white)](https://myportfolio-1-01m7.onrender.com/)
+[![Portfolio](https://img.shields.io/badge/🌐_Live_Portfolio-Explore_My_Projects-10B981?style=for-the-badge&labelColor=0F172A)](https://myportfolio-1-01m7.onrender.com/)
 
-*Check out my pinned repositories below ↓ — each one demonstrates real-world problem solving.*
+*Explore pinned repositories below ↓ — each one demonstrates real-world problem solving.*
 
 </div>
 
@@ -214,7 +210,7 @@ const yihune: Developer = {
 &nbsp;&nbsp;
 [![GitHub](https://img.shields.io/badge/GitHub-@yihune1234-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/yihune1234)
 &nbsp;&nbsp;
-[![Portfolio](https://img.shields.io/badge/Portfolio-myportfolio--1--01m7.onrender.com-10B981?style=for-the-badge&logo=vercel&logoColor=white)](https://myportfolio-1-01m7.onrender.com/)
+[![Portfolio](https://img.shields.io/badge/Portfolio-Visit_Site-10B981?style=for-the-badge&logo=vercel&logoColor=white)](https://myportfolio-1-01m7.onrender.com/)
 
 <br/><br/>
 
