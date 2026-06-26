@@ -1,1 +1,103 @@
 
+<svg width="900" height="220" viewBox="0 0 900 220" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0A0E1A"/>
+      <stop offset="50%" style="stop-color:#0D1F2D"/>
+      <stop offset="100%" style="stop-color:#0A0E1A"/>
+    </linearGradient>
+    <linearGradient id="wave1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00FF94;stop-opacity:0.8"/>
+      <stop offset="100%" style="stop-color:#00BFFF;stop-opacity:0.3"/>
+    </linearGradient>
+    <linearGradient id="textgrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00FF94"/>
+      <stop offset="60%" style="stop-color:#FFFFFF"/>
+      <stop offset="100%" style="stop-color:#00BFFF"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="softglow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="220" fill="url(#bg)"/>
+
+  <!-- Circuit grid dots -->
+  <g opacity="0.12" fill="#00FF94">
+    <circle cx="50" cy="40" r="1.5"/><circle cx="100" cy="40" r="1.5"/><circle cx="150" cy="40" r="1.5"/>
+    <circle cx="200" cy="40" r="1.5"/><circle cx="750" cy="40" r="1.5"/><circle cx="800" cy="40" r="1.5"/>
+    <circle cx="850" cy="40" r="1.5"/><circle cx="50" cy="80" r="1.5"/><circle cx="100" cy="80" r="1.5"/>
+    <circle cx="800" cy="80" r="1.5"/><circle cx="850" cy="80" r="1.5"/>
+    <circle cx="50" cy="180" r="1.5"/><circle cx="100" cy="180" r="1.5"/><circle cx="150" cy="180" r="1.5"/>
+    <circle cx="800" cy="180" r="1.5"/><circle cx="850" cy="180" r="1.5"/>
+  </g>
+
+  <!-- Circuit lines left -->
+  <g stroke="#00FF94" stroke-width="1" opacity="0.2" fill="none">
+    <polyline points="0,55 80,55 80,95 140,95"/>
+    <polyline points="0,95 40,95 40,130 0,130"/>
+    <polyline points="0,160 60,160 60,140 120,140"/>
+    <circle cx="80" cy="55" r="3" fill="#00FF94" opacity="0.5"/>
+    <circle cx="40" cy="95" r="3" fill="#00FF94" opacity="0.5"/>
+    <circle cx="60" cy="160" r="3" fill="#00FF94" opacity="0.5"/>
+  </g>
+
+  <!-- Circuit lines right -->
+  <g stroke="#00BFFF" stroke-width="1" opacity="0.2" fill="none">
+    <polyline points="900,55 820,55 820,95 760,95"/>
+    <polyline points="900,95 860,95 860,130 900,130"/>
+    <polyline points="900,160 840,160 840,140 780,140"/>
+    <circle cx="820" cy="55" r="3" fill="#00BFFF" opacity="0.5"/>
+    <circle cx="860" cy="95" r="3" fill="#00BFFF" opacity="0.5"/>
+    <circle cx="840" cy="160" r="3" fill="#00BFFF" opacity="0.5"/>
+  </g>
+
+  <!-- Top accent line -->
+  <rect x="0" y="0" width="900" height="3" fill="url(#wave1)"/>
+
+  <!-- Bottom wave shape -->
+  <path d="M0,190 Q225,220 450,200 Q675,180 900,210 L900,220 L0,220 Z" fill="#00FF94" opacity="0.08"/>
+  <path d="M0,200 Q225,185 450,205 Q675,220 900,195 L900,220 L0,220 Z" fill="#00BFFF" opacity="0.05"/>
+
+  <!-- Bottom accent line -->
+  <rect x="0" y="217" width="900" height="3" fill="url(#wave1)"/>
+
+  <!-- Bracket decorations -->
+  <text x="42" y="125" font-family="monospace" font-size="52" fill="#00FF94" opacity="0.15" filter="url(#glow)">{</text>
+  <text x="838" y="125" font-family="monospace" font-size="52" fill="#00FF94" opacity="0.15" filter="url(#glow)">}</text>
+
+  <!-- Corner markers -->
+  <g stroke="#00FF94" stroke-width="1.5" opacity="0.4" fill="none">
+    <polyline points="16,16 16,30 30,30"/>
+    <polyline points="884,16 870,16 870,30"/>
+    <polyline points="16,204 16,190 30,190"/>
+    <polyline points="884,204 870,204 870,190"/>
+  </g>
+
+  <!-- Small blinking dot (static for SVG) -->
+  <circle cx="450" cy="22" r="3" fill="#00FF94" opacity="0.9" filter="url(#glow)"/>
+  <circle cx="430" cy="22" r="2" fill="#00FF94" opacity="0.4"/>
+  <circle cx="470" cy="22" r="2" fill="#00FF94" opacity="0.4"/>
+
+  <!-- Main name text with glow -->
+  <text x="450" y="118" text-anchor="middle" font-family="'Courier New', Courier, monospace"
+        font-size="58" font-weight="bold" letter-spacing="8"
+        fill="url(#textgrad)" filter="url(#glow)">YIHUNE BELAY</text>
+
+  <!-- Subtitle -->
+  <text x="450" y="155" text-anchor="middle" font-family="'Courier New', Courier, monospace"
+        font-size="16" font-weight="400" letter-spacing="3"
+        fill="#AAAAAA" opacity="0.9">Full-Stack Web &amp; Mobile Developer</text>
+
+  <!-- Tag line -->
+  <text x="450" y="178" text-anchor="middle" font-family="'Courier New', Courier, monospace"
+        font-size="11" letter-spacing="4" fill="#00FF94" opacity="0.6">
+    React · React Native · Django · Laravel · Node.js
+  </text>
+</svg>
