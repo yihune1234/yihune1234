@@ -38,7 +38,7 @@
 <tr>
 <td align="center" width="240" valign="middle">
 
-<img src="https://res.cloudinary.com/dqcrqtzz6/image/upload/w_180,h_180,c_fill,r_max/v1782461598/3a397351-7f31-456f-a694-ed80dc5a4fbc_uywoim.jpg" width="175" height="175" alt="Yihune Belay" style="border-radius:50%"/>
+<img src="https://res.cloudinary.com/dqcrqtzz6/image/upload/v1782462896/917ecb6b-ccf4-473f-8d82-a5492208bb8e_sysrgb.jpg" width="175" height="175" alt="Yihune Belay" style="border-radius:50%"/>
 
 <br/><br/>
 
