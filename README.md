@@ -115,8 +115,15 @@
 [![Streak](https://streak-stats.demolab.com?user=yihune1234&theme=dark&hide_border=true&background=0D1117&stroke=00FF94&ring=00FF94&fire=FF4F5E&currStreakLabel=00FF94&sideNums=FFFFFF&dates=888888&sideLabels=888888&border_radius=8)](https://github.com/yihune1234)
 
 <br/>
+<div align="center">
 
-[![Activity](https://github-readme-activity-graph.vercel.app/graph?username=yihune1234&bg_color=0D1117&color=00FF94&line=00BFFF&point=FF4F5E&area=true&area_color=00FF9420&hide_border=true&radius=6)](https://github.com/yihune1234)
+  <!-- INFINITE LOOPING SNAKE MOTION -->
+  <img src="https://gh-motion-card.vercel.app/api/github-motion?username=yihune1234&animation=snake&theme=dark&shape=square&border_width=0&hide_rank=true&hide_total=false" width="100%" alt="Infinite Contribution Snake Motion"/>
+
+  <br/><br/>
+
+  <!-- ACTIVITY GRAPH -->
+  [![Activity](https://github-readme-activity-graph.vercel.app/graph?username=yihune1234&bg_color=0D1117&color=00FF94&line=00BFFF&point=FF4F5E&area=true&area_color=00FF9420&hide_border=true&radius=6)](https://github.com/yihune1234)
 
 </div>
 
