@@ -121,10 +121,6 @@
   <img src="https://gh-motion-card.vercel.app/api/github-motion?username=yihune1234&animation=snake&theme=dark&shape=square&border_width=0&hide_rank=true&hide_total=false" width="100%" alt="Infinite Contribution Snake Motion"/>
 
   <br/><br/>
-
-  <!-- ACTIVITY GRAPH -->
-  [![Activity](https://github-readme-activity-graph.vercel.app/graph?username=yihune1234&bg_color=0D1117&color=00FF94&line=00BFFF&point=FF4F5E&area=true&area_color=00FF9420&hide_border=true&radius=6)](https://github.com/yihune1234)
-
 </div>
 
 <br/>
