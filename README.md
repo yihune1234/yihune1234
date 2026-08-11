@@ -98,8 +98,7 @@
 <table align="center" border="0" cellpadding="6" cellspacing="0">
 <tr>
 <td>
-
-[![Stats](https://github-readme-stats.vercel.app/api?username=yihune1234&show_icons=true&theme=chartreuse-dark&include_all_commits=true&count_private=true&hide_border=true&bg_color=0D1117&title_color=00FF94&icon_color=00BFFF&text_color=CCCCCC&ring_color=00FF94)](https://github.com/yihune1234)
+[![GitHub Streak](https://streak-stats.demolab.com?user=yihune1234&theme=dark&hide_border=true&background=0D1117&stroke=00FF94&ring=00FF94&fire=FF4F5E&currStreakLabel=00FF94&sideNums=FFFFFF&dates=888888&sideLabels=888888)](https://github.com/yihune1234)
 
 </td>
 <td>
