@@ -112,7 +112,7 @@
 
 <div align="center">
 
-[![Streak](https://streak-stats.demolab.com?user=yihune1234&theme=dark&hide_border=true&background=0D1117&stroke=00FF94&ring=00FF94&fire=FF4F5E&currStreakLabel=00FF94&sideNums=FFFFFF&dates=888888&sideLabels=888888&border_radius=8)](https://github.com/yihune1234)
+[![GitHub Streak](https://streak-stats.demolab.com?user=yihune1234&theme=dark&hide_border=true&background=0D1117&stroke=00FF94&ring=00FF94&fire=FF4F5E&currStreakLabel=00FF94&sideNums=FFFFFF&dates=888888&sideLabels=888888&border_radius=8)](https://github.com/yihune1234)
 
 <br/>
 <div align="center">
