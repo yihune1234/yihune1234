@@ -95,19 +95,7 @@
 <!-- ╔══════════════════ STATS TRIO ═══════════════════════╗ -->
 ## <img src="https://media.giphy.com/media/iY8CRBdQXODJSCERIr/giphy.gif" width="28"/> GitHub Intelligence
 
-<table align="center" border="0" cellpadding="6" cellspacing="0">
-<tr>
-<td>
-[![GitHub Streak](https://streak-stats.demolab.com?user=yihune1234&theme=dark&hide_border=true&background=0D1117&stroke=00FF94&ring=00FF94&fire=FF4F5E&currStreakLabel=00FF94&sideNums=FFFFFF&dates=888888&sideLabels=888888)](https://github.com/yihune1234)
 
-</td>
-<td>
-
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=yihune1234&layout=compact&langs_count=8&theme=chartreuse-dark&hide_border=true&bg_color=0D1117&title_color=00FF94&text_color=CCCCCC)](https://github.com/yihune1234)
-
-</td>
-</tr>
-</table>
 
 
 <br/>
