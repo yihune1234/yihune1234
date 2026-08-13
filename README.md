@@ -83,7 +83,6 @@
 <!-- ╚═════════════════════════════════════════════════════╝ -->
 
 <br/>
-[![GitHub Streak](https://streak-stats.demolab.com/?user=yihune1234)](https://git.io/streak-stats)
 <!-- ╔══════════════════ DIVIDER ══════════════════════════╗ -->
 <div align="center">
 <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png" width="100%"/>
