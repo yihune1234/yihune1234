@@ -100,9 +100,7 @@
 <br/>
 <div align="center">
 
-  <!-- INFINITE LOOPING SNAKE MOTION -->
-  <img src="https://gh-motion-card.vercel.app/api/github-motion?username=yihune1234&animation=snake&theme=dark&shape=square&border_width=0&hide_rank=true&hide_total=false" width="100%" alt="Infinite Contribution Snake Motion"/>
-
+  <!-- INFINITE LOOPING SNAKE MOTION 
   <br/><br/>
 </div>
 
