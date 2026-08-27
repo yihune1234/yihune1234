@@ -89,11 +89,6 @@
 </div>
 <!-- ╚═════════════════════════════════════════════════════╝ -->
 
-<br/>
-
-<!-- ╔══════════════════ STATS TRIO ═══════════════════════╗ -->
-## <img src="https://media.giphy.com/media/iY8CRBdQXODJSCERIr/giphy.gif" width="28"/> GitHub Intelligence
-
 
 
 
