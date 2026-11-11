@@ -7,7 +7,7 @@
 
 <!-- ANIMATED CYBER HERO BANNER -->
 <a href="https://yihune-software.vercel.app/" target="_blank">
-  <img src="header.svg" width="100%" alt="Yihune Belay — Full-Stack Engineer & Mobile Architect" />
+  <img src="https://raw.githubusercontent.com/yihune1234/yihune1234/main/header.svg" width="100%" alt="Yihune Belay — Full-Stack Engineer & Mobile Architect" />
 </a>
 
 <br/><br/>
@@ -41,7 +41,7 @@
 ### 💻 &nbsp;Interactive Developer Console
 
 <div align="center">
-  <img src="terminal.svg" width="100%" alt="Developer Terminal Session" />
+  <img src="https://raw.githubusercontent.com/yihune1234/yihune1234/main/terminal.svg" width="100%" alt="Developer Terminal Session" />
 </div>
 
 <br/>
@@ -265,23 +265,6 @@ flowchart TD
     LARAVEL --> PG
 ```
 
-<div align="center">
-
-```
- ┌──────────────────────────────────────────────────────────────────────────┐
- │                  END-TO-END REQUEST LIFECYCLE PATTERN                    │
- │                                                                          │
- │  1. CLIENT INGRESS  ───► Type-Safe Request (Next.js App / React Native)  │
- │  2. GATEWAY & AUTH  ───► JWT Verification, Rate-Limiting & DTO Validation │
- │  3. DOMAIN SERVICE  ───► Clean Business Logic, Services & Event Handling │
- │  4. PERSISTENCE     ───► Prisma ORM / SQL Transactions + Redis Caching   │
- │                                                                          │
- │     🔒 Security-First   ⚡ Scalable Design   🧩 Modular Clean Code       │
- └──────────────────────────────────────────────────────────────────────────┘
-```
-
-</div>
-
 <br/>
 
 ---
@@ -318,11 +301,11 @@ flowchart TD
 <table border="0" cellpadding="0" cellspacing="0">
   <tr>
     <td valign="top" align="center">
-      <img src="https://github-readme-stats-eight-theta.vercel.app/api?username=yihune1234&show_icons=true&bg_color=0A0E1A&title_color=00FF94&text_color=E6EDF3&icon_color=00D2FF&border_color=1F2937&border_radius=10" alt="Yihune's GitHub Stats" />
+      <img src="https://github-readme-stats-eight-theta.vercel.app/api?username=yihune1234&show_icons=true&bg_color=0A0E1A&title_color=00FF94&text_color=E6EDF3&icon_color=00D2FF&border_color=1F2937&border_radius=10&cache_seconds=1800" alt="Yihune's GitHub Stats" />
     </td>
     <td width="20"></td>
     <td valign="top" align="center">
-      <img src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=yihune1234&layout=compact&bg_color=0A0E1A&title_color=00FF94&text_color=E6EDF3&border_color=1F2937&border_radius=10" alt="Top Languages" />
+      <img src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=yihune1234&layout=compact&bg_color=0A0E1A&title_color=00FF94&text_color=E6EDF3&border_color=1F2937&border_radius=10&cache_seconds=1800" alt="Top Languages" />
     </td>
   </tr>
 </table>
@@ -407,7 +390,7 @@ flowchart TD
 
 <div align="center">
 
-<p>I am actively available for <strong>Full-Stack Engineer</strong>, <strong>Backend Developer</strong>, and <strong>Mobile Developer</strong> opportunities.</p>
+<p>I am actively available for <strong>Full-Stack Engineer</strong>, <strong>Backend Developer</strong>, and <strong>Mobile Developer</strong> opportunities worldwide.</p>
 
 <br/>
 
@@ -418,17 +401,6 @@ flowchart TD
 [![GitHub](https://img.shields.io/badge/🐙_GITHUB-@yihune1234-white?style=for-the-badge&logo=github&logoColor=black&labelColor=0A0E1A)](https://github.com/yihune1234)
 
 <br/><br/>
-
-```
-  ┌────────────────────────────────────────────────────────────┐
-  │  📍 Location  │  Addis Ababa, Ethiopia  (EAT — UTC+3)     │
-  │  💼 Status    │  Available for Freelance & Full-time Roles │
-  │  🌐 Work Mode │  Remote-Ready                             │
-  │  ⚡ Response  │  Within 24 hours                           │
-  └────────────────────────────────────────────────────────────┘
-```
-
-<br/>
 
 > *"Good software is crafted with passion, shaped by architecture, and refined by empathy for the user."* ✨
 
