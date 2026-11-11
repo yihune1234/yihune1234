@@ -1,20 +1,23 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="340" viewBox="0 0 860 340" fill="none">
   <defs>
+    <!-- Background Gradient: Deep Dark Navy -->
     <linearGradient id="term-bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#060913" />
-      <stop offset="50%" stop-color="#0A0E1A" />
-      <stop offset="100%" stop-color="#070C16" />
+      <stop offset="0%" stop-color="#050B18" />
+      <stop offset="50%" stop-color="#08142A" />
+      <stop offset="100%" stop-color="#040914" />
     </linearGradient>
 
+    <!-- Header Gradient -->
     <linearGradient id="header-bg" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#0E1626" />
-      <stop offset="100%" stop-color="#141E34" />
+      <stop offset="0%" stop-color="#0D1E3A" />
+      <stop offset="100%" stop-color="#142C56" />
     </linearGradient>
 
+    <!-- Electric Blue Border Glow -->
     <linearGradient id="border-glow" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#00FF94" stop-opacity="0.7" />
-      <stop offset="50%" stop-color="#00D2FF" stop-opacity="0.3" />
-      <stop offset="100%" stop-color="#3B82F6" stop-opacity="0.6" />
+      <stop offset="0%" stop-color="#00D2FF" stop-opacity="0.8" />
+      <stop offset="50%" stop-color="#0066FF" stop-opacity="0.4" />
+      <stop offset="100%" stop-color="#38BDF8" stop-opacity="0.8" />
     </linearGradient>
   </defs>
 
@@ -28,28 +31,28 @@
       50%, 100% { opacity: 0; }
     }
     @keyframes livePulse {
-      0%, 100% { fill: #00FF94; opacity: 1; }
-      50% { fill: #00D2FF; opacity: 0.5; }
+      0%, 100% { fill: #00D2FF; opacity: 1; }
+      50% { fill: #0066FF; opacity: 0.4; }
     }
 
     .term-font {
       font-family: 'JetBrains Mono', 'Fira Code', 'SF Mono', Consolas, monospace;
       font-size: 13px;
     }
-    .prompt-user { fill: #00FF94; font-weight: 700; }
+    .prompt-user { fill: #00D2FF; font-weight: 700; }
     .prompt-at { fill: #64748B; }
-    .prompt-host { fill: #00D2FF; font-weight: 600; }
-    .prompt-dir { fill: #FACC15; }
-    .prompt-git { fill: #EC4899; font-weight: 600; }
+    .prompt-host { fill: #38BDF8; font-weight: 600; }
+    .prompt-dir { fill: #93C5FD; }
+    .prompt-git { fill: #60A5FA; font-weight: 600; }
     .cmd-text { fill: #FFFFFF; font-weight: 600; }
     .out-text { fill: #94A3B8; }
-    .out-accent { fill: #38BDF8; font-weight: 500; }
-    .out-success { fill: #4ADE80; font-weight: 700; }
-    .out-highlight { fill: #FCD34D; }
-    .out-string { fill: #A7F3D0; }
+    .out-accent { fill: #38BDF8; font-weight: 600; }
+    .out-success { fill: #00D2FF; font-weight: 700; }
+    .out-highlight { fill: #BAE6FD; }
+    .out-string { fill: #7DD3FC; }
     
     .cursor {
-      fill: #00FF94;
+      fill: #00D2FF;
       animation: blink 1s step-start infinite;
     }
     .tab-title {
@@ -71,10 +74,9 @@
     .step-5 { animation: lineFadeIn 0.5s ease-out 2.8s forwards; opacity: 0; }
     .step-6 { animation: lineFadeIn 0.5s ease-out 3.4s forwards; opacity: 0; }
     .step-7 { animation: lineFadeIn 0.5s ease-out 4.0s forwards; opacity: 0; }
-    .step-8 { animation: lineFadeIn 0.5s ease-out 4.6s forwards; opacity: 0; }
 
     @media (prefers-reduced-motion: reduce) {
-      .step-1, .step-2, .step-3, .step-4, .step-5, .step-6, .step-7, .step-8 {
+      .step-1, .step-2, .step-3, .step-4, .step-5, .step-6, .step-7 {
         opacity: 1 !important;
         transform: none !important;
       }
@@ -87,9 +89,9 @@
 
   <!-- Terminal Window Top Bar -->
   <path d="M 0 12 C 0 5.373 5.373 0 12 0 L 848 0 C 854.627 0 860 5.373 860 12 L 860 38 L 0 38 Z" fill="url(#header-bg)" />
-  <line x1="0" y1="38" x2="860" y2="38" stroke="#1E293B" stroke-width="1" />
+  <line x1="0" y1="38" x2="860" y2="38" stroke="#162E56" stroke-width="1" />
 
-  <!-- Mac / Unix Window Controls -->
+  <!-- Window Controls -->
   <circle cx="24" cy="19" r="6" fill="#EF4444" opacity="0.9" />
   <circle cx="44" cy="19" r="6" fill="#F59E0B" opacity="0.9" />
   <circle cx="64" cy="19" r="6" fill="#10B981" opacity="0.9" />
@@ -101,7 +103,7 @@
 
   <!-- Right Branch & Status Indicator -->
   <g transform="translate(710, 11)">
-    <rect width="130" height="18" rx="9" fill="#0B1324" stroke="#1E293B" stroke-width="0.8" />
+    <rect width="130" height="18" rx="9" fill="#0A1630" stroke="#1E3A6E" stroke-width="0.8" />
     <circle cx="12" cy="9" r="3.5" class="live-dot" />
     <text x="22" y="12.5" font-family="'JetBrains Mono', monospace" font-size="9.5" fill="#E2E8F0">LIVE SESSION</text>
   </g>
@@ -119,28 +121,28 @@
     <!-- Step 2: whoami result -->
     <g class="step-2">
       <text y="24" class="out-accent">
-        ➜ Yihune Belay Sebsibe <tspan class="out-text">— Full-Stack Software Engineer &amp; Mobile Architect 🇪🇹</tspan>
+        ➜ Yihune Belay <tspan class="out-text">— Software Engineer | Full-Stack Developer | Technology Entrepreneur 🇪🇹</tspan>
       </text>
     </g>
 
     <!-- Step 3: status check -->
     <g class="step-3">
       <text y="58">
-        <tspan class="prompt-user">yihune</tspan><tspan class="prompt-at">@</tspan><tspan class="prompt-host">dev-cloud</tspan> <tspan class="prompt-dir">~/workspace</tspan> <tspan class="prompt-git">‹main›</tspan> <tspan class="cmd-text">$ cat availability.json</tspan>
+        <tspan class="prompt-user">yihune</tspan><tspan class="prompt-at">@</tspan><tspan class="prompt-host">dev-cloud</tspan> <tspan class="prompt-dir">~/workspace</tspan> <tspan class="prompt-git">‹main›</tspan> <tspan class="cmd-text">$ cat current_positioning.json</tspan>
       </text>
     </g>
 
     <!-- Step 4: status json -->
     <g class="step-4">
       <text y="82">
-        <tspan class="out-text">{ </tspan><tspan class="out-highlight">"status"</tspan><tspan class="out-text">: </tspan><tspan class="out-string">"Open to Full-Time &amp; High-Impact Roles"</tspan><tspan class="out-text">, </tspan><tspan class="out-highlight">"remote"</tspan><tspan class="out-text">: </tspan><tspan class="out-success">true</tspan><tspan class="out-text">, </tspan><tspan class="out-highlight">"relocate"</tspan><tspan class="out-text">: </tspan><tspan class="out-success">true</tspan><tspan class="out-text"> }</tspan>
+        <tspan class="out-text">{ </tspan><tspan class="out-highlight">"role"</tspan><tspan class="out-text">: </tspan><tspan class="out-string">"Founder &amp; Lead Engineer @ Ariiti Tech"</tspan><tspan class="out-text">, </tspan><tspan class="out-highlight">"portfolio"</tspan><tspan class="out-text">: </tspan><tspan class="out-string">"myportfolio-1-01m7.onrender.com"</tspan><tspan class="out-text">, </tspan><tspan class="out-highlight">"available"</tspan><tspan class="out-text">: </tspan><tspan class="out-success">true</tspan><tspan class="out-text"> }</tspan>
       </text>
     </g>
 
     <!-- Step 5: stack check command -->
     <g class="step-5">
       <text y="116">
-        <tspan class="prompt-user">yihune</tspan><tspan class="prompt-at">@</tspan><tspan class="prompt-host">dev-cloud</tspan> <tspan class="prompt-dir">~/workspace</tspan> <tspan class="prompt-git">‹main›</tspan> <tspan class="cmd-text">$ ./verify_production_stack.sh</tspan>
+        <tspan class="prompt-user">yihune</tspan><tspan class="prompt-at">@</tspan><tspan class="prompt-host">dev-cloud</tspan> <tspan class="prompt-dir">~/workspace</tspan> <tspan class="prompt-git">‹main›</tspan> <tspan class="cmd-text">$ ./verify_engineering_stack.sh</tspan>
       </text>
     </g>
 
@@ -150,7 +152,7 @@
         <tspan class="out-success">[✔] WEB PLATFORM:</tspan> <tspan class="out-text">Next.js 15, React 18, TypeScript, Tailwind CSS</tspan>
       </text>
       <text y="162">
-        <tspan class="out-success">[✔] MOBILE ENG:</tspan> <tspan class="out-text">React Native, Expo, Android &amp; iOS Native Builds</tspan>
+        <tspan class="out-success">[✔] MOBILE ENG:</tspan> <tspan class="out-text">React Native, Expo, Cross-Platform Android &amp; iOS</tspan>
       </text>
       <text y="184">
         <tspan class="out-success">[✔] BACKEND &amp; API:</tspan> <tspan class="out-text">NestJS Clean Architecture, Django REST, Node.js, Laravel 11</tspan>
@@ -163,7 +165,7 @@
     <!-- Step 7: final active command line with blinking cursor -->
     <g class="step-7">
       <text y="242">
-        <tspan class="prompt-user">yihune</tspan><tspan class="prompt-at">@</tspan><tspan class="prompt-host">dev-cloud</tspan> <tspan class="prompt-dir">~/workspace</tspan> <tspan class="prompt-git">‹main›</tspan> <tspan class="cmd-text">$ ./launch_mission.sh --target=impact</tspan><tspan class="cursor"> █</tspan>
+        <tspan class="prompt-user">yihune</tspan><tspan class="prompt-at">@</tspan><tspan class="prompt-host">dev-cloud</tspan> <tspan class="prompt-dir">~/workspace</tspan> <tspan class="prompt-git">‹main›</tspan> <tspan class="cmd-text">$ ./build_future.sh --venture="Ariiti Tech"</tspan><tspan class="cursor"> █</tspan>
       </text>
     </g>
 

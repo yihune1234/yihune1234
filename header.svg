@@ -1,48 +1,44 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="260" viewBox="0 0 900 260" fill="none">
   <defs>
-    <!-- Background Gradients -->
-    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#050811" />
-      <stop offset="50%" stop-color="#0A0E1A" />
-      <stop offset="100%" stop-color="#060C18" />
+    <!-- Background Gradient: Deep Dark Navy -->
+    <linearGradient id="navy-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#040814" />
+      <stop offset="50%" stop-color="#071126" />
+      <stop offset="100%" stop-color="#030611" />
     </linearGradient>
 
-    <!-- Animated Accent Laser Gradient -->
-    <linearGradient id="laser-grad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#00FF94" />
-      <stop offset="35%" stop-color="#00E5FF" />
-      <stop offset="70%" stop-color="#3B82F6" />
-      <stop offset="100%" stop-color="#00FF94" />
+    <!-- Electric Blue Laser Border Gradient -->
+    <linearGradient id="electric-laser" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0066FF" />
+      <stop offset="30%" stop-color="#00D2FF" />
+      <stop offset="70%" stop-color="#38BDF8" />
+      <stop offset="100%" stop-color="#0066FF" />
     </linearGradient>
 
-    <!-- Glowing Title Gradient -->
-    <linearGradient id="title-grad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#00FF94" />
-      <stop offset="40%" stop-color="#00F0FF" />
-      <stop offset="85%" stop-color="#FFFFFF" />
-      <stop offset="100%" stop-color="#00FF94" />
+    <!-- Title Gradient: Brilliant Platinum to Electric Cyan -->
+    <linearGradient id="title-glow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00D2FF" />
+      <stop offset="45%" stop-color="#FFFFFF" />
+      <stop offset="85%" stop-color="#38BDF8" />
+      <stop offset="100%" stop-color="#0066FF" />
     </linearGradient>
 
-    <!-- Radial Glows -->
-    <radialGradient id="glow-emerald" cx="20%" cy="30%" r="50%">
-      <stop offset="0%" stop-color="#00FF94" stop-opacity="0.16" />
-      <stop offset="100%" stop-color="#00FF94" stop-opacity="0" />
+    <!-- Radial Ambient Glows -->
+    <radialGradient id="glow-core" cx="50%" cy="35%" r="60%">
+      <stop offset="0%" stop-color="#0066FF" stop-opacity="0.18" />
+      <stop offset="60%" stop-color="#00D2FF" stop-opacity="0.05" />
+      <stop offset="100%" stop-color="#0066FF" stop-opacity="0" />
     </radialGradient>
 
-    <radialGradient id="glow-cyan" cx="80%" cy="70%" r="50%">
-      <stop offset="0%" stop-color="#00D2FF" stop-opacity="0.14" />
-      <stop offset="100%" stop-color="#00D2FF" stop-opacity="0" />
-    </radialGradient>
-
-    <!-- Cyber Tech Grid Pattern -->
-    <pattern id="cyber-grid" width="28" height="28" patternUnits="userSpaceOnUse">
-      <path d="M 28 0 L 0 0 0 28" fill="none" stroke="#1E293B" stroke-width="0.75" stroke-opacity="0.45" />
-      <circle cx="28" cy="28" r="0.8" fill="#00FF94" fill-opacity="0.2" />
+    <!-- Tech Circuit Grid Pattern -->
+    <pattern id="navy-grid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#162544" stroke-width="0.8" stroke-opacity="0.5" />
+      <circle cx="30" cy="30" r="1" fill="#00D2FF" fill-opacity="0.25" />
     </pattern>
 
-    <!-- Filter for Neon Glow -->
-    <filter id="neon-glow" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="3" result="blur" />
+    <!-- Neon Glow Filter -->
+    <filter id="laser-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3.5" result="blur" />
       <feMerge>
         <feMergeNode in="blur" />
         <feMergeNode in="SourceGraphic" />
@@ -51,49 +47,49 @@
   </defs>
 
   <style>
-    @keyframes pulseGlow {
-      0%, 100% { opacity: 0.85; filter: drop-shadow(0 0 6px rgba(0, 255, 148, 0.4)); }
-      50% { opacity: 1; filter: drop-shadow(0 0 16px rgba(0, 229, 255, 0.7)); }
-    }
-    @keyframes radarPing {
-      0% { r: 3.5px; opacity: 1; }
-      75% { r: 12px; opacity: 0; }
-      100% { r: 14px; opacity: 0; }
-    }
     @keyframes laserRun {
       0% { stroke-dashoffset: 0; }
       100% { stroke-dashoffset: -1200; }
     }
-    @keyframes scanline {
+    @keyframes pulseGlow {
+      0%, 100% { opacity: 0.9; filter: drop-shadow(0 0 8px rgba(0, 210, 255, 0.4)); }
+      50% { opacity: 1; filter: drop-shadow(0 0 20px rgba(0, 102, 255, 0.7)); }
+    }
+    @keyframes beaconPing {
+      0% { r: 3.5px; opacity: 1; }
+      75% { r: 13px; opacity: 0; }
+      100% { r: 15px; opacity: 0; }
+    }
+    @keyframes scannerMove {
       0% { transform: translateY(-50px); opacity: 0; }
-      15% { opacity: 0.6; }
-      85% { opacity: 0.6; }
-      100% { transform: translateY(260px); opacity: 0; }
+      20% { opacity: 0.5; }
+      80% { opacity: 0.5; }
+      100% { transform: translateY(270px); opacity: 0; }
     }
 
     .title-text {
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'JetBrains Mono', 'Fira Code', monospace;
       font-weight: 900;
-      letter-spacing: 7px;
+      letter-spacing: 8px;
       font-size: 44px;
-      fill: url(#title-grad);
+      fill: url(#title-glow);
       animation: pulseGlow 4s ease-in-out infinite;
     }
     .tagline-badge {
       font-family: 'JetBrains Mono', 'Fira Code', monospace;
-      font-size: 11.5px;
+      font-size: 11px;
       font-weight: 700;
-      letter-spacing: 2.5px;
-      fill: #00FF94;
+      letter-spacing: 2px;
+      fill: #00D2FF;
     }
     .sub-role {
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
       font-weight: 500;
       letter-spacing: 2px;
-      font-size: 15px;
+      font-size: 14.5px;
       fill: #CBD5E1;
     }
-    .tech-pill {
+    .tech-pill-text {
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
       font-size: 11px;
       font-weight: 600;
@@ -108,127 +104,120 @@
       fill: #64748B;
     }
     .status-text {
-      font-family: 'JetBrains Mono', -apple-system, BlinkMacSystemFont, sans-serif;
-      font-size: 10.5px;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 10px;
       font-weight: 700;
       letter-spacing: 1px;
-      fill: #00FF94;
+      fill: #00D2FF;
     }
     .laser-border {
-      stroke-dasharray: 120 180;
-      animation: laserRun 10s linear infinite;
+      stroke-dasharray: 140 160;
+      animation: laserRun 9s linear infinite;
     }
     .beacon-pulse {
-      animation: radarPing 2s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+      animation: beaconPing 2s cubic-bezier(0, 0.2, 0.8, 1) infinite;
     }
-    .scanner-beam {
-      animation: scanline 7s ease-in-out infinite;
+    .scanner-line {
+      animation: scannerMove 6s ease-in-out infinite;
     }
   </style>
 
-  <!-- Canvas Background -->
-  <rect width="900" height="260" rx="16" fill="url(#bg-grad)" />
-  <rect width="900" height="260" rx="16" fill="url(#cyber-grid)" />
+  <!-- Dark Navy Base -->
+  <rect width="900" height="260" rx="16" fill="url(#navy-bg)" />
+  <rect width="900" height="260" rx="16" fill="url(#navy-grid)" />
+  <rect width="900" height="260" rx="16" fill="url(#glow-core)" />
 
-  <!-- Dynamic Radial Glow Fields -->
-  <rect width="900" height="260" rx="16" fill="url(#glow-emerald)" />
-  <rect width="900" height="260" rx="16" fill="url(#glow-cyan)" />
-
-  <!-- Animated Scanner Light Beam -->
-  <g class="scanner-beam">
-    <line x1="20" y1="0" x2="880" y2="0" stroke="url(#laser-grad)" stroke-width="1.2" opacity="0.4" />
+  <!-- Animated Scanner Light -->
+  <g class="scanner-line">
+    <line x1="20" y1="0" x2="880" y2="0" stroke="url(#electric-laser)" stroke-width="1.2" opacity="0.4" />
   </g>
 
-  <!-- Base Border -->
-  <rect x="1" y="1" width="898" height="258" rx="15" fill="none" stroke="#1E293B" stroke-width="1.5" />
+  <!-- Border Frame -->
+  <rect x="1" y="1" width="898" height="258" rx="15" fill="none" stroke="#162544" stroke-width="1.5" />
+  <rect x="1" y="1" width="898" height="258" rx="15" fill="none" stroke="url(#electric-laser)" stroke-width="2" class="laser-border" filter="url(#laser-glow)" />
 
-  <!-- Animated Laser Beam Border -->
-  <rect x="1" y="1" width="898" height="258" rx="15" fill="none" stroke="url(#laser-grad)" stroke-width="2" class="laser-border" filter="url(#neon-glow)" />
-
-  <!-- HUD Corner Accents -->
-  <path d="M 22 36 L 22 22 L 36 22" stroke="#00FF94" stroke-width="2.5" fill="none" />
-  <path d="M 878 36 L 878 22 L 864 22" stroke="#00D2FF" stroke-width="2.5" fill="none" />
-  <path d="M 22 224 L 22 238 L 36 238" stroke="#00FF94" stroke-width="2.5" fill="none" />
-  <path d="M 878 224 L 878 238 L 864 238" stroke="#00D2FF" stroke-width="2.5" fill="none" />
+  <!-- Corner Tech Accents -->
+  <path d="M 22 36 L 22 22 L 36 22" stroke="#00D2FF" stroke-width="2.5" fill="none" />
+  <path d="M 878 36 L 878 22 L 864 22" stroke="#0066FF" stroke-width="2.5" fill="none" />
+  <path d="M 22 224 L 22 238 L 36 238" stroke="#00D2FF" stroke-width="2.5" fill="none" />
+  <path d="M 878 224 L 878 238 L 864 238" stroke="#0066FF" stroke-width="2.5" fill="none" />
 
   <!-- Top Left Terminal Title Bar -->
   <g transform="translate(36, 26)">
     <circle cx="0" cy="0" r="4.5" fill="#EF4444" opacity="0.85" />
     <circle cx="14" cy="0" r="4.5" fill="#F59E0B" opacity="0.85" />
-    <circle cx="28" cy="0" r="4.5" fill="#10B981" opacity="0.85" />
-    <text x="46" y="3.5" class="hud-meta">ID: YB_CORE // SYS_V2026.4 // ETHIOPIA 🇪🇹</text>
+    <circle cx="28" cy="0" r="4.5" fill="#00D2FF" opacity="0.85" />
+    <text x="46" y="3.5" class="hud-meta">ID: YB_CORE // DEV_PORTFOLIO // ADDIS ABABA 🇪🇹</text>
   </g>
 
-  <!-- Top Right Live Status Beacon Pill -->
-  <g transform="translate(672, 18)">
-    <rect width="192" height="26" rx="13" fill="#0B1322" stroke="#00FF94" stroke-width="1" stroke-opacity="0.5" />
-    <!-- Radar ping ripple -->
-    <circle cx="18" cy="13" r="3.5" fill="none" stroke="#00FF94" stroke-width="1.5" class="beacon-pulse" />
-    <!-- Solid beacon center -->
-    <circle cx="18" cy="13" r="3.5" fill="#00FF94" />
-    <text x="32" y="16.5" class="status-text">AVAILABLE FOR WORK</text>
+  <!-- Top Right Live Status Pill -->
+  <g transform="translate(668, 18)">
+    <rect width="196" height="26" rx="13" fill="#09142A" stroke="#00D2FF" stroke-width="1" stroke-opacity="0.5" />
+    <circle cx="18" cy="13" r="3.5" fill="none" stroke="#00D2FF" stroke-width="1.5" class="beacon-pulse" />
+    <circle cx="18" cy="13" r="3.5" fill="#00D2FF" />
+    <text x="32" y="16.5" class="status-text">OPEN TO OPPORTUNITIES</text>
   </g>
 
-  <!-- Center HUD Geometry Icons -->
-  <text x="56" y="142" font-family="'JetBrains Mono', monospace" font-size="46" fill="#00FF94" opacity="0.12">&lt;/&gt;</text>
-  <text x="806" y="142" font-family="'JetBrains Mono', monospace" font-size="46" fill="#00D2FF" opacity="0.12">{ ; }</text>
+  <!-- Side Geometric Accents -->
+  <text x="56" y="142" font-family="'JetBrains Mono', monospace" font-size="44" fill="#0066FF" opacity="0.15">&lt;/&gt;</text>
+  <text x="806" y="142" font-family="'JetBrains Mono', monospace" font-size="44" fill="#00D2FF" opacity="0.15">{ ; }</text>
 
   <!-- Main Center Branding -->
   <g text-anchor="middle" transform="translate(450, 0)">
     <!-- Tech Eyebrow Tag -->
     <g transform="translate(0, 78)">
-      <rect x="-190" y="-14" width="380" height="22" rx="11" fill="#0B1726" stroke="#1E3A5F" stroke-width="1" />
-      <text y="1.5" class="tagline-badge">⚡ FULL-STACK ARCHITECT &amp; MOBILE DEV ⚡</text>
+      <rect x="-210" y="-14" width="420" height="22" rx="11" fill="#09142A" stroke="#162E56" stroke-width="1" />
+      <text y="1.5" class="tagline-badge">✦ SOFTWARE ENGINEER • FULL-STACK • TECH FOUNDER ✦</text>
     </g>
 
     <!-- Main Name Title -->
     <text y="130" class="title-text">YIHUNE BELAY</text>
 
     <!-- Subtitle Definition -->
-    <text y="166" class="sub-role">Engineering Production Web Platforms &amp; Scalable Mobile Applications</text>
+    <text y="166" class="sub-role">Engineering Production Web Platforms &amp; Scalable Mobile Architectures</text>
 
-    <!-- Modern Interactive Tech Stack Pills -->
+    <!-- Modern Dark Navy & Electric Blue Stack Pills -->
     <g transform="translate(-355, 196)">
       <!-- 1. React & Next.js -->
       <g transform="translate(0, 0)">
-        <rect width="105" height="26" rx="7" fill="#0D1629" stroke="#1E293B" stroke-width="1" />
+        <rect width="105" height="26" rx="7" fill="#0A1630" stroke="#1E3A6E" stroke-width="1" />
         <circle cx="14" cy="13" r="3" fill="#61DAFB" />
-        <text x="24" y="17" class="tech-pill">Next.js / React</text>
+        <text x="24" y="17" class="tech-pill-text">Next.js / React</text>
       </g>
       <!-- 2. React Native -->
       <g transform="translate(115, 0)">
-        <rect width="105" height="26" rx="7" fill="#0D1629" stroke="#1E293B" stroke-width="1" />
+        <rect width="105" height="26" rx="7" fill="#0A1630" stroke="#1E3A6E" stroke-width="1" />
         <circle cx="14" cy="13" r="3" fill="#00D2FF" />
-        <text x="24" y="17" class="tech-pill">React Native</text>
+        <text x="24" y="17" class="tech-pill-text">React Native</text>
       </g>
       <!-- 3. TypeScript -->
       <g transform="translate(230, 0)">
-        <rect width="98" height="26" rx="7" fill="#0D1629" stroke="#1E293B" stroke-width="1" />
+        <rect width="98" height="26" rx="7" fill="#0A1630" stroke="#1E3A6E" stroke-width="1" />
         <circle cx="14" cy="13" r="3" fill="#3178C6" />
-        <text x="24" y="17" class="tech-pill">TypeScript</text>
+        <text x="24" y="17" class="tech-pill-text">TypeScript</text>
       </g>
       <!-- 4. NestJS & Node -->
       <g transform="translate(338, 0)">
-        <rect width="112" height="26" rx="7" fill="#0D1629" stroke="#1E293B" stroke-width="1" />
+        <rect width="112" height="26" rx="7" fill="#0A1630" stroke="#1E3A6E" stroke-width="1" />
         <circle cx="14" cy="13" r="3" fill="#E0234E" />
-        <text x="24" y="17" class="tech-pill">NestJS / Node</text>
+        <text x="24" y="17" class="tech-pill-text">NestJS / Node</text>
       </g>
       <!-- 5. Django / Python -->
       <g transform="translate(460, 0)">
-        <rect width="122" height="26" rx="7" fill="#0D1629" stroke="#1E293B" stroke-width="1" />
-        <circle cx="14" cy="13" r="3" fill="#00FF94" />
-        <text x="24" y="17" class="tech-pill">Django REST / Py</text>
+        <rect width="122" height="26" rx="7" fill="#0A1630" stroke="#1E3A6E" stroke-width="1" />
+        <circle cx="14" cy="13" r="3" fill="#38BDF8" />
+        <text x="24" y="17" class="tech-pill-text">Django REST / Py</text>
       </g>
       <!-- 6. PostgreSQL -->
       <g transform="translate(592, 0)">
-        <rect width="118" height="26" rx="7" fill="#0D1629" stroke="#1E293B" stroke-width="1" />
-        <circle cx="14" cy="13" r="3" fill="#336791" />
-        <text x="24" y="17" class="tech-pill">PostgreSQL / ORM</text>
+        <rect width="118" height="26" rx="7" fill="#0A1630" stroke="#1E3A6E" stroke-width="1" />
+        <circle cx="14" cy="13" r="3" fill="#60A5FA" />
+        <text x="24" y="17" class="tech-pill-text">PostgreSQL / ORM</text>
       </g>
     </g>
   </g>
 
   <!-- Bottom Coordinates Meta -->
   <text x="36" y="244" class="hud-meta">LAT: 9.0300° N · LON: 38.7400° E (EAT / UTC+3)</text>
-  <text x="864" y="244" text-anchor="end" class="hud-meta">SECURITY: STRICT · TYPE-SAFE · MODULAR</text>
+  <text x="864" y="244" text-anchor="end" class="hud-meta">CORE: CLEAN ARCHITECTURE · STRICT TYPE SAFETY</text>
 </svg>
