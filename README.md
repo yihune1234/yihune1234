@@ -24,7 +24,7 @@
 &nbsp;
 [![Hire Me](https://img.shields.io/badge/⚡_EMAIL-yihunebelay859-0066FF?style=for-the-badge&logo=gmail&logoColor=fff&labelColor=071126)](mailto:yihunebelay859@gmail.com)
 &nbsp;
-[![Ariiti Tech](https://img.shields.io/badge/🏢_ORGANIZATION-Ariiti_Technologies-38BDF8?style=for-the-badge&logo=github&logoColor=38BDF8&labelColor=071126)](https://github.com/AriitiMarket)
+[![Ariiti Tech](https://img.shields.io/badge/🏢_ORGANIZATION-Ariiti_Technologies-38BDF8?style=for-the-badge&logo=github&logoColor=38BDF8&labelColor=071126)](https://github.com/AriitiTech)
 &nbsp;
 [![Location](https://img.shields.io/badge/📍_ETHIOPIA-ADDIS_ABABA-60A5FA?style=for-the-badge&logo=googlemaps&logoColor=60A5FA&labelColor=071126)](https://github.com/yihune1234)
 
@@ -67,7 +67,7 @@
         <li>🚀 <strong>System Architecture:</strong> Specialized in designing high-throughput backend microservices, modular clean architectures, and type-safe full-stack platforms.</li>
         <li>📱 <strong>Cross-Platform Mobile:</strong> Engineering production mobile applications using React Native and Expo with native sensor integration and offline caching.</li>
         <li>🛡️ <strong>Core Philosophy:</strong> Strict type safety, clean domain-driven architecture, resilient APIs, and verifiable performance.</li>
-        <li>🌐 <strong>Ventures:</strong> Building <a href="https://github.com/AriitiMarket"><strong>Ariiti Technologies</strong></a> — digital commerce, enterprise management tools, and IT infrastructure solutions.</li>
+        <li>🌐 <strong>Ventures:</strong> Building <a href="https://github.com/AriitiTech"><strong>Ariiti Technologies</strong></a> — digital commerce, enterprise management tools, and IT infrastructure solutions.</li>
       </ul>
     </td>
   </tr>
@@ -82,7 +82,7 @@
 <table width="100%" border="0" cellpadding="12" cellspacing="0">
   <tr>
     <td width="50%" valign="top" style="border: 1px solid #162E56; border-radius: 8px; background: #071126;">
-      <h3>🏢 <a href="https://github.com/AriitiMarket/Ariiti-Market-Project-Submission">Ariiti Market Platform Ecosystem</a></h3>
+      <h3>🏢 <a href="https://github.com/AriitiTech/Ariiti-Market-Project-Submission">Ariiti Market Platform Ecosystem</a></h3>
       <p><em>Company Venture / Flagship System</em></p>
       <p>A multi-vendor digital commerce ecosystem connecting buyers, merchants, delivery riders, and platform administrators. Built with microservices architecture, React 18, Vite, TypeScript, and React Native mobile applications.</p>
       <p>
@@ -91,7 +91,7 @@
         <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" />
         <img src="https://img.shields.io/badge/Microservices-00D2FF?style=flat-square&logo=cloud&logoColor=black" />
       </p>
-      <p><a href="https://github.com/AriitiMarket/Ariiti-Market-Project-Submission"><strong>Explore Central Project Hub ➔</strong></a></p>
+      <p><a href="https://github.com/AriitiTech/Ariiti-Market-Project-Submission"><strong>Explore Central Project Hub ➔</strong></a></p>
     </td>
     <td width="50%" valign="top" style="border: 1px solid #162E56; border-radius: 8px; background: #071126;">
       <h3>🛡️ <a href="https://github.com/yihune1234/InternshipApplicantManagementAPI">Internship Applicant Management REST API</a></h3>
@@ -402,7 +402,7 @@ flowchart TD
 &nbsp;&nbsp;
 [![Email](https://img.shields.io/badge/📧_EMAIL-yihunebelay859@gmail.com-0066FF?style=for-the-badge&logo=gmail&logoColor=white&labelColor=071126)](mailto:yihunebelay859@gmail.com)
 &nbsp;&nbsp;
-[![Organization](https://img.shields.io/badge/🏢_ARIITI_TECH-AriitiMarket-38BDF8?style=for-the-badge&logo=github&logoColor=white&labelColor=071126)](https://github.com/AriitiMarket)
+[![Organization](https://img.shields.io/badge/🏢_ARIITI_TECH-AriitiTech-38BDF8?style=for-the-badge&logo=github&logoColor=white&labelColor=071126)](https://github.com/AriitiTech)
 &nbsp;&nbsp;
 [![Telegram](https://img.shields.io/badge/💬_TELEGRAM-@aritiiteck-229ED9?style=for-the-badge&logo=telegram&logoColor=white&labelColor=071126)](https://t.me/aritiiteck)
 
