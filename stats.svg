@@ -11,7 +11,14 @@
       <stop offset="100%" stop-color="#39D353" />
     </linearGradient>
     <filter id="badge-glow" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="2" result="blur" />
+      <feGaussianBlur stdDeviation="2.5" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    <filter id="dot-glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="1.5" result="blur" />
       <feMerge>
         <feMergeNode in="blur" />
         <feMergeNode in="SourceGraphic" />
@@ -21,7 +28,7 @@
 
   <style>
     .header { font: 700 17px 'Segoe UI', -apple-system, Ubuntu, sans-serif; fill: #00D2FF; }
-    .stat-label { font: 600 13px 'Segoe UI', -apple-system, Ubuntu, sans-serif; fill: #E2E8F0; }
+    .stat-label { font: 600 13px 'Segoe UI', -apple-system, Ubuntu, sans-serif; fill: #F1F5F9; }
     .stat-val { font: 800 14px 'JetBrains Mono', Consolas, monospace; fill: #00E5FF; }
     .rank-text { font: 900 25px 'JetBrains Mono', sans-serif; fill: #00FFC2; }
     .meta-sub { font: 700 10.5px 'JetBrains Mono', monospace; fill: #38BDF8; letter-spacing: 1px; }
@@ -32,44 +39,44 @@
 
   <!-- Header -->
   <g transform="translate(25, 32)">
-    <circle cx="2" cy="-4" r="4" fill="#00D2FF" />
-    <text x="14" y="0" class="header">Verified GitHub Engineering Stats</text>
+    <circle cx="2" cy="-4" r="5" fill="#00FFC2" filter="url(#dot-glow)" />
+    <text x="16" y="1" class="header">Verified GitHub Engineering Stats</text>
   </g>
 
-  <!-- Left Stats List -->
+  <!-- Left Stats List (All Dots Clear, Bright & Visible) -->
   <g transform="translate(25, 62)">
     <!-- Metric 1: Verified Commits & Push Events -->
     <g transform="translate(0, 0)">
-      <circle cx="6" cy="6" r="3.5" fill="#00FFC2" />
-      <text x="20" y="10" class="stat-label">Total Verified Pushes &amp; Commits:</text>
+      <circle cx="6" cy="6" r="5" fill="#00FF88" stroke="#FFFFFF" stroke-width="1" filter="url(#dot-glow)" />
+      <text x="22" y="10" class="stat-label">Total Verified Pushes &amp; Commits:</text>
       <text x="280" y="10" class="stat-val">231+</text>
     </g>
 
     <!-- Metric 2: Repositories -->
     <g transform="translate(0, 26)">
-      <circle cx="6" cy="6" r="3.5" fill="#00D2FF" />
-      <text x="20" y="10" class="stat-label">Public &amp; Organization Repositories:</text>
+      <circle cx="6" cy="6" r="5" fill="#00E5FF" stroke="#FFFFFF" stroke-width="1" filter="url(#dot-glow)" />
+      <text x="22" y="10" class="stat-label">Public &amp; Organization Repositories:</text>
       <text x="280" y="10" class="stat-val">29</text>
     </g>
 
     <!-- Metric 3: Pull Requests -->
     <g transform="translate(0, 52)">
-      <circle cx="6" cy="6" r="3.5" fill="#38BDF8" />
-      <text x="20" y="10" class="stat-label">Pull Requests &amp; Code Reviews:</text>
+      <circle cx="6" cy="6" r="5" fill="#38BDF8" stroke="#FFFFFF" stroke-width="1" filter="url(#dot-glow)" />
+      <text x="22" y="10" class="stat-label">Pull Requests &amp; Code Reviews:</text>
       <text x="280" y="10" class="stat-val">35+</text>
     </g>
 
     <!-- Metric 4: Total Logged Activity Events -->
     <g transform="translate(0, 78)">
-      <circle cx="6" cy="6" r="3.5" fill="#60A5FA" />
-      <text x="20" y="10" class="stat-label">Total Activity Operations Logged:</text>
+      <circle cx="6" cy="6" r="5" fill="#818CF8" stroke="#FFFFFF" stroke-width="1" filter="url(#dot-glow)" />
+      <text x="22" y="10" class="stat-label">Total Activity Operations Logged:</text>
       <text x="280" y="10" class="stat-val">300+</text>
     </g>
 
     <!-- Metric 5: Live Activity Status -->
     <g transform="translate(0, 102)">
-      <circle cx="6" cy="6" r="3.5" fill="#39D353" />
-      <text x="20" y="10" class="stat-label">Development Cadence:</text>
+      <circle cx="6" cy="6" r="5" fill="#00FFC2" stroke="#FFFFFF" stroke-width="1" filter="url(#dot-glow)" />
+      <text x="22" y="10" class="stat-label">Development Cadence:</text>
       <text x="280" y="10" class="stat-val">Active (Nov 2026)</text>
     </g>
   </g>
