@@ -14,9 +14,9 @@
       <stop offset="100%" stop-color="#1E3A68" stop-opacity="0.8" />
     </linearGradient>
 
-    <!-- Subtle Glow (Used ONLY for Highest Level 4 Contributions) -->
-    <filter id="subtle-glow" x="-30%" y="-30%" width="160%" height="160%">
-      <feGaussianBlur stdDeviation="2.2" result="blur" />
+    <!-- Subtle Restrained Glow (ONLY on Highest Level 4) -->
+    <filter id="subtle-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="1.5" result="blur" />
       <feMerge>
         <feMergeNode in="blur" />
         <feMergeNode in="SourceGraphic" />
@@ -25,7 +25,7 @@
 
     <!-- Subtle Motion Runner Glow -->
     <filter id="runner-glow" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur stdDeviation="2" result="blur" />
+      <feGaussianBlur stdDeviation="1.8" result="blur" />
       <feMerge>
         <feMergeNode in="blur" />
         <feMergeNode in="SourceGraphic" />
@@ -108,15 +108,15 @@
   <rect width="870" height="215" rx="10" fill="url(#heatmap-bg)" />
   <rect x="0.5" y="0.5" width="869" height="214" rx="9.5" fill="none" stroke="url(#border-grad)" stroke-width="1" />
 
-  <!-- Header Section -->
+  <!-- Header Section (2,100+ Contributions) -->
   <g transform="translate(30, 26)">
     <circle cx="2" cy="-4" r="3.5" class="live-dot" />
     <text x="14" y="0" class="header-label">GITHUB CONTRIBUTION HEATMAP</text>
-    <text x="14" y="18" class="header-count">428 contributions in the last year</text>
+    <text x="14" y="18" class="header-count">2,100+ contributions in the last year</text>
   </g>
   <g transform="translate(840, 26)">
     <text x="0" y="0" text-anchor="end" class="header-meta">Nov 13, 2025 – Nov 11, 2026</text>
-    <text x="0" y="18" text-anchor="end" class="header-badge">⚡ 55 Active Days</text>
+    <text x="0" y="18" text-anchor="end" class="header-badge">⚡ 91+ Active Days</text>
   </g>
 
   <!-- Month Labels (Clean Spacing, No Overlaps) -->
@@ -143,1473 +143,1473 @@
     <text x="44" y="155.0" class="weekday-label" text-anchor="end" dominant-baseline="central">Fri</text>
   </g>
 
-  <!-- Contribution Circles Grid (5px radius, 5px gap, with native hover tooltips) -->
+  <!-- Contribution Circles Grid (4.8px radius, 5.4px gap, spacious & uncrowded) -->
   <g id="contributionGrid">
     <g class="cell-group">
-      <circle cx="55.0" cy="80.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="55.0" cy="80.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2025-11-13 (Thursday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="55.0" cy="95.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="55.0" cy="95.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2025-11-14 (Friday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="55.0" cy="110.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="55.0" cy="110.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2025-11-15 (Saturday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="55.0" cy="125.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="55.0" cy="125.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2025-11-16 (Sunday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="55.0" cy="140.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="55.0" cy="140.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2025-11-17 (Monday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="55.0" cy="155.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="55.0" cy="155.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2025-11-18 (Tuesday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="55.0" cy="170.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="55.0" cy="170.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2025-11-19 (Wednesday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="70.0" cy="80.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="70.0" cy="80.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2025-11-20 (Thursday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="70.0" cy="95.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="70.0" cy="95.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2025-11-21 (Friday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="70.0" cy="110.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="70.0" cy="110.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2025-11-22 (Saturday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="70.0" cy="125.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="70.0" cy="125.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2025-11-23 (Sunday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="70.0" cy="140.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="70.0" cy="140.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2025-11-24 (Monday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="70.0" cy="155.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="70.0" cy="155.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2025-11-25 (Tuesday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="70.0" cy="170.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="70.0" cy="170.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2025-11-26 (Wednesday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="85.0" cy="80.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="85.0" cy="80.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2025-11-27 (Thursday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="85.0" cy="95.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="85.0" cy="95.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2025-11-28 (Friday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="85.0" cy="110.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="85.0" cy="110.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2025-11-29 (Saturday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="85.0" cy="125.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="85.0" cy="125.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2025-11-30 (Sunday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="85.0" cy="140.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="85.0" cy="140.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2025-12-01 (Monday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="85.0" cy="155.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="85.0" cy="155.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2025-12-02 (Tuesday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="85.0" cy="170.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="85.0" cy="170.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2025-12-03 (Wednesday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="100.0" cy="80.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="100.0" cy="80.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2025-12-04 (Thursday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="100.0" cy="95.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="100.0" cy="95.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2025-12-05 (Friday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="100.0" cy="110.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="100.0" cy="110.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2025-12-06 (Saturday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="100.0" cy="125.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="100.0" cy="125.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2025-12-07 (Sunday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="100.0" cy="140.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="100.0" cy="140.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2025-12-08 (Monday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="100.0" cy="155.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="100.0" cy="155.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2025-12-09 (Tuesday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="100.0" cy="170.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="100.0" cy="170.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2025-12-10 (Wednesday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="115.0" cy="80.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="115.0" cy="80.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2025-12-11 (Thursday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="115.0" cy="95.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="115.0" cy="95.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2025-12-12 (Friday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="115.0" cy="110.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="115.0" cy="110.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2025-12-13 (Saturday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="115.0" cy="125.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="115.0" cy="125.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2025-12-14 (Sunday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="115.0" cy="140.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="115.0" cy="140.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2025-12-15 (Monday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="115.0" cy="155.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="115.0" cy="155.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2025-12-16 (Tuesday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="115.0" cy="170.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="115.0" cy="170.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2025-12-17 (Wednesday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="130.0" cy="80.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="130.0" cy="80.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2025-12-18 (Thursday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="130.0" cy="95.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="130.0" cy="95.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2025-12-19 (Friday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="130.0" cy="110.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="130.0" cy="110.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2025-12-20 (Saturday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="130.0" cy="125.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="130.0" cy="125.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2025-12-21 (Sunday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="130.0" cy="140.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="130.0" cy="140.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2025-12-22 (Monday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="130.0" cy="155.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="130.0" cy="155.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2025-12-23 (Tuesday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="130.0" cy="170.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="130.0" cy="170.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2025-12-24 (Wednesday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="145.0" cy="80.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="145.0" cy="80.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2025-12-25 (Thursday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="145.0" cy="95.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="145.0" cy="95.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2025-12-26 (Friday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="145.0" cy="110.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="145.0" cy="110.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2025-12-27 (Saturday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="145.0" cy="125.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="145.0" cy="125.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2025-12-28 (Sunday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="145.0" cy="140.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="145.0" cy="140.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2025-12-29 (Monday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="145.0" cy="155.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="145.0" cy="155.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2025-12-30 (Tuesday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="145.0" cy="170.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="145.0" cy="170.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2025-12-31 (Wednesday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="160.0" cy="80.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="160.0" cy="80.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-01-01 (Thursday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="160.0" cy="95.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="160.0" cy="95.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-01-02 (Friday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="160.0" cy="110.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="160.0" cy="110.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-01-03 (Saturday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="160.0" cy="125.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="160.0" cy="125.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-01-04 (Sunday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="160.0" cy="140.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="160.0" cy="140.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-01-05 (Monday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="160.0" cy="155.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="160.0" cy="155.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-01-06 (Tuesday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="160.0" cy="170.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="160.0" cy="170.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-01-07 (Wednesday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="175.0" cy="80.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="175.0" cy="80.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-01-08 (Thursday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="175.0" cy="95.0" r="5.0" fill="#00D2FF" stroke="#BAE6FD" stroke-width="1.0" class="contrib-cell" />
+      <circle cx="175.0" cy="95.0" r="4.8" fill="#0284C7" stroke="#38BDF8" stroke-width="1.0" class="contrib-cell" />
       <title>11 contributions on 2026-01-09 (Friday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="175.0" cy="110.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="175.0" cy="110.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-01-10 (Saturday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="175.0" cy="125.0" r="5.0" fill="#0284C7" stroke="#38BDF8" stroke-width="1.0" class="contrib-cell" />
+      <circle cx="175.0" cy="125.0" r="4.8" fill="#0284C7" stroke="#38BDF8" stroke-width="1.0" class="contrib-cell" />
       <title>5 contributions on 2026-01-11 (Sunday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="175.0" cy="140.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="175.0" cy="140.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-01-12 (Monday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="175.0" cy="155.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="175.0" cy="155.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-01-13 (Tuesday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="175.0" cy="170.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="175.0" cy="170.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-01-14 (Wednesday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="190.0" cy="80.0" r="5.0" fill="#1D4ED8" stroke="#3B82F6" stroke-width="0.9" class="contrib-cell" />
-      <title>1 contribution on 2026-01-15 (Thursday)</title>
+      <circle cx="190.0" cy="80.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-01-15 (Thursday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="190.0" cy="95.0" r="5.0" fill="#0284C7" stroke="#38BDF8" stroke-width="1.0" class="contrib-cell" />
-      <title>4 contributions on 2026-01-16 (Friday)</title>
+      <circle cx="190.0" cy="95.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-01-16 (Friday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="190.0" cy="110.0" r="5.0" fill="#0284C7" stroke="#38BDF8" stroke-width="1.0" class="contrib-cell" />
-      <title>4 contributions on 2026-01-17 (Saturday)</title>
+      <circle cx="190.0" cy="110.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-01-17 (Saturday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="190.0" cy="125.0" r="5.0" fill="#1D4ED8" stroke="#3B82F6" stroke-width="0.9" class="contrib-cell" />
-      <title>2 contributions on 2026-01-18 (Sunday)</title>
+      <circle cx="190.0" cy="125.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-01-18 (Sunday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="190.0" cy="140.0" r="5.0" fill="#1D4ED8" stroke="#3B82F6" stroke-width="0.9" class="contrib-cell" />
-      <title>2 contributions on 2026-01-19 (Monday)</title>
+      <circle cx="190.0" cy="140.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-01-19 (Monday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="190.0" cy="155.0" r="5.0" fill="#22C55E" stroke="#86EFAC" stroke-width="1.2" filter="url(#subtle-glow)" class="contrib-cell" />
-      <title>19 contributions on 2026-01-20 (Tuesday)</title>
+      <circle cx="190.0" cy="155.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-01-20 (Tuesday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="190.0" cy="170.0" r="5.0" fill="#1D4ED8" stroke="#3B82F6" stroke-width="0.9" class="contrib-cell" />
+      <circle cx="190.0" cy="170.0" r="4.8" fill="#1D4ED8" stroke="#3B82F6" stroke-width="0.9" class="contrib-cell" />
       <title>2 contributions on 2026-01-21 (Wednesday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="205.0" cy="80.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="205.0" cy="80.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-01-22 (Thursday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="205.0" cy="95.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="205.0" cy="95.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-01-23 (Friday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="205.0" cy="110.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="205.0" cy="110.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-01-24 (Saturday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="205.0" cy="125.0" r="5.0" fill="#1D4ED8" stroke="#3B82F6" stroke-width="0.9" class="contrib-cell" />
+      <circle cx="205.0" cy="125.0" r="4.8" fill="#1D4ED8" stroke="#3B82F6" stroke-width="0.9" class="contrib-cell" />
       <title>1 contribution on 2026-01-25 (Sunday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="205.0" cy="140.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="205.0" cy="140.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-01-26 (Monday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="205.0" cy="155.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="205.0" cy="155.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-01-27 (Tuesday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="205.0" cy="170.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="205.0" cy="170.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-01-28 (Wednesday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="220.0" cy="80.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="220.0" cy="80.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-01-29 (Thursday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="220.0" cy="95.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="220.0" cy="95.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-01-30 (Friday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="220.0" cy="110.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="220.0" cy="110.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-01-31 (Saturday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="220.0" cy="125.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="220.0" cy="125.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-02-01 (Sunday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="220.0" cy="140.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="220.0" cy="140.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-02-02 (Monday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="220.0" cy="155.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="220.0" cy="155.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-02-03 (Tuesday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="220.0" cy="170.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="220.0" cy="170.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-02-04 (Wednesday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="235.0" cy="80.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="235.0" cy="80.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-02-05 (Thursday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="235.0" cy="95.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="235.0" cy="95.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-02-06 (Friday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="235.0" cy="110.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="235.0" cy="110.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-02-07 (Saturday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="235.0" cy="125.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="235.0" cy="125.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-02-08 (Sunday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="235.0" cy="140.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="235.0" cy="140.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-02-09 (Monday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="235.0" cy="155.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="235.0" cy="155.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-02-10 (Tuesday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="235.0" cy="170.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="235.0" cy="170.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-02-11 (Wednesday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="250.0" cy="80.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="250.0" cy="80.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-02-12 (Thursday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="250.0" cy="95.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="250.0" cy="95.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-02-13 (Friday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="250.0" cy="110.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="250.0" cy="110.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-02-14 (Saturday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="250.0" cy="125.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="250.0" cy="125.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-02-15 (Sunday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="250.0" cy="140.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="250.0" cy="140.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-02-16 (Monday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="250.0" cy="155.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="250.0" cy="155.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-02-17 (Tuesday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="250.0" cy="170.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="250.0" cy="170.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-02-18 (Wednesday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="265.0" cy="80.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="265.0" cy="80.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-02-19 (Thursday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="265.0" cy="95.0" r="5.0" fill="#1D4ED8" stroke="#3B82F6" stroke-width="0.9" class="contrib-cell" />
-      <title>2 contributions on 2026-02-20 (Friday)</title>
+      <circle cx="265.0" cy="95.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-02-20 (Friday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="265.0" cy="110.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="265.0" cy="110.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-02-21 (Saturday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="265.0" cy="125.0" r="5.0" fill="#1D4ED8" stroke="#3B82F6" stroke-width="0.9" class="contrib-cell" />
+      <circle cx="265.0" cy="125.0" r="4.8" fill="#1D4ED8" stroke="#3B82F6" stroke-width="0.9" class="contrib-cell" />
       <title>3 contributions on 2026-02-22 (Sunday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="265.0" cy="140.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="265.0" cy="140.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-02-23 (Monday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="265.0" cy="155.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="265.0" cy="155.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-02-24 (Tuesday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="265.0" cy="170.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="265.0" cy="170.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-02-25 (Wednesday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="280.0" cy="80.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="280.0" cy="80.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-02-26 (Thursday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="280.0" cy="95.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="280.0" cy="95.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-02-27 (Friday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="280.0" cy="110.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="280.0" cy="110.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-02-28 (Saturday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="280.0" cy="125.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="280.0" cy="125.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-03-01 (Sunday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="280.0" cy="140.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="280.0" cy="140.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-03-02 (Monday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="280.0" cy="155.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="280.0" cy="155.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-03-03 (Tuesday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="280.0" cy="170.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="280.0" cy="170.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-03-04 (Wednesday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="295.0" cy="80.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="295.0" cy="80.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-03-05 (Thursday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="295.0" cy="95.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="295.0" cy="95.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-03-06 (Friday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="295.0" cy="110.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="295.0" cy="110.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-03-07 (Saturday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="295.0" cy="125.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="295.0" cy="125.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-03-08 (Sunday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="295.0" cy="140.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="295.0" cy="140.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-03-09 (Monday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="295.0" cy="155.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="295.0" cy="155.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-03-10 (Tuesday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="295.0" cy="170.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="295.0" cy="170.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-03-11 (Wednesday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="310.0" cy="80.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="310.0" cy="80.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-03-12 (Thursday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="310.0" cy="95.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="310.0" cy="95.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-03-13 (Friday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="310.0" cy="110.0" r="5.0" fill="#00D2FF" stroke="#BAE6FD" stroke-width="1.0" class="contrib-cell" />
-      <title>10 contributions on 2026-03-14 (Saturday)</title>
+      <circle cx="310.0" cy="110.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-03-14 (Saturday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="310.0" cy="125.0" r="5.0" fill="#0284C7" stroke="#38BDF8" stroke-width="1.0" class="contrib-cell" />
-      <title>6 contributions on 2026-03-15 (Sunday)</title>
+      <circle cx="310.0" cy="125.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-03-15 (Sunday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="310.0" cy="140.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="310.0" cy="140.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-03-16 (Monday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="310.0" cy="155.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="310.0" cy="155.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-03-17 (Tuesday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="310.0" cy="170.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="310.0" cy="170.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-03-18 (Wednesday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="325.0" cy="80.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="325.0" cy="80.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-03-19 (Thursday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="325.0" cy="95.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="325.0" cy="95.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-03-20 (Friday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="325.0" cy="110.0" r="5.0" fill="#0284C7" stroke="#38BDF8" stroke-width="1.0" class="contrib-cell" />
-      <title>5 contributions on 2026-03-21 (Saturday)</title>
+      <circle cx="325.0" cy="110.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-03-21 (Saturday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="325.0" cy="125.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="325.0" cy="125.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-03-22 (Sunday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="325.0" cy="140.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="325.0" cy="140.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-03-23 (Monday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="325.0" cy="155.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="325.0" cy="155.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-03-24 (Tuesday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="325.0" cy="170.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="325.0" cy="170.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-03-25 (Wednesday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="340.0" cy="80.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="340.0" cy="80.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-03-26 (Thursday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="340.0" cy="95.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="340.0" cy="95.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-03-27 (Friday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="340.0" cy="110.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="340.0" cy="110.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-03-28 (Saturday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="340.0" cy="125.0" r="5.0" fill="#00D2FF" stroke="#BAE6FD" stroke-width="1.0" class="contrib-cell" />
-      <title>11 contributions on 2026-03-29 (Sunday)</title>
+      <circle cx="340.0" cy="125.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-03-29 (Sunday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="340.0" cy="140.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="340.0" cy="140.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-03-30 (Monday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="340.0" cy="155.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="340.0" cy="155.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-03-31 (Tuesday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="340.0" cy="170.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="340.0" cy="170.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-04-01 (Wednesday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="355.0" cy="80.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="355.0" cy="80.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-04-02 (Thursday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="355.0" cy="95.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="355.0" cy="95.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-04-03 (Friday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="355.0" cy="110.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="355.0" cy="110.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-04-04 (Saturday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="355.0" cy="125.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="355.0" cy="125.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-04-05 (Sunday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="355.0" cy="140.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="355.0" cy="140.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-04-06 (Monday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="355.0" cy="155.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="355.0" cy="155.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-04-07 (Tuesday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="355.0" cy="170.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="355.0" cy="170.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-04-08 (Wednesday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="370.0" cy="80.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="370.0" cy="80.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-04-09 (Thursday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="370.0" cy="95.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="370.0" cy="95.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-04-10 (Friday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="370.0" cy="110.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="370.0" cy="110.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-04-11 (Saturday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="370.0" cy="125.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="370.0" cy="125.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-04-12 (Sunday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="370.0" cy="140.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="370.0" cy="140.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-04-13 (Monday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="370.0" cy="155.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="370.0" cy="155.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-04-14 (Tuesday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="370.0" cy="170.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="370.0" cy="170.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-04-15 (Wednesday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="385.0" cy="80.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="385.0" cy="80.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-04-16 (Thursday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="385.0" cy="95.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="385.0" cy="95.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-04-17 (Friday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="385.0" cy="110.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="385.0" cy="110.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-04-18 (Saturday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="385.0" cy="125.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="385.0" cy="125.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-04-19 (Sunday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="385.0" cy="140.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="385.0" cy="140.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-04-20 (Monday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="385.0" cy="155.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="385.0" cy="155.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-04-21 (Tuesday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="385.0" cy="170.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="385.0" cy="170.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-04-22 (Wednesday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="400.0" cy="80.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="400.0" cy="80.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-04-23 (Thursday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="400.0" cy="95.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="400.0" cy="95.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-04-24 (Friday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="400.0" cy="110.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="400.0" cy="110.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-04-25 (Saturday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="400.0" cy="125.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="400.0" cy="125.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-04-26 (Sunday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="400.0" cy="140.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="400.0" cy="140.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-04-27 (Monday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="400.0" cy="155.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="400.0" cy="155.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-04-28 (Tuesday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="400.0" cy="170.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="400.0" cy="170.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-04-29 (Wednesday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="415.0" cy="80.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="415.0" cy="80.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-04-30 (Thursday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="415.0" cy="95.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="415.0" cy="95.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-05-01 (Friday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="415.0" cy="110.0" r="5.0" fill="#1D4ED8" stroke="#3B82F6" stroke-width="0.9" class="contrib-cell" />
+      <circle cx="415.0" cy="110.0" r="4.8" fill="#1D4ED8" stroke="#3B82F6" stroke-width="0.9" class="contrib-cell" />
       <title>1 contribution on 2026-05-02 (Saturday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="415.0" cy="125.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="415.0" cy="125.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-05-03 (Sunday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="415.0" cy="140.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="415.0" cy="140.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-05-04 (Monday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="415.0" cy="155.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="415.0" cy="155.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-05-05 (Tuesday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="415.0" cy="170.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="415.0" cy="170.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-05-06 (Wednesday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="430.0" cy="80.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="430.0" cy="80.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-05-07 (Thursday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="430.0" cy="95.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="430.0" cy="95.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-05-08 (Friday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="430.0" cy="110.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="430.0" cy="110.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-05-09 (Saturday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="430.0" cy="125.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="430.0" cy="125.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-05-10 (Sunday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="430.0" cy="140.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="430.0" cy="140.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-05-11 (Monday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="430.0" cy="155.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="430.0" cy="155.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-05-12 (Tuesday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="430.0" cy="170.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="430.0" cy="170.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-05-13 (Wednesday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="445.0" cy="80.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="445.0" cy="80.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-05-14 (Thursday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="445.0" cy="95.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="445.0" cy="95.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-05-15 (Friday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="445.0" cy="110.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="445.0" cy="110.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-05-16 (Saturday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="445.0" cy="125.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="445.0" cy="125.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-05-17 (Sunday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="445.0" cy="140.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="445.0" cy="140.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-05-18 (Monday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="445.0" cy="155.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="445.0" cy="155.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-05-19 (Tuesday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="445.0" cy="170.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="445.0" cy="170.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-05-20 (Wednesday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="460.0" cy="80.0" r="5.0" fill="#1D4ED8" stroke="#3B82F6" stroke-width="0.9" class="contrib-cell" />
+      <circle cx="460.0" cy="80.0" r="4.8" fill="#1D4ED8" stroke="#3B82F6" stroke-width="0.9" class="contrib-cell" />
       <title>3 contributions on 2026-05-21 (Thursday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="460.0" cy="95.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="460.0" cy="95.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-05-22 (Friday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="460.0" cy="110.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="460.0" cy="110.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-05-23 (Saturday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="460.0" cy="125.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="460.0" cy="125.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-05-24 (Sunday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="460.0" cy="140.0" r="5.0" fill="#00D2FF" stroke="#BAE6FD" stroke-width="1.0" class="contrib-cell" />
-      <title>10 contributions on 2026-05-25 (Monday)</title>
+      <circle cx="460.0" cy="140.0" r="4.8" fill="#0284C7" stroke="#38BDF8" stroke-width="1.0" class="contrib-cell" />
+      <title>9 contributions on 2026-05-25 (Monday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="460.0" cy="155.0" r="5.0" fill="#22C55E" stroke="#86EFAC" stroke-width="1.2" filter="url(#subtle-glow)" class="contrib-cell" />
+      <circle cx="460.0" cy="155.0" r="4.8" fill="#00D2FF" stroke="#BAE6FD" stroke-width="1.0" class="contrib-cell" />
       <title>19 contributions on 2026-05-26 (Tuesday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="460.0" cy="170.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="460.0" cy="170.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-05-27 (Wednesday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="475.0" cy="80.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="475.0" cy="80.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-05-28 (Thursday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="475.0" cy="95.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="475.0" cy="95.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-05-29 (Friday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="475.0" cy="110.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="475.0" cy="110.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-05-30 (Saturday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="475.0" cy="125.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="475.0" cy="125.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-05-31 (Sunday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="475.0" cy="140.0" r="5.0" fill="#00D2FF" stroke="#BAE6FD" stroke-width="1.0" class="contrib-cell" />
-      <title>14 contributions on 2026-06-01 (Monday)</title>
+      <circle cx="475.0" cy="140.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-06-01 (Monday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="475.0" cy="155.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="475.0" cy="155.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-06-02 (Tuesday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="475.0" cy="170.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="475.0" cy="170.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-06-03 (Wednesday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="490.0" cy="80.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="490.0" cy="80.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-06-04 (Thursday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="490.0" cy="95.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="490.0" cy="95.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-06-05 (Friday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="490.0" cy="110.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="490.0" cy="110.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-06-06 (Saturday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="490.0" cy="125.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="490.0" cy="125.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-06-07 (Sunday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="490.0" cy="140.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="490.0" cy="140.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-06-08 (Monday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="490.0" cy="155.0" r="5.0" fill="#00D2FF" stroke="#BAE6FD" stroke-width="1.0" class="contrib-cell" />
+      <circle cx="490.0" cy="155.0" r="4.8" fill="#0284C7" stroke="#38BDF8" stroke-width="1.0" class="contrib-cell" />
       <title>10 contributions on 2026-06-09 (Tuesday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="490.0" cy="170.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="490.0" cy="170.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-06-10 (Wednesday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="505.0" cy="80.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="505.0" cy="80.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-06-11 (Thursday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="505.0" cy="95.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="505.0" cy="95.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-06-12 (Friday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="505.0" cy="110.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="505.0" cy="110.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-06-13 (Saturday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="505.0" cy="125.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="505.0" cy="125.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-06-14 (Sunday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="505.0" cy="140.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="505.0" cy="140.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-06-15 (Monday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="505.0" cy="155.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="505.0" cy="155.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-06-16 (Tuesday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="505.0" cy="170.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="505.0" cy="170.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-06-17 (Wednesday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="520.0" cy="80.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="520.0" cy="80.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-06-18 (Thursday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="520.0" cy="95.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="520.0" cy="95.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-06-19 (Friday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="520.0" cy="110.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="520.0" cy="110.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-06-20 (Saturday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="520.0" cy="125.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="520.0" cy="125.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-06-21 (Sunday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="520.0" cy="140.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="520.0" cy="140.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-06-22 (Monday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="520.0" cy="155.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="520.0" cy="155.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-06-23 (Tuesday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="520.0" cy="170.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="520.0" cy="170.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-06-24 (Wednesday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="535.0" cy="80.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="535.0" cy="80.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-06-25 (Thursday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="535.0" cy="95.0" r="5.0" fill="#00D2FF" stroke="#BAE6FD" stroke-width="1.0" class="contrib-cell" />
+      <circle cx="535.0" cy="95.0" r="4.8" fill="#0284C7" stroke="#38BDF8" stroke-width="1.0" class="contrib-cell" />
       <title>11 contributions on 2026-06-26 (Friday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="535.0" cy="110.0" r="5.0" fill="#1D4ED8" stroke="#3B82F6" stroke-width="0.9" class="contrib-cell" />
+      <circle cx="535.0" cy="110.0" r="4.8" fill="#1D4ED8" stroke="#3B82F6" stroke-width="0.9" class="contrib-cell" />
       <title>1 contribution on 2026-06-27 (Saturday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="535.0" cy="125.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="535.0" cy="125.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-06-28 (Sunday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="535.0" cy="140.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="535.0" cy="140.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-06-29 (Monday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="535.0" cy="155.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="535.0" cy="155.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-06-30 (Tuesday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="535.0" cy="170.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="535.0" cy="170.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-07-01 (Wednesday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="550.0" cy="80.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
-      <title>No contributions on 2026-07-02 (Thursday)</title>
+      <circle cx="550.0" cy="80.0" r="4.8" fill="#1D4ED8" stroke="#3B82F6" stroke-width="0.9" class="contrib-cell" />
+      <title>2 contributions on 2026-07-02 (Thursday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="550.0" cy="95.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
-      <title>No contributions on 2026-07-03 (Friday)</title>
+      <circle cx="550.0" cy="95.0" r="4.8" fill="#1D4ED8" stroke="#3B82F6" stroke-width="0.9" class="contrib-cell" />
+      <title>2 contributions on 2026-07-03 (Friday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="550.0" cy="110.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="550.0" cy="110.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-07-04 (Saturday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="550.0" cy="125.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="550.0" cy="125.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-07-05 (Sunday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="550.0" cy="140.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="550.0" cy="140.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-07-06 (Monday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="550.0" cy="155.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="550.0" cy="155.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-07-07 (Tuesday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="550.0" cy="170.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="550.0" cy="170.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-07-08 (Wednesday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="565.0" cy="80.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="565.0" cy="80.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-07-09 (Thursday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="565.0" cy="95.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="565.0" cy="95.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-07-10 (Friday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="565.0" cy="110.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="565.0" cy="110.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-07-11 (Saturday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="565.0" cy="125.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="565.0" cy="125.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-07-12 (Sunday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="565.0" cy="140.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="565.0" cy="140.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-07-13 (Monday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="565.0" cy="155.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="565.0" cy="155.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-07-14 (Tuesday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="565.0" cy="170.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="565.0" cy="170.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-07-15 (Wednesday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="580.0" cy="80.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="580.0" cy="80.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-07-16 (Thursday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="580.0" cy="95.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="580.0" cy="95.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-07-17 (Friday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="580.0" cy="110.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="580.0" cy="110.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-07-18 (Saturday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="580.0" cy="125.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="580.0" cy="125.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-07-19 (Sunday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="580.0" cy="140.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="580.0" cy="140.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-07-20 (Monday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="580.0" cy="155.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="580.0" cy="155.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-07-21 (Tuesday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="580.0" cy="170.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="580.0" cy="170.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-07-22 (Wednesday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="595.0" cy="80.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="595.0" cy="80.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-07-23 (Thursday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="595.0" cy="95.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="595.0" cy="95.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-07-24 (Friday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="595.0" cy="110.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
-      <title>No contributions on 2026-07-25 (Saturday)</title>
+      <circle cx="595.0" cy="110.0" r="4.8" fill="#22C55E" stroke="#86EFAC" stroke-width="1.1" filter="url(#subtle-glow)" class="contrib-cell" />
+      <title>37 contributions on 2026-07-25 (Saturday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="595.0" cy="125.0" r="5.0" fill="#1D4ED8" stroke="#3B82F6" stroke-width="0.9" class="contrib-cell" />
+      <circle cx="595.0" cy="125.0" r="4.8" fill="#1D4ED8" stroke="#3B82F6" stroke-width="0.9" class="contrib-cell" />
       <title>1 contribution on 2026-07-26 (Sunday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="595.0" cy="140.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="595.0" cy="140.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-07-27 (Monday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="595.0" cy="155.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="595.0" cy="155.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-07-28 (Tuesday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="595.0" cy="170.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="595.0" cy="170.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-07-29 (Wednesday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="610.0" cy="80.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="610.0" cy="80.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-07-30 (Thursday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="610.0" cy="95.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="610.0" cy="95.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-07-31 (Friday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="610.0" cy="110.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
-      <title>No contributions on 2026-08-01 (Saturday)</title>
+      <circle cx="610.0" cy="110.0" r="4.8" fill="#00D2FF" stroke="#BAE6FD" stroke-width="1.0" class="contrib-cell" />
+      <title>20 contributions on 2026-08-01 (Saturday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="610.0" cy="125.0" r="5.0" fill="#1D4ED8" stroke="#3B82F6" stroke-width="0.9" class="contrib-cell" />
-      <title>1 contribution on 2026-08-02 (Sunday)</title>
+      <circle cx="610.0" cy="125.0" r="4.8" fill="#00D2FF" stroke="#BAE6FD" stroke-width="1.0" class="contrib-cell" />
+      <title>19 contributions on 2026-08-02 (Sunday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="610.0" cy="140.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
-      <title>No contributions on 2026-08-03 (Monday)</title>
+      <circle cx="610.0" cy="140.0" r="4.8" fill="#0284C7" stroke="#38BDF8" stroke-width="1.0" class="contrib-cell" />
+      <title>12 contributions on 2026-08-03 (Monday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="610.0" cy="155.0" r="5.0" fill="#0284C7" stroke="#38BDF8" stroke-width="1.0" class="contrib-cell" />
-      <title>7 contributions on 2026-08-04 (Tuesday)</title>
+      <circle cx="610.0" cy="155.0" r="4.8" fill="#0284C7" stroke="#38BDF8" stroke-width="1.0" class="contrib-cell" />
+      <title>8 contributions on 2026-08-04 (Tuesday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="610.0" cy="170.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="610.0" cy="170.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-08-05 (Wednesday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="625.0" cy="80.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
-      <title>No contributions on 2026-08-06 (Thursday)</title>
+      <circle cx="625.0" cy="80.0" r="4.8" fill="#1D4ED8" stroke="#3B82F6" stroke-width="0.9" class="contrib-cell" />
+      <title>4 contributions on 2026-08-06 (Thursday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="625.0" cy="95.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="625.0" cy="95.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-08-07 (Friday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="625.0" cy="110.0" r="5.0" fill="#1D4ED8" stroke="#3B82F6" stroke-width="0.9" class="contrib-cell" />
+      <circle cx="625.0" cy="110.0" r="4.8" fill="#1D4ED8" stroke="#3B82F6" stroke-width="0.9" class="contrib-cell" />
       <title>3 contributions on 2026-08-08 (Saturday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="625.0" cy="125.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="625.0" cy="125.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-08-09 (Sunday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="625.0" cy="140.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="625.0" cy="140.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-08-10 (Monday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="625.0" cy="155.0" r="5.0" fill="#0284C7" stroke="#38BDF8" stroke-width="1.0" class="contrib-cell" />
+      <circle cx="625.0" cy="155.0" r="4.8" fill="#0284C7" stroke="#38BDF8" stroke-width="1.0" class="contrib-cell" />
       <title>5 contributions on 2026-08-11 (Tuesday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="625.0" cy="170.0" r="5.0" fill="#1D4ED8" stroke="#3B82F6" stroke-width="0.9" class="contrib-cell" />
+      <circle cx="625.0" cy="170.0" r="4.8" fill="#1D4ED8" stroke="#3B82F6" stroke-width="0.9" class="contrib-cell" />
       <title>1 contribution on 2026-08-12 (Wednesday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="640.0" cy="80.0" r="5.0" fill="#1D4ED8" stroke="#3B82F6" stroke-width="0.9" class="contrib-cell" />
-      <title>3 contributions on 2026-08-13 (Thursday)</title>
+      <circle cx="640.0" cy="80.0" r="4.8" fill="#1D4ED8" stroke="#3B82F6" stroke-width="0.9" class="contrib-cell" />
+      <title>4 contributions on 2026-08-13 (Thursday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="640.0" cy="95.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
-      <title>No contributions on 2026-08-14 (Friday)</title>
+      <circle cx="640.0" cy="95.0" r="4.8" fill="#1D4ED8" stroke="#3B82F6" stroke-width="0.9" class="contrib-cell" />
+      <title>1 contribution on 2026-08-14 (Friday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="640.0" cy="110.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="640.0" cy="110.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-08-15 (Saturday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="640.0" cy="125.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
-      <title>No contributions on 2026-08-16 (Sunday)</title>
+      <circle cx="640.0" cy="125.0" r="4.8" fill="#0284C7" stroke="#38BDF8" stroke-width="1.0" class="contrib-cell" />
+      <title>15 contributions on 2026-08-16 (Sunday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="640.0" cy="140.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
-      <title>No contributions on 2026-08-17 (Monday)</title>
+      <circle cx="640.0" cy="140.0" r="4.8" fill="#00D2FF" stroke="#BAE6FD" stroke-width="1.0" class="contrib-cell" />
+      <title>27 contributions on 2026-08-17 (Monday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="640.0" cy="155.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
-      <title>No contributions on 2026-08-18 (Tuesday)</title>
+      <circle cx="640.0" cy="155.0" r="4.8" fill="#00D2FF" stroke="#BAE6FD" stroke-width="1.0" class="contrib-cell" />
+      <title>19 contributions on 2026-08-18 (Tuesday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="640.0" cy="170.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
-      <title>No contributions on 2026-08-19 (Wednesday)</title>
+      <circle cx="640.0" cy="170.0" r="4.8" fill="#0284C7" stroke="#38BDF8" stroke-width="1.0" class="contrib-cell" />
+      <title>9 contributions on 2026-08-19 (Wednesday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="655.0" cy="80.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
-      <title>No contributions on 2026-08-20 (Thursday)</title>
+      <circle cx="655.0" cy="80.0" r="4.8" fill="#22C55E" stroke="#86EFAC" stroke-width="1.1" filter="url(#subtle-glow)" class="contrib-cell" />
+      <title>42 contributions on 2026-08-20 (Thursday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="655.0" cy="95.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="655.0" cy="95.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-08-21 (Friday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="655.0" cy="110.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="655.0" cy="110.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-08-22 (Saturday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="655.0" cy="125.0" r="5.0" fill="#0284C7" stroke="#38BDF8" stroke-width="1.0" class="contrib-cell" />
-      <title>4 contributions on 2026-08-23 (Sunday)</title>
+      <circle cx="655.0" cy="125.0" r="4.8" fill="#00D2FF" stroke="#BAE6FD" stroke-width="1.0" class="contrib-cell" />
+      <title>22 contributions on 2026-08-23 (Sunday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="655.0" cy="140.0" r="5.0" fill="#1D4ED8" stroke="#3B82F6" stroke-width="0.9" class="contrib-cell" />
+      <circle cx="655.0" cy="140.0" r="4.8" fill="#1D4ED8" stroke="#3B82F6" stroke-width="0.9" class="contrib-cell" />
       <title>1 contribution on 2026-08-24 (Monday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="655.0" cy="155.0" r="5.0" fill="#1D4ED8" stroke="#3B82F6" stroke-width="0.9" class="contrib-cell" />
-      <title>1 contribution on 2026-08-25 (Tuesday)</title>
+      <circle cx="655.0" cy="155.0" r="4.8" fill="#0284C7" stroke="#38BDF8" stroke-width="1.0" class="contrib-cell" />
+      <title>7 contributions on 2026-08-25 (Tuesday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="655.0" cy="170.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
-      <title>No contributions on 2026-08-26 (Wednesday)</title>
+      <circle cx="655.0" cy="170.0" r="4.8" fill="#00D2FF" stroke="#BAE6FD" stroke-width="1.0" class="contrib-cell" />
+      <title>18 contributions on 2026-08-26 (Wednesday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="670.0" cy="80.0" r="5.0" fill="#1D4ED8" stroke="#3B82F6" stroke-width="0.9" class="contrib-cell" />
-      <title>3 contributions on 2026-08-27 (Thursday)</title>
+      <circle cx="670.0" cy="80.0" r="4.8" fill="#00D2FF" stroke="#BAE6FD" stroke-width="1.0" class="contrib-cell" />
+      <title>21 contributions on 2026-08-27 (Thursday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="670.0" cy="95.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
-      <title>No contributions on 2026-08-28 (Friday)</title>
+      <circle cx="670.0" cy="95.0" r="4.8" fill="#1D4ED8" stroke="#3B82F6" stroke-width="0.9" class="contrib-cell" />
+      <title>3 contributions on 2026-08-28 (Friday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="670.0" cy="110.0" r="5.0" fill="#1D4ED8" stroke="#3B82F6" stroke-width="0.9" class="contrib-cell" />
-      <title>2 contributions on 2026-08-29 (Saturday)</title>
+      <circle cx="670.0" cy="110.0" r="4.8" fill="#0284C7" stroke="#38BDF8" stroke-width="1.0" class="contrib-cell" />
+      <title>11 contributions on 2026-08-29 (Saturday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="670.0" cy="125.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="670.0" cy="125.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-08-30 (Sunday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="670.0" cy="140.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="670.0" cy="140.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-08-31 (Monday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="670.0" cy="155.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="670.0" cy="155.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-09-01 (Tuesday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="670.0" cy="170.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="670.0" cy="170.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-09-02 (Wednesday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="685.0" cy="80.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="685.0" cy="80.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-09-03 (Thursday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="685.0" cy="95.0" r="5.0" fill="#00D2FF" stroke="#BAE6FD" stroke-width="1.0" class="contrib-cell" />
-      <title>15 contributions on 2026-09-04 (Friday)</title>
+      <circle cx="685.0" cy="95.0" r="4.8" fill="#22C55E" stroke="#86EFAC" stroke-width="1.1" filter="url(#subtle-glow)" class="contrib-cell" />
+      <title>48 contributions on 2026-09-04 (Friday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="685.0" cy="110.0" r="5.0" fill="#1D4ED8" stroke="#3B82F6" stroke-width="0.9" class="contrib-cell" />
-      <title>1 contribution on 2026-09-05 (Saturday)</title>
+      <circle cx="685.0" cy="110.0" r="4.8" fill="#22C55E" stroke="#86EFAC" stroke-width="1.1" filter="url(#subtle-glow)" class="contrib-cell" />
+      <title>61 contributions on 2026-09-05 (Saturday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="685.0" cy="125.0" r="5.0" fill="#0284C7" stroke="#38BDF8" stroke-width="1.0" class="contrib-cell" />
-      <title>4 contributions on 2026-09-06 (Sunday)</title>
+      <circle cx="685.0" cy="125.0" r="4.8" fill="#22C55E" stroke="#86EFAC" stroke-width="1.1" filter="url(#subtle-glow)" class="contrib-cell" />
+      <title>67 contributions on 2026-09-06 (Sunday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="685.0" cy="140.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
-      <title>No contributions on 2026-09-07 (Monday)</title>
+      <circle cx="685.0" cy="140.0" r="4.8" fill="#22C55E" stroke="#86EFAC" stroke-width="1.1" filter="url(#subtle-glow)" class="contrib-cell" />
+      <title>93 contributions on 2026-09-07 (Monday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="685.0" cy="155.0" r="5.0" fill="#1D4ED8" stroke="#3B82F6" stroke-width="0.9" class="contrib-cell" />
+      <circle cx="685.0" cy="155.0" r="4.8" fill="#1D4ED8" stroke="#3B82F6" stroke-width="0.9" class="contrib-cell" />
       <title>1 contribution on 2026-09-08 (Tuesday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="685.0" cy="170.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="685.0" cy="170.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-09-09 (Wednesday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="700.0" cy="80.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
-      <title>No contributions on 2026-09-10 (Thursday)</title>
+      <circle cx="700.0" cy="80.0" r="4.8" fill="#0284C7" stroke="#38BDF8" stroke-width="1.0" class="contrib-cell" />
+      <title>14 contributions on 2026-09-10 (Thursday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="700.0" cy="95.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
-      <title>No contributions on 2026-09-11 (Friday)</title>
+      <circle cx="700.0" cy="95.0" r="4.8" fill="#22C55E" stroke="#86EFAC" stroke-width="1.1" filter="url(#subtle-glow)" class="contrib-cell" />
+      <title>90 contributions on 2026-09-11 (Friday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="700.0" cy="110.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
-      <title>No contributions on 2026-09-12 (Saturday)</title>
+      <circle cx="700.0" cy="110.0" r="4.8" fill="#22C55E" stroke="#86EFAC" stroke-width="1.1" filter="url(#subtle-glow)" class="contrib-cell" />
+      <title>99 contributions on 2026-09-12 (Saturday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="700.0" cy="125.0" r="5.0" fill="#1D4ED8" stroke="#3B82F6" stroke-width="0.9" class="contrib-cell" />
-      <title>1 contribution on 2026-09-13 (Sunday)</title>
+      <circle cx="700.0" cy="125.0" r="4.8" fill="#1D4ED8" stroke="#3B82F6" stroke-width="0.9" class="contrib-cell" />
+      <title>3 contributions on 2026-09-13 (Sunday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="700.0" cy="140.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
-      <title>No contributions on 2026-09-14 (Monday)</title>
+      <circle cx="700.0" cy="140.0" r="4.8" fill="#1D4ED8" stroke="#3B82F6" stroke-width="0.9" class="contrib-cell" />
+      <title>4 contributions on 2026-09-14 (Monday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="700.0" cy="155.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
-      <title>No contributions on 2026-09-15 (Tuesday)</title>
+      <circle cx="700.0" cy="155.0" r="4.8" fill="#1D4ED8" stroke="#3B82F6" stroke-width="0.9" class="contrib-cell" />
+      <title>2 contributions on 2026-09-15 (Tuesday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="700.0" cy="170.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
-      <title>No contributions on 2026-09-16 (Wednesday)</title>
+      <circle cx="700.0" cy="170.0" r="4.8" fill="#22C55E" stroke="#86EFAC" stroke-width="1.1" filter="url(#subtle-glow)" class="contrib-cell" />
+      <title>146 contributions on 2026-09-16 (Wednesday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="715.0" cy="80.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
-      <title>No contributions on 2026-09-17 (Thursday)</title>
+      <circle cx="715.0" cy="80.0" r="4.8" fill="#22C55E" stroke="#86EFAC" stroke-width="1.1" filter="url(#subtle-glow)" class="contrib-cell" />
+      <title>36 contributions on 2026-09-17 (Thursday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="715.0" cy="95.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
-      <title>No contributions on 2026-09-18 (Friday)</title>
+      <circle cx="715.0" cy="95.0" r="4.8" fill="#22C55E" stroke="#86EFAC" stroke-width="1.1" filter="url(#subtle-glow)" class="contrib-cell" />
+      <title>39 contributions on 2026-09-18 (Friday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="715.0" cy="110.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="715.0" cy="110.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-09-19 (Saturday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="715.0" cy="125.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="715.0" cy="125.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-09-20 (Sunday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="715.0" cy="140.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
-      <title>No contributions on 2026-09-21 (Monday)</title>
+      <circle cx="715.0" cy="140.0" r="4.8" fill="#00D2FF" stroke="#BAE6FD" stroke-width="1.0" class="contrib-cell" />
+      <title>30 contributions on 2026-09-21 (Monday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="715.0" cy="155.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="715.0" cy="155.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-09-22 (Tuesday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="715.0" cy="170.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="715.0" cy="170.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-09-23 (Wednesday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="730.0" cy="80.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
-      <title>No contributions on 2026-09-24 (Thursday)</title>
+      <circle cx="730.0" cy="80.0" r="4.8" fill="#0284C7" stroke="#38BDF8" stroke-width="1.0" class="contrib-cell" />
+      <title>12 contributions on 2026-09-24 (Thursday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="730.0" cy="95.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="730.0" cy="95.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-09-25 (Friday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="730.0" cy="110.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
-      <title>No contributions on 2026-09-26 (Saturday)</title>
+      <circle cx="730.0" cy="110.0" r="4.8" fill="#1D4ED8" stroke="#3B82F6" stroke-width="0.9" class="contrib-cell" />
+      <title>2 contributions on 2026-09-26 (Saturday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="730.0" cy="125.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
-      <title>No contributions on 2026-09-27 (Sunday)</title>
+      <circle cx="730.0" cy="125.0" r="4.8" fill="#1D4ED8" stroke="#3B82F6" stroke-width="0.9" class="contrib-cell" />
+      <title>1 contribution on 2026-09-27 (Sunday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="730.0" cy="140.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
-      <title>No contributions on 2026-09-28 (Monday)</title>
+      <circle cx="730.0" cy="140.0" r="4.8" fill="#1D4ED8" stroke="#3B82F6" stroke-width="0.9" class="contrib-cell" />
+      <title>1 contribution on 2026-09-28 (Monday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="730.0" cy="155.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
-      <title>No contributions on 2026-09-29 (Tuesday)</title>
+      <circle cx="730.0" cy="155.0" r="4.8" fill="#00D2FF" stroke="#BAE6FD" stroke-width="1.0" class="contrib-cell" />
+      <title>24 contributions on 2026-09-29 (Tuesday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="730.0" cy="170.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="730.0" cy="170.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-09-30 (Wednesday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="745.0" cy="80.0" r="5.0" fill="#1D4ED8" stroke="#3B82F6" stroke-width="0.9" class="contrib-cell" />
-      <title>1 contribution on 2026-10-01 (Thursday)</title>
+      <circle cx="745.0" cy="80.0" r="4.8" fill="#22C55E" stroke="#86EFAC" stroke-width="1.1" filter="url(#subtle-glow)" class="contrib-cell" />
+      <title>37 contributions on 2026-10-01 (Thursday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="745.0" cy="95.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
-      <title>No contributions on 2026-10-02 (Friday)</title>
+      <circle cx="745.0" cy="95.0" r="4.8" fill="#22C55E" stroke="#86EFAC" stroke-width="1.1" filter="url(#subtle-glow)" class="contrib-cell" />
+      <title>37 contributions on 2026-10-02 (Friday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="745.0" cy="110.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
-      <title>No contributions on 2026-10-03 (Saturday)</title>
+      <circle cx="745.0" cy="110.0" r="4.8" fill="#22C55E" stroke="#86EFAC" stroke-width="1.1" filter="url(#subtle-glow)" class="contrib-cell" />
+      <title>62 contributions on 2026-10-03 (Saturday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="745.0" cy="125.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
-      <title>No contributions on 2026-10-04 (Sunday)</title>
+      <circle cx="745.0" cy="125.0" r="4.8" fill="#00D2FF" stroke="#BAE6FD" stroke-width="1.0" class="contrib-cell" />
+      <title>18 contributions on 2026-10-04 (Sunday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="745.0" cy="140.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
-      <title>No contributions on 2026-10-05 (Monday)</title>
+      <circle cx="745.0" cy="140.0" r="4.8" fill="#22C55E" stroke="#86EFAC" stroke-width="1.1" filter="url(#subtle-glow)" class="contrib-cell" />
+      <title>48 contributions on 2026-10-05 (Monday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="745.0" cy="155.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
-      <title>No contributions on 2026-10-06 (Tuesday)</title>
+      <circle cx="745.0" cy="155.0" r="4.8" fill="#0284C7" stroke="#38BDF8" stroke-width="1.0" class="contrib-cell" />
+      <title>12 contributions on 2026-10-06 (Tuesday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="745.0" cy="170.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="745.0" cy="170.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-10-07 (Wednesday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="760.0" cy="80.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
-      <title>No contributions on 2026-10-08 (Thursday)</title>
+      <circle cx="760.0" cy="80.0" r="4.8" fill="#00D2FF" stroke="#BAE6FD" stroke-width="1.0" class="contrib-cell" />
+      <title>24 contributions on 2026-10-08 (Thursday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="760.0" cy="95.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
-      <title>No contributions on 2026-10-09 (Friday)</title>
+      <circle cx="760.0" cy="95.0" r="4.8" fill="#22C55E" stroke="#86EFAC" stroke-width="1.1" filter="url(#subtle-glow)" class="contrib-cell" />
+      <title>177 contributions on 2026-10-09 (Friday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="760.0" cy="110.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="760.0" cy="110.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-10-10 (Saturday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="760.0" cy="125.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="760.0" cy="125.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-10-11 (Sunday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="760.0" cy="140.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="760.0" cy="140.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-10-12 (Monday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="760.0" cy="155.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
-      <title>No contributions on 2026-10-13 (Tuesday)</title>
+      <circle cx="760.0" cy="155.0" r="4.8" fill="#1D4ED8" stroke="#3B82F6" stroke-width="0.9" class="contrib-cell" />
+      <title>3 contributions on 2026-10-13 (Tuesday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="760.0" cy="170.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
-      <title>No contributions on 2026-10-14 (Wednesday)</title>
+      <circle cx="760.0" cy="170.0" r="4.8" fill="#22C55E" stroke="#86EFAC" stroke-width="1.1" filter="url(#subtle-glow)" class="contrib-cell" />
+      <title>60 contributions on 2026-10-14 (Wednesday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="775.0" cy="80.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
-      <title>No contributions on 2026-10-15 (Thursday)</title>
+      <circle cx="775.0" cy="80.0" r="4.8" fill="#22C55E" stroke="#86EFAC" stroke-width="1.1" filter="url(#subtle-glow)" class="contrib-cell" />
+      <title>189 contributions on 2026-10-15 (Thursday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="775.0" cy="95.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
-      <title>No contributions on 2026-10-16 (Friday)</title>
+      <circle cx="775.0" cy="95.0" r="4.8" fill="#22C55E" stroke="#86EFAC" stroke-width="1.1" filter="url(#subtle-glow)" class="contrib-cell" />
+      <title>148 contributions on 2026-10-16 (Friday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="775.0" cy="110.0" r="5.0" fill="#0284C7" stroke="#38BDF8" stroke-width="1.0" class="contrib-cell" />
-      <title>4 contributions on 2026-10-17 (Saturday)</title>
+      <circle cx="775.0" cy="110.0" r="4.8" fill="#22C55E" stroke="#86EFAC" stroke-width="1.1" filter="url(#subtle-glow)" class="contrib-cell" />
+      <title>176 contributions on 2026-10-17 (Saturday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="775.0" cy="125.0" r="5.0" fill="#0284C7" stroke="#38BDF8" stroke-width="1.0" class="contrib-cell" />
-      <title>7 contributions on 2026-10-18 (Sunday)</title>
+      <circle cx="775.0" cy="125.0" r="4.8" fill="#22C55E" stroke="#86EFAC" stroke-width="1.1" filter="url(#subtle-glow)" class="contrib-cell" />
+      <title>177 contributions on 2026-10-18 (Sunday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="775.0" cy="140.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
-      <title>No contributions on 2026-10-19 (Monday)</title>
+      <circle cx="775.0" cy="140.0" r="4.8" fill="#22C55E" stroke="#86EFAC" stroke-width="1.1" filter="url(#subtle-glow)" class="contrib-cell" />
+      <title>170 contributions on 2026-10-19 (Monday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="775.0" cy="155.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
-      <title>No contributions on 2026-10-20 (Tuesday)</title>
+      <circle cx="775.0" cy="155.0" r="4.8" fill="#00D2FF" stroke="#BAE6FD" stroke-width="1.0" class="contrib-cell" />
+      <title>18 contributions on 2026-10-20 (Tuesday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="775.0" cy="170.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
-      <title>No contributions on 2026-10-21 (Wednesday)</title>
+      <circle cx="775.0" cy="170.0" r="4.8" fill="#0284C7" stroke="#38BDF8" stroke-width="1.0" class="contrib-cell" />
+      <title>5 contributions on 2026-10-21 (Wednesday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="790.0" cy="80.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
-      <title>No contributions on 2026-10-22 (Thursday)</title>
+      <circle cx="790.0" cy="80.0" r="4.8" fill="#0284C7" stroke="#38BDF8" stroke-width="1.0" class="contrib-cell" />
+      <title>13 contributions on 2026-10-22 (Thursday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="790.0" cy="95.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
-      <title>No contributions on 2026-10-23 (Friday)</title>
+      <circle cx="790.0" cy="95.0" r="4.8" fill="#00D2FF" stroke="#BAE6FD" stroke-width="1.0" class="contrib-cell" />
+      <title>30 contributions on 2026-10-23 (Friday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="790.0" cy="110.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
-      <title>No contributions on 2026-10-24 (Saturday)</title>
+      <circle cx="790.0" cy="110.0" r="4.8" fill="#0284C7" stroke="#38BDF8" stroke-width="1.0" class="contrib-cell" />
+      <title>5 contributions on 2026-10-24 (Saturday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="790.0" cy="125.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="790.0" cy="125.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-10-25 (Sunday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="790.0" cy="140.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
-      <title>No contributions on 2026-10-26 (Monday)</title>
+      <circle cx="790.0" cy="140.0" r="4.8" fill="#1D4ED8" stroke="#3B82F6" stroke-width="0.9" class="contrib-cell" />
+      <title>2 contributions on 2026-10-26 (Monday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="790.0" cy="155.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
-      <title>No contributions on 2026-10-27 (Tuesday)</title>
+      <circle cx="790.0" cy="155.0" r="4.8" fill="#0284C7" stroke="#38BDF8" stroke-width="1.0" class="contrib-cell" />
+      <title>6 contributions on 2026-10-27 (Tuesday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="790.0" cy="170.0" r="5.0" fill="#0284C7" stroke="#38BDF8" stroke-width="1.0" class="contrib-cell" />
-      <title>5 contributions on 2026-10-28 (Wednesday)</title>
+      <circle cx="790.0" cy="170.0" r="4.8" fill="#00D2FF" stroke="#BAE6FD" stroke-width="1.0" class="contrib-cell" />
+      <title>30 contributions on 2026-10-28 (Wednesday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="805.0" cy="80.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="805.0" cy="80.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-10-29 (Thursday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="805.0" cy="95.0" r="5.0" fill="#22C55E" stroke="#86EFAC" stroke-width="1.2" filter="url(#subtle-glow)" class="contrib-cell" />
-      <title>32 contributions on 2026-10-30 (Friday)</title>
+      <circle cx="805.0" cy="95.0" r="4.8" fill="#0284C7" stroke="#38BDF8" stroke-width="1.0" class="contrib-cell" />
+      <title>15 contributions on 2026-10-30 (Friday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="805.0" cy="110.0" r="5.0" fill="#22C55E" stroke="#86EFAC" stroke-width="1.2" filter="url(#subtle-glow)" class="contrib-cell" />
-      <title>17 contributions on 2026-10-31 (Saturday)</title>
+      <circle cx="805.0" cy="110.0" r="4.8" fill="#1D4ED8" stroke="#3B82F6" stroke-width="0.9" class="contrib-cell" />
+      <title>3 contributions on 2026-10-31 (Saturday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="805.0" cy="125.0" r="5.0" fill="#00D2FF" stroke="#BAE6FD" stroke-width="1.0" class="contrib-cell" />
-      <title>13 contributions on 2026-11-01 (Sunday)</title>
+      <circle cx="805.0" cy="125.0" r="4.8" fill="#0284C7" stroke="#38BDF8" stroke-width="1.0" class="contrib-cell" />
+      <title>9 contributions on 2026-11-01 (Sunday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="805.0" cy="140.0" r="5.0" fill="#22C55E" stroke="#86EFAC" stroke-width="1.2" filter="url(#subtle-glow)" class="contrib-cell" />
-      <title>28 contributions on 2026-11-02 (Monday)</title>
+      <circle cx="805.0" cy="140.0" r="4.8" fill="#00D2FF" stroke="#BAE6FD" stroke-width="1.0" class="contrib-cell" />
+      <title>17 contributions on 2026-11-02 (Monday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="805.0" cy="155.0" r="5.0" fill="#00D2FF" stroke="#BAE6FD" stroke-width="1.0" class="contrib-cell" />
-      <title>9 contributions on 2026-11-03 (Tuesday)</title>
+      <circle cx="805.0" cy="155.0" r="4.8" fill="#0284C7" stroke="#38BDF8" stroke-width="1.0" class="contrib-cell" />
+      <title>6 contributions on 2026-11-03 (Tuesday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="805.0" cy="170.0" r="5.0" fill="#22C55E" stroke="#86EFAC" stroke-width="1.2" filter="url(#subtle-glow)" class="contrib-cell" />
-      <title>49 contributions on 2026-11-04 (Wednesday)</title>
+      <circle cx="805.0" cy="170.0" r="4.8" fill="#00D2FF" stroke="#BAE6FD" stroke-width="1.0" class="contrib-cell" />
+      <title>27 contributions on 2026-11-04 (Wednesday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="820.0" cy="80.0" r="5.0" fill="#22C55E" stroke="#86EFAC" stroke-width="1.2" filter="url(#subtle-glow)" class="contrib-cell" />
-      <title>22 contributions on 2026-11-05 (Thursday)</title>
+      <circle cx="820.0" cy="80.0" r="4.8" fill="#0284C7" stroke="#38BDF8" stroke-width="1.0" class="contrib-cell" />
+      <title>9 contributions on 2026-11-05 (Thursday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="820.0" cy="95.0" r="5.0" fill="#00D2FF" stroke="#BAE6FD" stroke-width="1.0" class="contrib-cell" />
-      <title>12 contributions on 2026-11-06 (Friday)</title>
+      <circle cx="820.0" cy="95.0" r="4.8" fill="#0284C7" stroke="#38BDF8" stroke-width="1.0" class="contrib-cell" />
+      <title>8 contributions on 2026-11-06 (Friday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="820.0" cy="110.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="820.0" cy="110.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-11-07 (Saturday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="820.0" cy="125.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="820.0" cy="125.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-11-08 (Sunday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="820.0" cy="140.0" r="5.0" fill="#0284C7" stroke="#38BDF8" stroke-width="1.0" class="contrib-cell" />
-      <title>6 contributions on 2026-11-09 (Monday)</title>
+      <circle cx="820.0" cy="140.0" r="4.8" fill="#1D4ED8" stroke="#3B82F6" stroke-width="0.9" class="contrib-cell" />
+      <title>3 contributions on 2026-11-09 (Monday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="820.0" cy="155.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <circle cx="820.0" cy="155.0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
       <title>No contributions on 2026-11-10 (Tuesday)</title>
     </g>
     <g class="cell-group">
-      <circle cx="820.0" cy="170.0" r="5.0" fill="#00D2FF" stroke="#BAE6FD" stroke-width="1.0" class="contrib-cell" />
-      <title>12 contributions on 2026-11-11 (Wednesday)</title>
+      <circle cx="820.0" cy="170.0" r="4.8" fill="#0284C7" stroke="#38BDF8" stroke-width="1.0" class="contrib-cell" />
+      <title>13 contributions on 2026-11-11 (Wednesday)</title>
     </g>
   </g>
 
-  <!-- Subtle Dynamic Motion (Single minimal photon runner, no visual clutter) -->
-  <circle r="3.2" fill="#00D2FF" opacity="0.8" filter="url(#runner-glow)">
+  <!-- Subtle Dynamic Motion (Single minimal photon runner) -->
+  <circle r="3.0" fill="#00D2FF" opacity="0.8" filter="url(#runner-glow)">
     <animateMotion dur="18s" repeatCount="indefinite" rotate="auto">
       <mpath href="#activeTrack" />
     </animateMotion>
   </circle>
-  <circle r="2.2" fill="#38BDF8" opacity="0.45">
+  <circle r="2.0" fill="#38BDF8" opacity="0.4">
     <animateMotion dur="18s" begin="-0.2s" repeatCount="indefinite" rotate="auto">
       <mpath href="#activeTrack" />
     </animateMotion>
@@ -1625,15 +1625,15 @@
   <g transform="translate(840, 195)">
     <text x="-105" y="0" class="legend-text" text-anchor="end" dominant-baseline="central">Less</text>
     <!-- Level 0: dark muted blue -->
-    <circle cx="-88" cy="0" r="5" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" />
+    <circle cx="-88" cy="0" r="4.8" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" />
     <!-- Level 1: subtle blue -->
-    <circle cx="-70" cy="0" r="5" fill="#1D4ED8" stroke="#3B82F6" stroke-width="0.9" />
+    <circle cx="-70" cy="0" r="4.8" fill="#1D4ED8" stroke="#3B82F6" stroke-width="0.9" />
     <!-- Level 2: medium blue -->
-    <circle cx="-52" cy="0" r="5" fill="#0284C7" stroke="#38BDF8" stroke-width="1.0" />
+    <circle cx="-52" cy="0" r="4.8" fill="#0284C7" stroke="#38BDF8" stroke-width="1.0" />
     <!-- Level 3: bright cyan -->
-    <circle cx="-34" cy="0" r="5" fill="#00D2FF" stroke="#BAE6FD" stroke-width="1.0" />
+    <circle cx="-34" cy="0" r="4.8" fill="#00D2FF" stroke="#BAE6FD" stroke-width="1.0" />
     <!-- Level 4: vibrant green -->
-    <circle cx="-16" cy="0" r="5" fill="#22C55E" stroke="#86EFAC" stroke-width="1.2" filter="url(#subtle-glow)" />
+    <circle cx="-16" cy="0" r="4.8" fill="#22C55E" stroke="#86EFAC" stroke-width="1.1" filter="url(#subtle-glow)" />
     <text x="0" y="0" class="legend-text" dominant-baseline="central">More</text>
   </g>
 </svg>

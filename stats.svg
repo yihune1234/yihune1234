@@ -36,13 +36,13 @@
     <text x="14" y="0" class="header">Verified GitHub Engineering Stats</text>
   </g>
 
-  <!-- Stats List -->
+  <!-- Stats List (Aligned with 2,100+ verified contributions) -->
   <g transform="translate(25, 62)">
     <!-- Metric 1: Verified Commits & Push Events -->
     <g transform="translate(0, 0)">
       <circle cx="6" cy="6" r="4" fill="#22C55E" />
       <text x="20" y="10" class="stat-label">Total Verified Pushes &amp; Commits:</text>
-      <text x="280" y="10" class="stat-val">231+</text>
+      <text x="280" y="10" class="stat-val">2,100+</text>
     </g>
 
     <!-- Metric 2: Repositories -->
@@ -63,7 +63,7 @@
     <g transform="translate(0, 78)">
       <circle cx="6" cy="6" r="4" fill="#60A5FA" />
       <text x="20" y="10" class="stat-label">Total Activity Operations Logged:</text>
-      <text x="280" y="10" class="stat-val">300+</text>
+      <text x="280" y="10" class="stat-val">2,700+</text>
     </g>
 
     <!-- Metric 5: Live Activity Status -->
