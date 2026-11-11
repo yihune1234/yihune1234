@@ -303,7 +303,7 @@ flowchart TD
 <table border="0" cellpadding="0" cellspacing="0">
   <tr>
     <td valign="top" align="center">
-      <img src="https://github-readme-stats-eight-theta.vercel.app/api?username=yihune1234&show_icons=true&bg_color=071126&title_color=00D2FF&text_color=CBD5E1&icon_color=38BDF8&border_color=162E56&border_radius=10&cache_seconds=1800" alt="Yihune's GitHub Stats" />
+      <img src="https://raw.githubusercontent.com/yihune1234/yihune1234/main/stats.svg" alt="Verified Engineering Stats" />
     </td>
     <td width="20"></td>
     <td valign="top" align="center">
@@ -311,11 +311,6 @@ flowchart TD
     </td>
   </tr>
 </table>
-
-<br/>
-
-<!-- STREAK STATS -->
-<img src="https://streak-stats.demolab.com/?user=yihune1234&background=071126&border=162E56&stroke=00D2FF&ring=00D2FF&fire=00D2FF&currStreakLabel=00D2FF&currStreakNum=FFFFFF&sideNums=FFFFFF&sideLabels=94A3B8&dates=94A3B8&border_radius=10" alt="GitHub Streak" />
 
 <br/><br/>
 
