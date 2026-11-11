@@ -315,6 +315,11 @@ flowchart TD
 <!-- STREAK STATS -->
 <img src="https://streak-stats.demolab.com/?user=yihune1234&background=0A0E1A&border=1F2937&stroke=00FF94&ring=00FF94&fire=00FF94&currStreakLabel=00FF94&currStreakNum=FFFFFF&sideNums=FFFFFF&sideLabels=94A3B8&dates=94A3B8&border_radius=10" alt="GitHub Streak" />
 
+<br/><br/>
+
+<!-- INFINITE CONTRIBUTION SNAKE MOTION -->
+<img src="https://raw.githubusercontent.com/yihune1234/yihune1234/main/snake.svg" width="100%" alt="Contribution Graph Snake Motion" />
+
 </div>
 
 <br/>
