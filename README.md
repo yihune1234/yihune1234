@@ -138,97 +138,83 @@
 
 ### 🛠️ &nbsp;Tech Arsenal & Capabilities
 
-<div align="center">
-
-<!-- LANGUAGES -->
-<p><strong>💻 Languages</strong></p>
-<img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
-&nbsp;
-<img src="https://img.shields.io/badge/JavaScript_(ES6+)-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript" />
-&nbsp;
-<img src="https://img.shields.io/badge/Python_3-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
-&nbsp;
-<img src="https://img.shields.io/badge/PHP_8+-777BB4?style=for-the-badge&logo=php&logoColor=white" alt="PHP" />
-&nbsp;
-<img src="https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=postgresql&logoColor=white" alt="SQL" />
-&nbsp;
-<img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5" />
-&nbsp;
-<img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3" />
-
-<br/><br/>
-
-<!-- FRONTEND -->
-<p><strong>🌐 Web Frontend</strong></p>
-<img src="https://img.shields.io/badge/React_18-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React" />
-&nbsp;
-<img src="https://img.shields.io/badge/Next.js_15-000000?style=for-the-badge&logo=nextdotjs&logoColor=white" alt="Next.js" />
-&nbsp;
-<img src="https://img.shields.io/badge/Tailwind_CSS-0F172A?style=for-the-badge&logo=tailwindcss&logoColor=06B6D4" alt="Tailwind CSS" />
-&nbsp;
-<img src="https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white" alt="Vite" />
-&nbsp;
-<img src="https://img.shields.io/badge/Redux_Toolkit-764ABC?style=for-the-badge&logo=redux&logoColor=white" alt="Redux" />
-
-<br/><br/>
-
-<!-- MOBILE -->
-<p><strong>📱 Mobile Engineering</strong></p>
-<img src="https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React Native" />
-&nbsp;
-<img src="https://img.shields.io/badge/Expo-000020?style=for-the-badge&logo=expo&logoColor=white" alt="Expo" />
-&nbsp;
-<img src="https://img.shields.io/badge/Android_SDK-3DDC84?style=for-the-badge&logo=android&logoColor=white" alt="Android" />
-&nbsp;
-<img src="https://img.shields.io/badge/iOS_Ecosystem-000000?style=for-the-badge&logo=apple&logoColor=white" alt="iOS" />
-
-<br/><br/>
-
-<!-- BACKEND & APIS -->
-<p><strong>⚙️ Backend &amp; Microservices</strong></p>
-<img src="https://img.shields.io/badge/NestJS-E0234E?style=for-the-badge&logo=nestjs&logoColor=white" alt="NestJS" />
-&nbsp;
-<img src="https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white" alt="Django" />
-&nbsp;
-<img src="https://img.shields.io/badge/Django_REST-A30000?style=for-the-badge&logo=django&logoColor=white" alt="DRF" />
-&nbsp;
-<img src="https://img.shields.io/badge/Node.js-1A4731?style=for-the-badge&logo=nodedotjs&logoColor=3ECF8E" alt="Node.js" />
-&nbsp;
-<img src="https://img.shields.io/badge/Express.js-1C1C1C?style=for-the-badge&logo=express&logoColor=white" alt="Express" />
-&nbsp;
-<img src="https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white" alt="Laravel" />
-
-<br/><br/>
-
-<!-- DATABASES & ORMS -->
-<p><strong>🗄️ Databases &amp; ORMs</strong></p>
-<img src="https://img.shields.io/badge/PostgreSQL-336791?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL" />
-&nbsp;
-<img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL" />
-&nbsp;
-<img src="https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white" alt="MongoDB" />
-&nbsp;
-<img src="https://img.shields.io/badge/SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=white" alt="SQLite" />
-&nbsp;
-<img src="https://img.shields.io/badge/Prisma_ORM-2D3748?style=for-the-badge&logo=prisma&logoColor=white" alt="Prisma" />
-
-<br/><br/>
-
-<!-- TOOLS & DEVOPS -->
-<p><strong>🔧 DevOps, Cloud &amp; Tools</strong></p>
-<img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker" />
-&nbsp;
-<img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git" />
-&nbsp;
-<img src="https://img.shields.io/badge/GitHub_Actions-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
-&nbsp;
-<img src="https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white" alt="Postman" />
-&nbsp;
-<img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux" />
-&nbsp;
-<img src="https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white" alt="VS Code" />
-
-</div>
+<table width="100%" border="0" cellpadding="10" cellspacing="0">
+  <tr>
+    <td width="50%" valign="top" style="border: 1px solid #1E293B; border-radius: 8px; background: #0A0E1A;">
+      <h4>💻 Languages &amp; Core Foundations</h4>
+      <p>
+        <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" />
+        <img src="https://img.shields.io/badge/JavaScript_(ES6+)-F7DF1E?style=flat-square&logo=javascript&logoColor=black" />
+        <img src="https://img.shields.io/badge/Python_3-3776AB?style=flat-square&logo=python&logoColor=white" />
+        <img src="https://img.shields.io/badge/PHP_8+-777BB4?style=flat-square&logo=php&logoColor=white" />
+        <img src="https://img.shields.io/badge/SQL-4479A1?style=flat-square&logo=postgresql&logoColor=white" />
+        <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white" />
+        <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white" />
+      </p>
+      <p><em>Focus: Strict Type Safety • Asynchronous Concurrency • Functional &amp; OOP Design • Clean Code Practices</em></p>
+    </td>
+    <td width="50%" valign="top" style="border: 1px solid #1E293B; border-radius: 8px; background: #0A0E1A;">
+      <h4>🌐 Web Frontend Engineering</h4>
+      <p>
+        <img src="https://img.shields.io/badge/Next.js_15-000000?style=flat-square&logo=nextdotjs&logoColor=white" />
+        <img src="https://img.shields.io/badge/React_18-20232A?style=flat-square&logo=react&logoColor=61DAFB" />
+        <img src="https://img.shields.io/badge/Tailwind_CSS-0F172A?style=flat-square&logo=tailwindcss&logoColor=06B6D4" />
+        <img src="https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white" />
+        <img src="https://img.shields.io/badge/Redux_Toolkit-764ABC?style=flat-square&logo=redux&logoColor=white" />
+      </p>
+      <p><em>Focus: Server Components &amp; SSR • Responsive Design Systems • Fluid Micro-Interactions • State Architecture</em></p>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top" style="border: 1px solid #1E293B; border-radius: 8px; background: #0A0E1A;">
+      <h4>📱 Mobile App Architecture</h4>
+      <p>
+        <img src="https://img.shields.io/badge/React_Native-20232A?style=flat-square&logo=react&logoColor=61DAFB" />
+        <img src="https://img.shields.io/badge/Expo-000020?style=flat-square&logo=expo&logoColor=white" />
+        <img src="https://img.shields.io/badge/Android_SDK-3DDC84?style=flat-square&logo=android&logoColor=white" />
+        <img src="https://img.shields.io/badge/iOS_Ecosystem-000000?style=flat-square&logo=apple&logoColor=white" />
+      </p>
+      <p><em>Focus: Cross-Platform Native Apps • 60 FPS Fluid Navigation • Offline-First SQLite • Native Sensor &amp; Map APIs</em></p>
+    </td>
+    <td width="50%" valign="top" style="border: 1px solid #1E293B; border-radius: 8px; background: #0A0E1A;">
+      <h4>⚙️ Backend &amp; Microservices</h4>
+      <p>
+        <img src="https://img.shields.io/badge/NestJS-E0234E?style=flat-square&logo=nestjs&logoColor=white" />
+        <img src="https://img.shields.io/badge/Django-092E20?style=flat-square&logo=django&logoColor=white" />
+        <img src="https://img.shields.io/badge/Django_REST-A30000?style=flat-square&logo=django&logoColor=white" />
+        <img src="https://img.shields.io/badge/Node.js-1A4731?style=flat-square&logo=nodedotjs&logoColor=3ECF8E" />
+        <img src="https://img.shields.io/badge/Express.js-1C1C1C?style=flat-square&logo=express&logoColor=white" />
+        <img src="https://img.shields.io/badge/Laravel_11-FF2D20?style=flat-square&logo=laravel&logoColor=white" />
+      </p>
+      <p><em>Focus: Clean Modular Architecture • RESTful APIs • JWT &amp; Role-Based Access Control • Swagger/OpenAPI Specs</em></p>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top" style="border: 1px solid #1E293B; border-radius: 8px; background: #0A0E1A;">
+      <h4>🗄️ Database Systems &amp; ORMs</h4>
+      <p>
+        <img src="https://img.shields.io/badge/PostgreSQL-336791?style=flat-square&logo=postgresql&logoColor=white" />
+        <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white" />
+        <img src="https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white" />
+        <img src="https://img.shields.io/badge/SQLite-003B57?style=flat-square&logo=sqlite&logoColor=white" />
+        <img src="https://img.shields.io/badge/Prisma_ORM-2D3748?style=flat-square&logo=prisma&logoColor=white" />
+      </p>
+      <p><em>Focus: Schema Normalization • Query Indexing &amp; Optimization • ACID Guarantees • NoSQL Collections</em></p>
+    </td>
+    <td width="50%" valign="top" style="border: 1px solid #1E293B; border-radius: 8px; background: #0A0E1A;">
+      <h4>🔧 DevOps, Cloud &amp; Tooling</h4>
+      <p>
+        <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" />
+        <img src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white" />
+        <img src="https://img.shields.io/badge/GitHub_Actions-181717?style=flat-square&logo=github&logoColor=white" />
+        <img src="https://img.shields.io/badge/Postman-FF6C37?style=flat-square&logo=postman&logoColor=white" />
+        <img src="https://img.shields.io/badge/Linux_CLI-FCC624?style=flat-square&logo=linux&logoColor=black" />
+        <img src="https://img.shields.io/badge/VS_Code-007ACC?style=flat-square&logo=visualstudiocode&logoColor=white" />
+      </p>
+      <p><em>Focus: Multi-Stage Containerization • Automated CI/CD Pipelines • Server Hardening • Automated Testing</em></p>
+    </td>
+  </tr>
+</table>
 
 <br/>
 
@@ -236,40 +222,65 @@
 
 ### 🏗️ &nbsp;Full-Stack Architectural Flow
 
+```mermaid
+flowchart TD
+    classDef client fill:#0B1324,stroke:#00D2FF,stroke-width:1.5px,color:#fff;
+    classDef gateway fill:#0A192F,stroke:#00FF94,stroke-width:1.5px,color:#fff;
+    classDef service fill:#111C35,stroke:#818CF8,stroke-width:1.5px,color:#fff;
+    classDef data fill:#080F1D,stroke:#F59E0B,stroke-width:1.5px,color:#fff;
+
+    subgraph CLIENT ["📱 CLIENT & INTERFACE LAYER"]
+        W["🌐 Next.js 15 & React 18<br/><i>Tailwind CSS • Responsive UX</i>"]:::client
+        M["📱 React Native & Expo<br/><i>Android & iOS Cross-Platform</i>"]:::client
+    end
+
+    subgraph INGRESS ["🛡️ API GATEWAY & SECURITY INGRESS"]
+        GW["API Gateway & Reverse Proxy<br/><i>CORS • Rate Limiting • SSL/TLS</i>"]:::gateway
+        SEC["Auth & Payload Validation<br/><i>JWT Verification • RBAC • DTOs</i>"]:::gateway
+    end
+
+    subgraph SERVICES ["⚙️ APPLICATION & BUSINESS DOMAIN"]
+        NEST["🛡️ NestJS Microservices<br/><i>Clean Architecture • Prisma ORM</i>"]:::service
+        DJANGO["🐍 Django REST Engine<br/><i>Async Tasks • Celery Workers</i>"]:::service
+        LARAVEL["🐘 Laravel API Core<br/><i>Queues & Jobs • Eloquent</i>"]:::service
+    end
+
+    subgraph STORAGE ["🗄️ PERSISTENCE & CACHE LAYER"]
+        PG[("🐘 PostgreSQL / MySQL<br/><i>Relational Schema • ACID</i>")]:::data
+        MONGO[("🍃 MongoDB<br/><i>Document Collections</i>")]:::data
+        REDIS[("⚡ Redis Cache<br/><i>Sessions & Data Caching</i>")]:::data
+    end
+
+    W --> GW
+    M --> GW
+    GW --> SEC
+    SEC --> NEST
+    SEC --> DJANGO
+    SEC --> LARAVEL
+
+    NEST --> PG
+    NEST --> REDIS
+    DJANGO --> PG
+    DJANGO --> MONGO
+    LARAVEL --> PG
+```
+
+<div align="center">
+
 ```
  ┌──────────────────────────────────────────────────────────────────────────┐
- │                    YIHUNE'S FULL-STACK ARCHITECTURE                      │
+ │                  END-TO-END REQUEST LIFECYCLE PATTERN                    │
  │                                                                          │
- │   CLIENT LAYER                                                           │
- │   ┌────────────────────────┐         ┌──────────────────────────┐        │
- │   │   🌐  WEB PLATFORM     │         │   📱  MOBILE APPS        │        │
- │   │   React 18 • Next.js   │         │   React Native • Expo    │        │
- │   │   Tailwind • TypeScript│         │   Android & iOS Native   │        │
- │   └────────────┬───────────┘         └─────────────┬────────────┘        │
- │                │                                   │                     │
- │   API GATEWAY  └─────────────────┬─────────────────┘                     │
- │                                  ▼                                       │
- │   ┌─────────────────────────────────────────────────────────────┐        │
- │   │         RESTful API  /  JWT  /  Rate-Limiter  /  Swagger    │        │
- │   │         NestJS Modules  •  Django REST  •  Express API      │        │
- │   └──────────────────────────────┬──────────────────────────────┘        │
- │                                  │                                       │
- │   APPLICATION & DOMAIN SERVICES  ▼                                       │
- │   ┌──────────────┐       ┌─────────────────┐       ┌──────────────┐      │
- │   │  🐍 Django   │       │   🛡️ NestJS     │       │  🐘 Laravel  │      │
- │   │  + DRF APIs  │       │   + Prisma ORM  │       │  + Eloquent  │      │
- │   └──────┬───────┘       └────────┬────────┘       └──────┬───────┘      │
- │          └────────────────────────┼───────────────────────┘              │
- │                                   ▼                                      │
- │   DATA PERSISTENCE LAYER                                                 │
- │   ┌──────────────┐       ┌─────────────────┐       ┌──────────────┐      │
- │   │  PostgreSQL  │       │      MySQL      │       │   MongoDB    │      │
- │   │  Relational  │       │   ACID Tables   │       │  NoSQL Docs  │      │
- │   └──────────────┘       └─────────────────┘       └──────────────┘      │
+ │  1. CLIENT INGRESS  ───► Type-Safe Request (Next.js App / React Native)  │
+ │  2. GATEWAY & AUTH  ───► JWT Verification, Rate-Limiting & DTO Validation │
+ │  3. DOMAIN SERVICE  ───► Clean Business Logic, Services & Event Handling │
+ │  4. PERSISTENCE     ───► Prisma ORM / SQL Transactions + Redis Caching   │
  │                                                                          │
  │     🔒 Security-First   ⚡ Scalable Design   🧩 Modular Clean Code       │
  └──────────────────────────────────────────────────────────────────────────┘
 ```
+
+</div>
 
 <br/>
 
@@ -279,6 +290,31 @@
 
 <div align="center">
 
+<!-- AT A GLANCE METRICS COUNTER -->
+<table width="100%" border="0" cellpadding="8" cellspacing="0">
+  <tr>
+    <td width="25%" align="center" style="border: 1px solid #1E293B; border-radius: 8px; background: #0A0E1A;">
+      <h3 style="color:#00FF94; margin:0;">20+</h3>
+      <p style="margin:4px 0 0; color:#94A3B8; font-size:12px;">Repositories & Systems</p>
+    </td>
+    <td width="25%" align="center" style="border: 1px solid #1E293B; border-radius: 8px; background: #0A0E1A;">
+      <h3 style="color:#00D2FF; margin:0;">4+</h3>
+      <p style="margin:4px 0 0; color:#94A3B8; font-size:12px;">Backend Frameworks</p>
+    </td>
+    <td width="25%" align="center" style="border: 1px solid #1E293B; border-radius: 8px; background: #0A0E1A;">
+      <h3 style="color:#FACC15; margin:0;">100%</h3>
+      <p style="margin:4px 0 0; color:#94A3B8; font-size:12px;">Type-Safe Codebases</p>
+    </td>
+    <td width="25%" align="center" style="border: 1px solid #1E293B; border-radius: 8px; background: #0A0E1A;">
+      <h3 style="color:#FF4F5E; margin:0;">⚡ Live</h3>
+      <p style="margin:4px 0 0; color:#94A3B8; font-size:12px;">Open to Opportunities</p>
+    </td>
+  </tr>
+</table>
+
+<br/>
+
+<!-- DUAL STATS CARDS -->
 <table border="0" cellpadding="0" cellspacing="0">
   <tr>
     <td valign="top" align="center">
@@ -293,6 +329,7 @@
 
 <br/>
 
+<!-- STREAK STATS -->
 <img src="https://streak-stats.demolab.com/?user=yihune1234&background=0A0E1A&border=1F2937&stroke=00FF94&ring=00FF94&fire=00FF94&currStreakLabel=00FF94&currStreakNum=FFFFFF&sideNums=FFFFFF&sideLabels=94A3B8&dates=94A3B8&border_radius=10" alt="GitHub Streak" />
 
 </div>
@@ -303,15 +340,48 @@
 
 ### 🎯 &nbsp;Current Focus & 2026 Engineering Goals
 
-<div align="center">
-
-| 📱 Mobile Architecture | 🐍 Distributed Backends | 🛡️ Clean Architecture | 🐳 Cloud & DevOps |
-|:---|:---|:---|:---|
-| • React Native TurboModules | • Django Channels & WebSockets | • NestJS Microservices & CQRS | • Docker containerization |
-| • Offline sync & SQLite caching | • Celery distributed async tasks | • Prisma ORM & schema design | • CI/CD automated deployments |
-| • Push notifications & linking | • High-concurrency caching | • Automated Jest unit testing | • Production Nginx & cloud deploy |
-
-</div>
+<table width="100%" border="0" cellpadding="10" cellspacing="0">
+  <tr>
+    <td width="50%" valign="top" style="border: 1px solid #1E293B; border-radius: 8px; background: #0A0E1A;">
+      <h4>📱 Track 1: Next-Gen Mobile Architecture</h4>
+      <p><img src="https://img.shields.io/badge/STATUS-ACTIVE_SPRINT-00FF94?style=flat-square&labelColor=0A0E1A" /></p>
+      <ul>
+        <li><strong>React Native New Architecture:</strong> Deep integration with Fabric renderer and TurboModules leveraging native C++ JSI bindings.</li>
+        <li><strong>Offline-First Resilience:</strong> Client-side caching and delta data reconciliation via SQLite &amp; WatermelonDB.</li>
+        <li><strong>Mobile Telemetry:</strong> Native push notification pipelines (Expo/FCM), deep-linking routing, and fluid gestures.</li>
+      </ul>
+    </td>
+    <td width="50%" valign="top" style="border: 1px solid #1E293B; border-radius: 8px; background: #0A0E1A;">
+      <h4>🛡️ Track 2: Enterprise Backend &amp; Microservices</h4>
+      <p><img src="https://img.shields.io/badge/STATUS-IN_PROGRESS-00D2FF?style=flat-square&labelColor=0A0E1A" /></p>
+      <ul>
+        <li><strong>Clean Architecture &amp; NestJS:</strong> Domain-Driven Design (DDD), CQRS patterns, and decoupled dependency injection.</li>
+        <li><strong>Asynchronous Message Queues:</strong> Event-driven communication with Redis Streams, Celery distributed tasks, and RabbitMQ.</li>
+        <li><strong>Contract-First API Design:</strong> Interactive Swagger/OpenAPI v3 specifications, strict DTO validation, and automated client generation.</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top" style="border: 1px solid #1E293B; border-radius: 8px; background: #0A0E1A;">
+      <h4>☁️ Track 3: Cloud Native, DevOps &amp; CI/CD</h4>
+      <p><img src="https://img.shields.io/badge/STATUS-CONTINUOUS-FACC15?style=flat-square&labelColor=0A0E1A" /></p>
+      <ul>
+        <li><strong>Containerization:</strong> Multi-stage Docker builds optimized for minimal production image footprint and zero-leak secrets.</li>
+        <li><strong>Automated Workflows:</strong> GitHub Actions CI/CD pipelines enforcing linting, type-checking, Jest testing, and automated deployment.</li>
+        <li><strong>Production Infrastructure:</strong> Linux server hardening, Nginx reverse proxy configuration, and SSL/TLS automation.</li>
+      </ul>
+    </td>
+    <td width="50%" valign="top" style="border: 1px solid #1E293B; border-radius: 8px; background: #0A0E1A;">
+      <h4>⚡ Track 4: Performance &amp; Database Optimization</h4>
+      <p><img src="https://img.shields.io/badge/STATUS-EXPANDING-C084FC?style=flat-square&labelColor=0A0E1A" /></p>
+      <ul>
+        <li><strong>Query Execution Plans:</strong> Profiling and indexing with <code>EXPLAIN ANALYZE</code> in PostgreSQL/MySQL to eliminate N+1 bottlenecks.</li>
+        <li><strong>Multi-Tier Caching:</strong> In-memory Redis caching layers with intelligent TTL invalidation strategies.</li>
+        <li><strong>Modern Web Vitals:</strong> Next.js 15 Server Components, streaming SSR, and edge compute performance tuning.</li>
+      </ul>
+    </td>
+  </tr>
+</table>
 
 <br/>
 
