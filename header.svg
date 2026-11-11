@@ -1,113 +1,161 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="220" viewBox="0 0 900 220">
-  <rect width="900" height="220" fill="#0A0E1A"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="240" viewBox="0 0 900 240" fill="none">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#070A12" />
+      <stop offset="50%" stop-color="#0A0E1A" />
+      <stop offset="100%" stop-color="#050811" />
+    </linearGradient>
 
-  <rect width="900" height="3" y="0" fill="#00FF94"/>
-  <rect width="900" height="3" y="217" fill="#00BFFF"/>
+    <!-- Accent Gradient -->
+    <linearGradient id="accent-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00FF94" />
+      <stop offset="50%" stop-color="#00E5FF" />
+      <stop offset="100%" stop-color="#3B82F6" />
+    </linearGradient>
 
-  <!-- Decorative dots -->
-  <g fill="#00FF94" opacity="0.2">
-    <circle cx="50" cy="40" r="2"/>
-    <circle cx="100" cy="40" r="2"/>
-    <circle cx="150" cy="40" r="2"/>
-    <circle cx="200" cy="40" r="2"/>
-    <circle cx="700" cy="40" r="2"/>
-    <circle cx="750" cy="40" r="2"/>
-    <circle cx="800" cy="40" r="2"/>
-    <circle cx="850" cy="40" r="2"/>
+    <linearGradient id="border-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00FF94" stop-opacity="0.8" />
+      <stop offset="50%" stop-color="#00D2FF" stop-opacity="0.2" />
+      <stop offset="100%" stop-color="#00FF94" stop-opacity="0.8" />
+    </linearGradient>
 
-    <circle cx="50" cy="180" r="2"/>
-    <circle cx="100" cy="180" r="2"/>
-    <circle cx="150" cy="180" r="2"/>
-    <circle cx="750" cy="180" r="2"/>
-    <circle cx="800" cy="180" r="2"/>
-    <circle cx="850" cy="180" r="2"/>
+    <!-- Radial Glows -->
+    <radialGradient id="glow-left" cx="15%" cy="30%" r="40%">
+      <stop offset="0%" stop-color="#00FF94" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="#00FF94" stop-opacity="0" />
+    </radialGradient>
+
+    <radialGradient id="glow-right" cx="85%" cy="70%" r="40%">
+      <stop offset="0%" stop-color="#00D2FF" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="#00D2FF" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Grid Pattern -->
+    <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#1E293B" stroke-width="0.7" stroke-opacity="0.4" />
+    </pattern>
+  </defs>
+
+  <style>
+    .title-text {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'JetBrains Mono', 'Fira Code', monospace;
+      font-weight: 800;
+      letter-spacing: 5px;
+      font-size: 42px;
+      fill: url(#accent-grad);
+    }
+    .sub-text {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      font-weight: 500;
+      letter-spacing: 2px;
+      font-size: 15px;
+      fill: #CBD5E1;
+    }
+    .tag-text {
+      font-family: 'JetBrains Mono', 'Fira Code', monospace;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 1.5px;
+      fill: #00FF94;
+    }
+    .pill-text {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      font-size: 11px;
+      font-weight: 600;
+      fill: #94A3B8;
+      letter-spacing: 0.5px;
+    }
+    .code-accent {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 13px;
+      fill: #00FF94;
+      opacity: 0.7;
+    }
+  </style>
+
+  <!-- Background Base -->
+  <rect width="900" height="240" rx="14" fill="url(#bg-grad)" />
+  <rect width="900" height="240" rx="14" fill="url(#grid)" />
+
+  <!-- Ambient Glow -->
+  <rect width="900" height="240" rx="14" fill="url(#glow-left)" />
+  <rect width="900" height="240" rx="14" fill="url(#glow-right)" />
+
+  <!-- Outer Rounded Border -->
+  <rect x="1" y="1" width="898" height="238" rx="13" fill="none" stroke="#1E293B" stroke-width="1.5" />
+  <path d="M 40 1 L 860 1" stroke="url(#border-grad)" stroke-width="2" />
+  <path d="M 40 239 L 860 239" stroke="url(#border-grad)" stroke-width="2" />
+
+  <!-- Decorative Corner Accents -->
+  <path d="M 20 30 L 20 20 L 30 20" stroke="#00FF94" stroke-width="2" fill="none" opacity="0.8" />
+  <path d="M 880 30 L 880 20 L 870 20" stroke="#00D2FF" stroke-width="2" fill="none" opacity="0.8" />
+  <path d="M 20 210 L 20 220 L 30 220" stroke="#00FF94" stroke-width="2" fill="none" opacity="0.8" />
+  <path d="M 880 210 L 880 220 L 870 220" stroke="#00D2FF" stroke-width="2" fill="none" opacity="0.8" />
+
+  <!-- Terminal Header Bar Dots -->
+  <g transform="translate(36, 26)">
+    <circle cx="0" cy="0" r="4.5" fill="#EF4444" opacity="0.8" />
+    <circle cx="14" cy="0" r="4.5" fill="#F59E0B" opacity="0.8" />
+    <circle cx="28" cy="0" r="4.5" fill="#10B981" opacity="0.8" />
+    <text x="44" y="3.5" class="code-accent" font-size="11">~/portfolio/yihune-belay</text>
   </g>
 
-  <!-- Circuit lines -->
-  <g fill="none" stroke="#00FF94" stroke-width="1" opacity="0.3">
-    <polyline points="0,55 80,55 80,95 140,95"/>
-    <polyline points="0,95 40,95 40,130 0,130"/>
-    <polyline points="0,160 60,160 60,140 120,140"/>
+  <!-- Top Right Status Pill -->
+  <g transform="translate(680, 18)">
+    <rect width="180" height="24" rx="12" fill="#0E1726" stroke="#00FF94" stroke-width="1" stroke-opacity="0.4" />
+    <circle cx="16" cy="12" r="4" fill="#00FF94" />
+    <circle cx="16" cy="12" r="7" fill="#00FF94" opacity="0.25" />
+    <text x="28" y="15.5" class="pill-text" fill="#00FF94">OPEN TO WORK • REMOTE</text>
   </g>
 
-  <g fill="none" stroke="#00BFFF" stroke-width="1" opacity="0.3">
-    <polyline points="900,55 820,55 820,95 760,95"/>
-    <polyline points="900,95 860,95 860,130 900,130"/>
-    <polyline points="900,160 840,160 840,140 780,140"/>
+  <!-- Center Decorative Bracket Icons -->
+  <text x="60" y="130" class="code-accent" font-size="44" opacity="0.15">&lt;/&gt;</text>
+  <text x="800" y="130" class="code-accent" font-size="44" opacity="0.15">{ ; }</text>
+
+  <!-- Main Content Centered -->
+  <g text-anchor="middle" transform="translate(450, 0)">
+    <!-- Small Tagline -->
+    <text y="78" class="tag-text">✦ SOFTWARE ENGINEER &amp; FULL-STACK DEVELOPER ✦</text>
+
+    <!-- Main Title -->
+    <text y="125" class="title-text">YIHUNE BELAY</text>
+
+    <!-- Subtitle -->
+    <text y="158" class="sub-text">Crafting Scalable Web Applications &amp; High-Performance Mobile Apps</text>
+
+    <!-- Tech Stack Mini Badges Bar -->
+    <g transform="translate(-320, 184)">
+      <!-- Pill 1: Next.js & React -->
+      <g transform="translate(0, 0)">
+        <rect width="90" height="24" rx="6" fill="#131C2E" stroke="#334155" stroke-width="1"/>
+        <text x="45" y="16" text-anchor="middle" class="pill-text">React / Next</text>
+      </g>
+      <!-- Pill 2: React Native -->
+      <g transform="translate(100, 0)">
+        <rect width="105" height="24" rx="6" fill="#131C2E" stroke="#334155" stroke-width="1"/>
+        <text x="52" y="16" text-anchor="middle" class="pill-text">React Native</text>
+      </g>
+      <!-- Pill 3: TypeScript -->
+      <g transform="translate(215, 0)">
+        <rect width="95" height="24" rx="6" fill="#131C2E" stroke="#334155" stroke-width="1"/>
+        <text x="47" y="16" text-anchor="middle" class="pill-text">TypeScript</text>
+      </g>
+      <!-- Pill 4: Django / Python -->
+      <g transform="translate(320, 0)">
+        <rect width="115" height="24" rx="6" fill="#131C2E" stroke="#334155" stroke-width="1"/>
+        <text x="57" y="16" text-anchor="middle" class="pill-text">Django / Python</text>
+      </g>
+      <!-- Pill 5: Node.js / NestJS -->
+      <g transform="translate(445, 0)">
+        <rect width="105" height="24" rx="6" fill="#131C2E" stroke="#334155" stroke-width="1"/>
+        <text x="52" y="16" text-anchor="middle" class="pill-text">Node / NestJS</text>
+      </g>
+      <!-- Pill 6: Laravel -->
+      <g transform="translate(560, 0)">
+        <rect width="80" height="24" rx="6" fill="#131C2E" stroke="#334155" stroke-width="1"/>
+        <text x="40" y="16" text-anchor="middle" class="pill-text">Laravel</text>
+      </g>
+    </g>
   </g>
-
-  <!-- Corner decorations -->
-  <g fill="none" stroke="#00FF94" stroke-width="2" opacity="0.5">
-    <polyline points="16,16 16,30 30,30"/>
-    <polyline points="884,16 870,16 870,30"/>
-    <polyline points="16,204 16,190 30,190"/>
-    <polyline points="884,204 870,204 870,190"/>
-  </g>
-
-  <!-- Center indicator -->
-  <circle cx="450" cy="25" r="3" fill="#00FF94"/>
-  <circle cx="430" cy="25" r="2" fill="#00FF94" opacity="0.4"/>
-  <circle cx="470" cy="25" r="2" fill="#00FF94" opacity="0.4"/>
-
-  <!-- Brackets -->
-  <text
-    x="50"
-    y="125"
-    font-family="monospace"
-    font-size="50"
-    fill="#00FF94"
-    opacity="0.2"
-  >{</text>
-
-  <text
-    x="850"
-    y="125"
-    font-family="monospace"
-    font-size="50"
-    fill="#00FF94"
-    opacity="0.2"
-  >}</text>
-
-  <!-- Name -->
-  <text
-    x="450"
-    y="115"
-    text-anchor="middle"
-    font-family="monospace"
-    font-size="52"
-    font-weight="bold"
-    letter-spacing="6"
-    fill="#00FF94"
-  >YIHUNE BELAY</text>
-
-  <!-- Subtitle -->
-  <text
-    x="450"
-    y="150"
-    text-anchor="middle"
-    font-family="monospace"
-    font-size="16"
-    letter-spacing="2"
-    fill="#FFFFFF"
-  >Full-Stack Web &amp; Mobile Developer</text>
-
-  <!-- Tech stack -->
-  <text
-    x="450"
-    y="177"
-    text-anchor="middle"
-    font-family="monospace"
-    font-size="11"
-    letter-spacing="2"
-    fill="#00BFFF"
-  >React · React Native · Django · Laravel · Node.js</text>
-
-  <!-- Bottom waves -->
-  <path
-    d="M0 195 Q225 180 450 200 Q675 220 900 195"
-    fill="none"
-    stroke="#00FF94"
-    stroke-width="1"
-    opacity="0.25"
-  />
 </svg>
