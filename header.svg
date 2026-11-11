@@ -1,161 +1,234 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="240" viewBox="0 0 900 240" fill="none">
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="260" viewBox="0 0 900 260" fill="none">
   <defs>
-    <!-- Background Gradient -->
+    <!-- Background Gradients -->
     <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#070A12" />
+      <stop offset="0%" stop-color="#050811" />
       <stop offset="50%" stop-color="#0A0E1A" />
-      <stop offset="100%" stop-color="#050811" />
+      <stop offset="100%" stop-color="#060C18" />
     </linearGradient>
 
-    <!-- Accent Gradient -->
-    <linearGradient id="accent-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+    <!-- Animated Accent Laser Gradient -->
+    <linearGradient id="laser-grad" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#00FF94" />
-      <stop offset="50%" stop-color="#00E5FF" />
-      <stop offset="100%" stop-color="#3B82F6" />
+      <stop offset="35%" stop-color="#00E5FF" />
+      <stop offset="70%" stop-color="#3B82F6" />
+      <stop offset="100%" stop-color="#00FF94" />
     </linearGradient>
 
-    <linearGradient id="border-grad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#00FF94" stop-opacity="0.8" />
-      <stop offset="50%" stop-color="#00D2FF" stop-opacity="0.2" />
-      <stop offset="100%" stop-color="#00FF94" stop-opacity="0.8" />
+    <!-- Glowing Title Gradient -->
+    <linearGradient id="title-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00FF94" />
+      <stop offset="40%" stop-color="#00F0FF" />
+      <stop offset="85%" stop-color="#FFFFFF" />
+      <stop offset="100%" stop-color="#00FF94" />
     </linearGradient>
 
     <!-- Radial Glows -->
-    <radialGradient id="glow-left" cx="15%" cy="30%" r="40%">
-      <stop offset="0%" stop-color="#00FF94" stop-opacity="0.12" />
+    <radialGradient id="glow-emerald" cx="20%" cy="30%" r="50%">
+      <stop offset="0%" stop-color="#00FF94" stop-opacity="0.16" />
       <stop offset="100%" stop-color="#00FF94" stop-opacity="0" />
     </radialGradient>
 
-    <radialGradient id="glow-right" cx="85%" cy="70%" r="40%">
-      <stop offset="0%" stop-color="#00D2FF" stop-opacity="0.12" />
+    <radialGradient id="glow-cyan" cx="80%" cy="70%" r="50%">
+      <stop offset="0%" stop-color="#00D2FF" stop-opacity="0.14" />
       <stop offset="100%" stop-color="#00D2FF" stop-opacity="0" />
     </radialGradient>
 
-    <!-- Grid Pattern -->
-    <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse">
-      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#1E293B" stroke-width="0.7" stroke-opacity="0.4" />
+    <!-- Cyber Tech Grid Pattern -->
+    <pattern id="cyber-grid" width="28" height="28" patternUnits="userSpaceOnUse">
+      <path d="M 28 0 L 0 0 0 28" fill="none" stroke="#1E293B" stroke-width="0.75" stroke-opacity="0.45" />
+      <circle cx="28" cy="28" r="0.8" fill="#00FF94" fill-opacity="0.2" />
     </pattern>
+
+    <!-- Filter for Neon Glow -->
+    <filter id="neon-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
   </defs>
 
   <style>
+    @keyframes pulseGlow {
+      0%, 100% { opacity: 0.85; filter: drop-shadow(0 0 6px rgba(0, 255, 148, 0.4)); }
+      50% { opacity: 1; filter: drop-shadow(0 0 16px rgba(0, 229, 255, 0.7)); }
+    }
+    @keyframes radarPing {
+      0% { r: 3.5px; opacity: 1; }
+      75% { r: 12px; opacity: 0; }
+      100% { r: 14px; opacity: 0; }
+    }
+    @keyframes laserRun {
+      0% { stroke-dashoffset: 0; }
+      100% { stroke-dashoffset: -1200; }
+    }
+    @keyframes scanline {
+      0% { transform: translateY(-50px); opacity: 0; }
+      15% { opacity: 0.6; }
+      85% { opacity: 0.6; }
+      100% { transform: translateY(260px); opacity: 0; }
+    }
+
     .title-text {
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'JetBrains Mono', 'Fira Code', monospace;
-      font-weight: 800;
-      letter-spacing: 5px;
-      font-size: 42px;
-      fill: url(#accent-grad);
+      font-weight: 900;
+      letter-spacing: 7px;
+      font-size: 44px;
+      fill: url(#title-grad);
+      animation: pulseGlow 4s ease-in-out infinite;
     }
-    .sub-text {
+    .tagline-badge {
+      font-family: 'JetBrains Mono', 'Fira Code', monospace;
+      font-size: 11.5px;
+      font-weight: 700;
+      letter-spacing: 2.5px;
+      fill: #00FF94;
+    }
+    .sub-role {
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
       font-weight: 500;
       letter-spacing: 2px;
       font-size: 15px;
       fill: #CBD5E1;
     }
-    .tag-text {
-      font-family: 'JetBrains Mono', 'Fira Code', monospace;
-      font-size: 12px;
-      font-weight: 600;
-      letter-spacing: 1.5px;
-      fill: #00FF94;
-    }
-    .pill-text {
+    .tech-pill {
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
       font-size: 11px;
       font-weight: 600;
-      fill: #94A3B8;
+      fill: #E2E8F0;
       letter-spacing: 0.5px;
     }
-    .code-accent {
+    .hud-meta {
       font-family: 'JetBrains Mono', monospace;
-      font-size: 13px;
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 1px;
+      fill: #64748B;
+    }
+    .status-text {
+      font-family: 'JetBrains Mono', -apple-system, BlinkMacSystemFont, sans-serif;
+      font-size: 10.5px;
+      font-weight: 700;
+      letter-spacing: 1px;
       fill: #00FF94;
-      opacity: 0.7;
+    }
+    .laser-border {
+      stroke-dasharray: 120 180;
+      animation: laserRun 10s linear infinite;
+    }
+    .beacon-pulse {
+      animation: radarPing 2s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+    }
+    .scanner-beam {
+      animation: scanline 7s ease-in-out infinite;
     }
   </style>
 
-  <!-- Background Base -->
-  <rect width="900" height="240" rx="14" fill="url(#bg-grad)" />
-  <rect width="900" height="240" rx="14" fill="url(#grid)" />
+  <!-- Canvas Background -->
+  <rect width="900" height="260" rx="16" fill="url(#bg-grad)" />
+  <rect width="900" height="260" rx="16" fill="url(#cyber-grid)" />
 
-  <!-- Ambient Glow -->
-  <rect width="900" height="240" rx="14" fill="url(#glow-left)" />
-  <rect width="900" height="240" rx="14" fill="url(#glow-right)" />
+  <!-- Dynamic Radial Glow Fields -->
+  <rect width="900" height="260" rx="16" fill="url(#glow-emerald)" />
+  <rect width="900" height="260" rx="16" fill="url(#glow-cyan)" />
 
-  <!-- Outer Rounded Border -->
-  <rect x="1" y="1" width="898" height="238" rx="13" fill="none" stroke="#1E293B" stroke-width="1.5" />
-  <path d="M 40 1 L 860 1" stroke="url(#border-grad)" stroke-width="2" />
-  <path d="M 40 239 L 860 239" stroke="url(#border-grad)" stroke-width="2" />
+  <!-- Animated Scanner Light Beam -->
+  <g class="scanner-beam">
+    <line x1="20" y1="0" x2="880" y2="0" stroke="url(#laser-grad)" stroke-width="1.2" opacity="0.4" />
+  </g>
 
-  <!-- Decorative Corner Accents -->
-  <path d="M 20 30 L 20 20 L 30 20" stroke="#00FF94" stroke-width="2" fill="none" opacity="0.8" />
-  <path d="M 880 30 L 880 20 L 870 20" stroke="#00D2FF" stroke-width="2" fill="none" opacity="0.8" />
-  <path d="M 20 210 L 20 220 L 30 220" stroke="#00FF94" stroke-width="2" fill="none" opacity="0.8" />
-  <path d="M 880 210 L 880 220 L 870 220" stroke="#00D2FF" stroke-width="2" fill="none" opacity="0.8" />
+  <!-- Base Border -->
+  <rect x="1" y="1" width="898" height="258" rx="15" fill="none" stroke="#1E293B" stroke-width="1.5" />
 
-  <!-- Terminal Header Bar Dots -->
+  <!-- Animated Laser Beam Border -->
+  <rect x="1" y="1" width="898" height="258" rx="15" fill="none" stroke="url(#laser-grad)" stroke-width="2" class="laser-border" filter="url(#neon-glow)" />
+
+  <!-- HUD Corner Accents -->
+  <path d="M 22 36 L 22 22 L 36 22" stroke="#00FF94" stroke-width="2.5" fill="none" />
+  <path d="M 878 36 L 878 22 L 864 22" stroke="#00D2FF" stroke-width="2.5" fill="none" />
+  <path d="M 22 224 L 22 238 L 36 238" stroke="#00FF94" stroke-width="2.5" fill="none" />
+  <path d="M 878 224 L 878 238 L 864 238" stroke="#00D2FF" stroke-width="2.5" fill="none" />
+
+  <!-- Top Left Terminal Title Bar -->
   <g transform="translate(36, 26)">
-    <circle cx="0" cy="0" r="4.5" fill="#EF4444" opacity="0.8" />
-    <circle cx="14" cy="0" r="4.5" fill="#F59E0B" opacity="0.8" />
-    <circle cx="28" cy="0" r="4.5" fill="#10B981" opacity="0.8" />
-    <text x="44" y="3.5" class="code-accent" font-size="11">~/portfolio/yihune-belay</text>
+    <circle cx="0" cy="0" r="4.5" fill="#EF4444" opacity="0.85" />
+    <circle cx="14" cy="0" r="4.5" fill="#F59E0B" opacity="0.85" />
+    <circle cx="28" cy="0" r="4.5" fill="#10B981" opacity="0.85" />
+    <text x="46" y="3.5" class="hud-meta">ID: YB_CORE // SYS_V2026.4 // ETHIOPIA 🇪🇹</text>
   </g>
 
-  <!-- Top Right Status Pill -->
-  <g transform="translate(680, 18)">
-    <rect width="180" height="24" rx="12" fill="#0E1726" stroke="#00FF94" stroke-width="1" stroke-opacity="0.4" />
-    <circle cx="16" cy="12" r="4" fill="#00FF94" />
-    <circle cx="16" cy="12" r="7" fill="#00FF94" opacity="0.25" />
-    <text x="28" y="15.5" class="pill-text" fill="#00FF94">OPEN TO WORK • REMOTE</text>
+  <!-- Top Right Live Status Beacon Pill -->
+  <g transform="translate(672, 18)">
+    <rect width="192" height="26" rx="13" fill="#0B1322" stroke="#00FF94" stroke-width="1" stroke-opacity="0.5" />
+    <!-- Radar ping ripple -->
+    <circle cx="18" cy="13" r="3.5" fill="none" stroke="#00FF94" stroke-width="1.5" class="beacon-pulse" />
+    <!-- Solid beacon center -->
+    <circle cx="18" cy="13" r="3.5" fill="#00FF94" />
+    <text x="32" y="16.5" class="status-text">AVAILABLE FOR WORK</text>
   </g>
 
-  <!-- Center Decorative Bracket Icons -->
-  <text x="60" y="130" class="code-accent" font-size="44" opacity="0.15">&lt;/&gt;</text>
-  <text x="800" y="130" class="code-accent" font-size="44" opacity="0.15">{ ; }</text>
+  <!-- Center HUD Geometry Icons -->
+  <text x="56" y="142" font-family="'JetBrains Mono', monospace" font-size="46" fill="#00FF94" opacity="0.12">&lt;/&gt;</text>
+  <text x="806" y="142" font-family="'JetBrains Mono', monospace" font-size="46" fill="#00D2FF" opacity="0.12">{ ; }</text>
 
-  <!-- Main Content Centered -->
+  <!-- Main Center Branding -->
   <g text-anchor="middle" transform="translate(450, 0)">
-    <!-- Small Tagline -->
-    <text y="78" class="tag-text">✦ SOFTWARE ENGINEER &amp; FULL-STACK DEVELOPER ✦</text>
+    <!-- Tech Eyebrow Tag -->
+    <g transform="translate(0, 78)">
+      <rect x="-190" y="-14" width="380" height="22" rx="11" fill="#0B1726" stroke="#1E3A5F" stroke-width="1" />
+      <text y="1.5" class="tagline-badge">⚡ FULL-STACK ARCHITECT &amp; MOBILE DEV ⚡</text>
+    </g>
 
-    <!-- Main Title -->
-    <text y="125" class="title-text">YIHUNE BELAY</text>
+    <!-- Main Name Title -->
+    <text y="130" class="title-text">YIHUNE BELAY</text>
 
-    <!-- Subtitle -->
-    <text y="158" class="sub-text">Crafting Scalable Web Applications &amp; High-Performance Mobile Apps</text>
+    <!-- Subtitle Definition -->
+    <text y="166" class="sub-role">Engineering Production Web Platforms &amp; Scalable Mobile Applications</text>
 
-    <!-- Tech Stack Mini Badges Bar -->
-    <g transform="translate(-320, 184)">
-      <!-- Pill 1: Next.js & React -->
+    <!-- Modern Interactive Tech Stack Pills -->
+    <g transform="translate(-355, 196)">
+      <!-- 1. React & Next.js -->
       <g transform="translate(0, 0)">
-        <rect width="90" height="24" rx="6" fill="#131C2E" stroke="#334155" stroke-width="1"/>
-        <text x="45" y="16" text-anchor="middle" class="pill-text">React / Next</text>
+        <rect width="105" height="26" rx="7" fill="#0D1629" stroke="#1E293B" stroke-width="1" />
+        <circle cx="14" cy="13" r="3" fill="#61DAFB" />
+        <text x="24" y="17" class="tech-pill">Next.js / React</text>
       </g>
-      <!-- Pill 2: React Native -->
-      <g transform="translate(100, 0)">
-        <rect width="105" height="24" rx="6" fill="#131C2E" stroke="#334155" stroke-width="1"/>
-        <text x="52" y="16" text-anchor="middle" class="pill-text">React Native</text>
+      <!-- 2. React Native -->
+      <g transform="translate(115, 0)">
+        <rect width="105" height="26" rx="7" fill="#0D1629" stroke="#1E293B" stroke-width="1" />
+        <circle cx="14" cy="13" r="3" fill="#00D2FF" />
+        <text x="24" y="17" class="tech-pill">React Native</text>
       </g>
-      <!-- Pill 3: TypeScript -->
-      <g transform="translate(215, 0)">
-        <rect width="95" height="24" rx="6" fill="#131C2E" stroke="#334155" stroke-width="1"/>
-        <text x="47" y="16" text-anchor="middle" class="pill-text">TypeScript</text>
+      <!-- 3. TypeScript -->
+      <g transform="translate(230, 0)">
+        <rect width="98" height="26" rx="7" fill="#0D1629" stroke="#1E293B" stroke-width="1" />
+        <circle cx="14" cy="13" r="3" fill="#3178C6" />
+        <text x="24" y="17" class="tech-pill">TypeScript</text>
       </g>
-      <!-- Pill 4: Django / Python -->
-      <g transform="translate(320, 0)">
-        <rect width="115" height="24" rx="6" fill="#131C2E" stroke="#334155" stroke-width="1"/>
-        <text x="57" y="16" text-anchor="middle" class="pill-text">Django / Python</text>
+      <!-- 4. NestJS & Node -->
+      <g transform="translate(338, 0)">
+        <rect width="112" height="26" rx="7" fill="#0D1629" stroke="#1E293B" stroke-width="1" />
+        <circle cx="14" cy="13" r="3" fill="#E0234E" />
+        <text x="24" y="17" class="tech-pill">NestJS / Node</text>
       </g>
-      <!-- Pill 5: Node.js / NestJS -->
-      <g transform="translate(445, 0)">
-        <rect width="105" height="24" rx="6" fill="#131C2E" stroke="#334155" stroke-width="1"/>
-        <text x="52" y="16" text-anchor="middle" class="pill-text">Node / NestJS</text>
+      <!-- 5. Django / Python -->
+      <g transform="translate(460, 0)">
+        <rect width="122" height="26" rx="7" fill="#0D1629" stroke="#1E293B" stroke-width="1" />
+        <circle cx="14" cy="13" r="3" fill="#00FF94" />
+        <text x="24" y="17" class="tech-pill">Django REST / Py</text>
       </g>
-      <!-- Pill 6: Laravel -->
-      <g transform="translate(560, 0)">
-        <rect width="80" height="24" rx="6" fill="#131C2E" stroke="#334155" stroke-width="1"/>
-        <text x="40" y="16" text-anchor="middle" class="pill-text">Laravel</text>
+      <!-- 6. PostgreSQL -->
+      <g transform="translate(592, 0)">
+        <rect width="118" height="26" rx="7" fill="#0D1629" stroke="#1E293B" stroke-width="1" />
+        <circle cx="14" cy="13" r="3" fill="#336791" />
+        <text x="24" y="17" class="tech-pill">PostgreSQL / ORM</text>
       </g>
     </g>
   </g>
+
+  <!-- Bottom Coordinates Meta -->
+  <text x="36" y="244" class="hud-meta">LAT: 9.0300° N · LON: 38.7400° E (EAT / UTC+3)</text>
+  <text x="864" y="244" text-anchor="end" class="hud-meta">SECURITY: STRICT · TYPE-SAFE · MODULAR</text>
 </svg>

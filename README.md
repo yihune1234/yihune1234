@@ -1,32 +1,32 @@
 <!-- ═══════════════════════════════════════════════════════════════
-     YIHUNE BELAY — GitHub Profile README
-     Full-Stack Software Engineer & Mobile Developer
+     YIHUNE BELAY — Full-Stack Software Engineer & Mobile Developer
+     Creative & Modern GitHub Profile
 ═══════════════════════════════════════════════════════════════ -->
 
 <div align="center">
 
-<!-- HERO BANNER -->
+<!-- ANIMATED CYBER HERO BANNER -->
 <a href="https://yihune-software.vercel.app/" target="_blank">
-  <img src="header.svg" width="100%" alt="Yihune Belay Banner" />
+  <img src="header.svg" width="100%" alt="Yihune Belay — Full-Stack Engineer & Mobile Architect" />
 </a>
 
 <br/><br/>
 
 <!-- DYNAMIC TYPING SVG -->
 <a href="https://github.com/yihune1234">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=19&duration=3000&pause=1000&color=00FF94&center=true&vCenter=true&width=750&lines=Software+Engineer+%26+Full-Stack+Developer;Building+Scalable+Web+Platforms+%26+Mobile+Apps;TypeScript+%E2%80%A2+React+%E2%80%A2+React+Native+%E2%80%A2+Next.js;Django+%E2%80%A2+NestJS+%E2%80%A2+Laravel+%E2%80%A2+Node.js;Open+for+Opportunities+%E2%80%A2+Remote-Ready" alt="Typing Animation" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=19&duration=3000&pause=1000&color=00FF94&center=true&vCenter=true&width=750&lines=Software+Engineer+%26+Full-Stack+Architect;Engineering+Scalable+Web+Platforms+%26+Mobile+Apps;TypeScript+%E2%80%A2+React+%E2%80%A2+React+Native+%E2%80%A2+Next.js;NestJS+%E2%80%A2+Django+%E2%80%A2+Node.js+%E2%80%A2+Laravel;Clean+Architecture+%E2%80%A2+High+Performance+%E2%80%A2+Remote-Ready" alt="Typing Animation" />
 </a>
 
 <br/><br/>
 
-<!-- QUICK BADGES -->
-[![Portfolio](https://img.shields.io/badge/PORTFOLIO-Visit_Site-00FF94?style=for-the-badge&logo=googlechrome&logoColor=0A0E1A&labelColor=0A0E1A)](https://yihune-software.vercel.app/)
+<!-- QUICK ACTION HUD BADGES -->
+[![Live Portfolio](https://img.shields.io/badge/🌐_PORTFOLIO-Visit_Site-00FF94?style=for-the-badge&logo=googlechrome&logoColor=0A0E1A&labelColor=0A0E1A)](https://yihune-software.vercel.app/)
 &nbsp;
-[![Email](https://img.shields.io/badge/EMAIL_ME-Hire_Me-00D2FF?style=for-the-badge&logo=gmail&logoColor=fff&labelColor=0A0E1A)](mailto:yihunebelay859@gmail.com)
+[![Hire Me](https://img.shields.io/badge/⚡_HIRE_ME-Email_Direct-00D2FF?style=for-the-badge&logo=gmail&logoColor=fff&labelColor=0A0E1A)](mailto:yihunebelay859@gmail.com)
 &nbsp;
-[![Status](https://img.shields.io/badge/STATUS-OPEN_TO_WORK-00FF94?style=for-the-badge&logo=github&logoColor=00FF94&labelColor=0A0E1A)](https://github.com/yihune1234)
+[![Status](https://img.shields.io/badge/💼_STATUS-OPEN_TO_WORK-00FF94?style=for-the-badge&logo=github&logoColor=00FF94&labelColor=0A0E1A)](https://github.com/yihune1234)
 &nbsp;
-[![Location](https://img.shields.io/badge/LOCATION-ETHIOPIA-FFB703?style=for-the-badge&logo=googlemaps&logoColor=FFB703&labelColor=0A0E1A)](https://github.com/yihune1234)
+[![Location](https://img.shields.io/badge/📍_ETHIOPIA-ADDIS_ABABA-FFB703?style=for-the-badge&logo=googlemaps&logoColor=FFB703&labelColor=0A0E1A)](https://github.com/yihune1234)
 
 <br/>
 
@@ -38,73 +38,38 @@
 
 ---
 
-### 👨‍💻 &nbsp;About Me
+### 💻 &nbsp;Interactive Developer Console
 
-```yaml
-engineer:
-  name: "Yihune Belay Sebsibe"
-  title: "Full-Stack Software Engineer & Mobile Developer"
-  education: "B.Sc. in Software Engineering, Haramaya University (Senior / Final Year)"
-  location: "Addis Ababa, Ethiopia 🇪🇹"
-  availability: "Available for Full-time Roles, Remote Work & High-Impact Projects"
-  core_stack: ["TypeScript", "React", "React Native", "Next.js", "Django", "NestJS", "Node.js", "PostgreSQL"]
-  passions: ["Clean Architecture", "API Design", "Cross-Platform Mobile", "Performance Optimization"]
-```
-
-- 🚀 **Full-Stack Development**: Experienced in architecting end-to-end applications from intuitive, responsive UIs (React, Next.js, Tailwind CSS) to high-throughput, secure RESTful backends (Django, NestJS, Node.js, Laravel).
-- 📱 **Mobile Engineering**: Building cross-platform iOS and Android applications with React Native and Expo, with an emphasis on offline-first storage, responsive UI, and smooth animations.
-- 🧱 **Clean Architecture Mindset**: Strong focus on maintainability, modularity, type safety, relational database normalization, and automated documentation (Swagger/OpenAPI).
-- 🌍 **Collaboration**: Fast learner, strong communicator, and comfortable operating in distributed, remote-first engineering teams.
+<div align="center">
+  <img src="terminal.svg" width="100%" alt="Developer Terminal Session" />
+</div>
 
 <br/>
 
 ---
 
-### 🌟 &nbsp;Featured Projects
+### 👨‍💻 &nbsp;About Me & Engineering DNA
 
-<table width="100%">
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
   <tr>
-    <td width="50%" valign="top">
-      <h4>🏢 <a href="https://github.com/yihune1234/InternshipApplicantManagementAPI">Internship Applicant Management API</a></h4>
-      <p>A production-ready RESTful backend built with clean architecture principles. Features JWT authentication, Prisma ORM, role-based access control, comprehensive validation, and interactive Swagger/OpenAPI documentation.</p>
-      <p>
-        <img src="https://img.shields.io/badge/NestJS-E0234E?style=flat-square&logo=nestjs&logoColor=white" />
-        <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" />
-        <img src="https://img.shields.io/badge/Prisma-2D3748?style=flat-square&logo=prisma&logoColor=white" />
-        <img src="https://img.shields.io/badge/Swagger-85EA2D?style=flat-square&logo=swagger&logoColor=black" />
-      </p>
+    <td width="180" align="center" valign="middle">
+      <img src="https://avatars.githubusercontent.com/u/197728600?v=4" width="160" height="160" style="border-radius: 50%; border: 3px solid #00FF94;" alt="Yihune Belay" />
+      <br/><br/>
+      <a href="https://yihune-software.vercel.app/" target="_blank">
+        <img src="https://img.shields.io/badge/◈_yihune--software.vercel.app-00FF94?style=flat-square&labelColor=0A0E1A" alt="Portfolio" />
+      </a>
     </td>
-    <td width="50%" valign="top">
-      <h4>🌐 <a href="https://yihune-software.vercel.app/">Developer Portfolio Web App</a></h4>
-      <p>Modern developer portfolio highlighting full-stack engineering projects, personal milestones, responsive UI interactions, and direct inquiry channels.</p>
-      <p>
-        <img src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white" />
-        <img src="https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB" />
-        <img src="https://img.shields.io/badge/TailwindCSS-0F172A?style=flat-square&logo=tailwindcss&logoColor=06B6D4" />
-        <img src="https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=vercel&logoColor=white" />
-      </p>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" valign="top">
-      <h4>📱 <a href="https://github.com/yihune1234/aritii_rider_app">Aritii Rider Mobile App</a></h4>
-      <p>Cross-platform mobile application engineered for ride-hailing and urban mobility services. Designed for low latency, smooth map interactions, and responsive navigation.</p>
-      <p>
-        <img src="https://img.shields.io/badge/React_Native-20232A?style=flat-square&logo=react&logoColor=61DAFB" />
-        <img src="https://img.shields.io/badge/Expo-000020?style=flat-square&logo=expo&logoColor=white" />
-        <img src="https://img.shields.io/badge/Android-3DDC84?style=flat-square&logo=android&logoColor=white" />
-        <img src="https://img.shields.io/badge/iOS-000000?style=flat-square&logo=apple&logoColor=white" />
-      </p>
-    </td>
-    <td width="50%" valign="top">
-      <h4>🗄️ <a href="https://github.com/yihune1234/Student-Contact-Management-System">Student Contact & Management System</a></h4>
-      <p>Full-stack relational data management system designed for academic records, secure authentication, student inquiries, and transactional record updates.</p>
-      <p>
-        <img src="https://img.shields.io/badge/PHP-777BB4?style=flat-square&logo=php&logoColor=white" />
-        <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white" />
-        <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black" />
-        <img src="https://img.shields.io/badge/Bootstrap-7952B3?style=flat-square&logo=bootstrap&logoColor=white" />
-      </p>
+    <td width="30"></td>
+    <td valign="top">
+      <h4>Hey there, I'm Yihune Belay Sebsibe! 👋</h4>
+      <p>I am a passionate <strong>Full-Stack Software Engineer &amp; Mobile App Developer</strong> currently completing my degree in <strong>Software Engineering at Haramaya University</strong>. I specialize in architecting modern web platforms, high-throughput backend microservices, and fluid cross-platform mobile apps.</p>
+      <ul>
+        <li>🎯 <strong>Core Philosophy:</strong> Clean code, strict type safety, modular microservices, and measurable performance.</li>
+        <li>💡 <strong>Frontend Mastery:</strong> Next.js, React, TypeScript, Tailwind CSS with fluid, responsive UI/UX.</li>
+        <li>📱 <strong>Mobile Engineering:</strong> React Native &amp; Expo with offline caching, high-framerate rendering, and device APIs.</li>
+        <li>🛡️ <strong>Backend Architecture:</strong> NestJS Clean Architecture, Django REST Framework, Node.js, and Laravel.</li>
+        <li>🌍 <strong>Work Preference:</strong> Open to <strong>Full-Time Roles</strong>, <strong>Contract Engineering</strong>, and <strong>Remote Collaboration</strong> across global teams.</li>
+      </ul>
     </td>
   </tr>
 </table>
@@ -113,7 +78,65 @@ engineer:
 
 ---
 
-### 🛠️ &nbsp;Tech Stack & Capabilities
+### 🌟 &nbsp;Flagship Projects & Production Systems
+
+<table width="100%" border="0" cellpadding="10" cellspacing="0">
+  <tr>
+    <td width="50%" valign="top" style="border: 1px solid #1E293B; border-radius: 8px; background: #0A0E1A;">
+      <h3>🏢 <a href="https://github.com/yihune1234/InternshipApplicantManagementAPI">Internship Applicant Management REST API</a></h3>
+      <p>Production-grade backend built with <strong>Clean Architecture</strong>. Features JWT authentication, Prisma ORM, role-based access control (RBAC), data validation with class-validator, SQLite/PostgreSQL persistence, and interactive Swagger OpenAPI documentation.</p>
+      <p>
+        <img src="https://img.shields.io/badge/NestJS-E0234E?style=flat-square&logo=nestjs&logoColor=white" />
+        <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" />
+        <img src="https://img.shields.io/badge/Prisma-2D3748?style=flat-square&logo=prisma&logoColor=white" />
+        <img src="https://img.shields.io/badge/JWT_Auth-000000?style=flat-square&logo=jsonwebtokens&logoColor=white" />
+        <img src="https://img.shields.io/badge/Swagger-85EA2D?style=flat-square&logo=swagger&logoColor=black" />
+      </p>
+      <p><a href="https://github.com/yihune1234/InternshipApplicantManagementAPI"><strong>Explore Repository ➔</strong></a></p>
+    </td>
+    <td width="50%" valign="top" style="border: 1px solid #1E293B; border-radius: 8px; background: #0A0E1A;">
+      <h3>🌐 <a href="https://yihune-software.vercel.app/">Developer Portfolio &amp; Project Showcase</a></h3>
+      <p>Modern developer web application featuring dynamic project showcases, smooth animations, responsive glassmorphic interfaces, interactive contact forms, and automated CI/CD deployments via Vercel.</p>
+      <p>
+        <img src="https://img.shields.io/badge/Next.js_15-000000?style=flat-square&logo=nextdotjs&logoColor=white" />
+        <img src="https://img.shields.io/badge/React_18-20232A?style=flat-square&logo=react&logoColor=61DAFB" />
+        <img src="https://img.shields.io/badge/TailwindCSS-0F172A?style=flat-square&logo=tailwindcss&logoColor=06B6D4" />
+        <img src="https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=vercel&logoColor=white" />
+      </p>
+      <p><a href="https://yihune-software.vercel.app/"><strong>View Live Website ➔</strong></a></p>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top" style="border: 1px solid #1E293B; border-radius: 8px; background: #0A0E1A;">
+      <h3>📱 <a href="https://github.com/yihune1234/aritii_rider_app">Aritii Rider — Cross-Platform Mobility App</a></h3>
+      <p>High-performance mobile application engineered for ride-hailing and urban delivery dispatch. Built with React Native and Expo, incorporating geospatial location tracking, real-time map updates, and optimized state handling.</p>
+      <p>
+        <img src="https://img.shields.io/badge/React_Native-20232A?style=flat-square&logo=react&logoColor=61DAFB" />
+        <img src="https://img.shields.io/badge/Expo-000020?style=flat-square&logo=expo&logoColor=white" />
+        <img src="https://img.shields.io/badge/Android-3DDC84?style=flat-square&logo=android&logoColor=white" />
+        <img src="https://img.shields.io/badge/iOS-000000?style=flat-square&logo=apple&logoColor=white" />
+      </p>
+      <p><a href="https://github.com/yihune1234/aritii_rider_app"><strong>Explore Repository ➔</strong></a></p>
+    </td>
+    <td width="50%" valign="top" style="border: 1px solid #1E293B; border-radius: 8px; background: #0A0E1A;">
+      <h3>🗄️ <a href="https://github.com/yihune1234/Student-Contact-Management-System">Student Contact &amp; Records Management</a></h3>
+      <p>Full-stack relational data platform handling academic records, student inquiry logs, contact categorization, secure session authentication, and transactional SQL data processing.</p>
+      <p>
+        <img src="https://img.shields.io/badge/PHP-777BB4?style=flat-square&logo=php&logoColor=white" />
+        <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white" />
+        <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black" />
+        <img src="https://img.shields.io/badge/Bootstrap-7952B3?style=flat-square&logo=bootstrap&logoColor=white" />
+      </p>
+      <p><a href="https://github.com/yihune1234/Student-Contact-Management-System"><strong>Explore Repository ➔</strong></a></p>
+    </td>
+  </tr>
+</table>
+
+<br/>
+
+---
+
+### 🛠️ &nbsp;Tech Arsenal & Capabilities
 
 <div align="center">
 
@@ -121,11 +144,11 @@ engineer:
 <p><strong>💻 Languages</strong></p>
 <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
 &nbsp;
-<img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript" />
+<img src="https://img.shields.io/badge/JavaScript_(ES6+)-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript" />
 &nbsp;
-<img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
+<img src="https://img.shields.io/badge/Python_3-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
 &nbsp;
-<img src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white" alt="PHP" />
+<img src="https://img.shields.io/badge/PHP_8+-777BB4?style=for-the-badge&logo=php&logoColor=white" alt="PHP" />
 &nbsp;
 <img src="https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=postgresql&logoColor=white" alt="SQL" />
 &nbsp;
@@ -137,37 +160,37 @@ engineer:
 
 <!-- FRONTEND -->
 <p><strong>🌐 Web Frontend</strong></p>
-<img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React" />
+<img src="https://img.shields.io/badge/React_18-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React" />
 &nbsp;
-<img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white" alt="Next.js" />
+<img src="https://img.shields.io/badge/Next.js_15-000000?style=for-the-badge&logo=nextdotjs&logoColor=white" alt="Next.js" />
 &nbsp;
 <img src="https://img.shields.io/badge/Tailwind_CSS-0F172A?style=for-the-badge&logo=tailwindcss&logoColor=06B6D4" alt="Tailwind CSS" />
 &nbsp;
 <img src="https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white" alt="Vite" />
 &nbsp;
-<img src="https://img.shields.io/badge/Redux-764ABC?style=for-the-badge&logo=redux&logoColor=white" alt="Redux" />
+<img src="https://img.shields.io/badge/Redux_Toolkit-764ABC?style=for-the-badge&logo=redux&logoColor=white" alt="Redux" />
 
 <br/><br/>
 
 <!-- MOBILE -->
-<p><strong>📱 Mobile Development</strong></p>
+<p><strong>📱 Mobile Engineering</strong></p>
 <img src="https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React Native" />
 &nbsp;
 <img src="https://img.shields.io/badge/Expo-000020?style=for-the-badge&logo=expo&logoColor=white" alt="Expo" />
 &nbsp;
-<img src="https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white" alt="Android" />
+<img src="https://img.shields.io/badge/Android_SDK-3DDC84?style=for-the-badge&logo=android&logoColor=white" alt="Android" />
 &nbsp;
-<img src="https://img.shields.io/badge/iOS-000000?style=for-the-badge&logo=apple&logoColor=white" alt="iOS" />
+<img src="https://img.shields.io/badge/iOS_Ecosystem-000000?style=for-the-badge&logo=apple&logoColor=white" alt="iOS" />
 
 <br/><br/>
 
 <!-- BACKEND & APIS -->
-<p><strong>⚙️ Backend & APIs</strong></p>
+<p><strong>⚙️ Backend &amp; Microservices</strong></p>
+<img src="https://img.shields.io/badge/NestJS-E0234E?style=for-the-badge&logo=nestjs&logoColor=white" alt="NestJS" />
+&nbsp;
 <img src="https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white" alt="Django" />
 &nbsp;
 <img src="https://img.shields.io/badge/Django_REST-A30000?style=for-the-badge&logo=django&logoColor=white" alt="DRF" />
-&nbsp;
-<img src="https://img.shields.io/badge/NestJS-E0234E?style=for-the-badge&logo=nestjs&logoColor=white" alt="NestJS" />
 &nbsp;
 <img src="https://img.shields.io/badge/Node.js-1A4731?style=for-the-badge&logo=nodedotjs&logoColor=3ECF8E" alt="Node.js" />
 &nbsp;
@@ -177,8 +200,8 @@ engineer:
 
 <br/><br/>
 
-<!-- DATABASES & ORM -->
-<p><strong>🗄️ Databases & ORM</strong></p>
+<!-- DATABASES & ORMS -->
+<p><strong>🗄️ Databases &amp; ORMs</strong></p>
 <img src="https://img.shields.io/badge/PostgreSQL-336791?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL" />
 &nbsp;
 <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL" />
@@ -187,17 +210,17 @@ engineer:
 &nbsp;
 <img src="https://img.shields.io/badge/SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=white" alt="SQLite" />
 &nbsp;
-<img src="https://img.shields.io/badge/Prisma-2D3748?style=for-the-badge&logo=prisma&logoColor=white" alt="Prisma" />
+<img src="https://img.shields.io/badge/Prisma_ORM-2D3748?style=for-the-badge&logo=prisma&logoColor=white" alt="Prisma" />
 
 <br/><br/>
 
 <!-- TOOLS & DEVOPS -->
-<p><strong>🔧 Tools & DevOps</strong></p>
+<p><strong>🔧 DevOps, Cloud &amp; Tools</strong></p>
+<img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker" />
+&nbsp;
 <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git" />
 &nbsp;
-<img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
-&nbsp;
-<img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker" />
+<img src="https://img.shields.io/badge/GitHub_Actions-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
 &nbsp;
 <img src="https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white" alt="Postman" />
 &nbsp;
@@ -211,38 +234,37 @@ engineer:
 
 ---
 
-### 🏗️ &nbsp;System Architecture & Engineering Workflow
+### 🏗️ &nbsp;Full-Stack Architectural Flow
 
 ```
  ┌──────────────────────────────────────────────────────────────────────────┐
  │                    YIHUNE'S FULL-STACK ARCHITECTURE                      │
  │                                                                          │
- │   CLIENT LAYER (Web & Mobile)                                            │
+ │   CLIENT LAYER                                                           │
  │   ┌────────────────────────┐         ┌──────────────────────────┐        │
- │   │   🌐  WEB PLATFORM     │         │   📱  MOBILE APP         │        │
+ │   │   🌐  WEB PLATFORM     │         │   📱  MOBILE APPS        │        │
  │   │   React 18 • Next.js   │         │   React Native • Expo    │        │
- │   │   Tailwind • TypeScript│         │   Android & iOS Builds   │        │
+ │   │   Tailwind • TypeScript│         │   Android & iOS Native   │        │
  │   └────────────┬───────────┘         └─────────────┬────────────┘        │
  │                │                                   │                     │
- │   GATEWAY / API│                                   │                     │
- │                └─────────────────┬─────────────────┘                     │
+ │   API GATEWAY  └─────────────────┬─────────────────┘                     │
  │                                  ▼                                       │
  │   ┌─────────────────────────────────────────────────────────────┐        │
- │   │             RESTful API  /  JWT  /  CORS  /  Swagger        │        │
- │   │        Django REST  •  NestJS Modules  •  Express API       │        │
+ │   │         RESTful API  /  JWT  /  Rate-Limiter  /  Swagger    │        │
+ │   │         NestJS Modules  •  Django REST  •  Express API      │        │
  │   └──────────────────────────────┬──────────────────────────────┘        │
  │                                  │                                       │
- │   SERVICES & DOMAIN LOGIC        ▼                                       │
+ │   APPLICATION & DOMAIN SERVICES  ▼                                       │
  │   ┌──────────────┐       ┌─────────────────┐       ┌──────────────┐      │
  │   │  🐍 Django   │       │   🛡️ NestJS     │       │  🐘 Laravel  │      │
- │   │  + DRF APIs  │       │   + Prisma ORM  │       │  + REST API  │      │
+ │   │  + DRF APIs  │       │   + Prisma ORM  │       │  + Eloquent  │      │
  │   └──────┬───────┘       └────────┬────────┘       └──────┬───────┘      │
  │          └────────────────────────┼───────────────────────┘              │
  │                                   ▼                                      │
- │   PERSISTENCE LAYER                                                      │
+ │   DATA PERSISTENCE LAYER                                                 │
  │   ┌──────────────┐       ┌─────────────────┐       ┌──────────────┐      │
  │   │  PostgreSQL  │       │      MySQL      │       │   MongoDB    │      │
- │   │  Relational  │       │    ACID Schema  │       │  Document DB │      │
+ │   │  Relational  │       │   ACID Tables   │       │  NoSQL Docs  │      │
  │   └──────────────┘       └─────────────────┘       └──────────────┘      │
  │                                                                          │
  │     🔒 Security-First   ⚡ Scalable Design   🧩 Modular Clean Code       │
@@ -253,7 +275,7 @@ engineer:
 
 ---
 
-### 📊 &nbsp;GitHub Analytics & Activity
+### 📊 &nbsp;GitHub Analytics & Live Activity
 
 <div align="center">
 
@@ -279,31 +301,35 @@ engineer:
 
 ---
 
-### 📡 &nbsp;Continuous Learning & Technical Focus
+### 🎯 &nbsp;Current Focus & 2026 Engineering Goals
 
-| 📱 Mobile Architecture | 🐍 Backend & APIs | 🛡️ Clean Backend | ☁️ DevOps & Delivery |
+<div align="center">
+
+| 📱 Mobile Architecture | 🐍 Distributed Backends | 🛡️ Clean Architecture | 🐳 Cloud & DevOps |
 |:---|:---|:---|:---|
-| • React Native TurboModules | • Django REST Framework | • NestJS Microservices | • Docker containerization |
-| • Offline sync & SQLite caching | • Celery asynchronous tasks | • Prisma ORM & PostgreSQL | • CI/CD automated pipelines |
-| • Push notifications & deep linking | • JWT & Refresh Token flow | • Unit testing & Jest | • Production deployment & Nginx |
+| • React Native TurboModules | • Django Channels & WebSockets | • NestJS Microservices & CQRS | • Docker containerization |
+| • Offline sync & SQLite caching | • Celery distributed async tasks | • Prisma ORM & schema design | • CI/CD automated deployments |
+| • Push notifications & linking | • High-concurrency caching | • Automated Jest unit testing | • Production Nginx & cloud deploy |
+
+</div>
 
 <br/>
 
 ---
 
-### 🤝 &nbsp;Let's Connect & Collaborate
+### 🤝 &nbsp;Let's Connect & Build Something Extraordinary
 
 <div align="center">
 
-<p>I am actively exploring <strong>Full-Stack Engineer</strong>, <strong>Backend Developer</strong>, and <strong>Mobile Developer</strong> opportunities.</p>
+<p>I am actively available for <strong>Full-Stack Engineer</strong>, <strong>Backend Developer</strong>, and <strong>Mobile Developer</strong> opportunities.</p>
 
 <br/>
 
-[![Portfolio](https://img.shields.io/badge/PORTFOLIO-yihune--software.vercel.app-00FF94?style=for-the-badge&logo=googlechrome&logoColor=0A0E1A&labelColor=0A0E1A)](https://yihune-software.vercel.app/)
+[![Portfolio](https://img.shields.io/badge/🌐_PORTFOLIO-yihune--software.vercel.app-00FF94?style=for-the-badge&logo=googlechrome&logoColor=0A0E1A&labelColor=0A0E1A)](https://yihune-software.vercel.app/)
 &nbsp;&nbsp;
-[![Email](https://img.shields.io/badge/GMAIL-yihunebelay859@gmail.com-FF4F5E?style=for-the-badge&logo=gmail&logoColor=white&labelColor=0A0E1A)](mailto:yihunebelay859@gmail.com)
+[![Email](https://img.shields.io/badge/📧_GMAIL-yihunebelay859@gmail.com-FF4F5E?style=for-the-badge&logo=gmail&logoColor=white&labelColor=0A0E1A)](mailto:yihunebelay859@gmail.com)
 &nbsp;&nbsp;
-[![GitHub](https://img.shields.io/badge/GITHUB-yihune1234-white?style=for-the-badge&logo=github&logoColor=black&labelColor=0A0E1A)](https://github.com/yihune1234)
+[![GitHub](https://img.shields.io/badge/🐙_GITHUB-@yihune1234-white?style=for-the-badge&logo=github&logoColor=black&labelColor=0A0E1A)](https://github.com/yihune1234)
 
 <br/><br/>
 
@@ -318,7 +344,7 @@ engineer:
 
 <br/>
 
-> *"Simplicity, readability, and performance are the cornerstones of software that stands the test of time."*
+> *"Good software is crafted with passion, shaped by architecture, and refined by empathy for the user."* ✨
 
 <br/>
 
