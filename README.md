@@ -1,6 +1,6 @@
 <!-- ═══════════════════════════════════════════════════════════════
      YIHUNE BELAY — Full-Stack Software Engineer & Mobile Developer
-     Creative & Modern GitHub Profile
+     Ultra-Modern & Creative GitHub Profile
 ═══════════════════════════════════════════════════════════════ -->
 
 <div align="center">
@@ -50,7 +50,7 @@
 
 ### 👨‍💻 &nbsp;About Me & Engineering DNA
 
-<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<table width="100%" border="0" cellpadding="10" cellspacing="0">
   <tr>
     <td width="180" align="center" valign="middle">
       <img src="https://avatars.githubusercontent.com/u/197728600?v=4" width="160" height="160" style="border-radius: 50%; border: 3px solid #00FF94;" alt="Yihune Belay" />
@@ -59,16 +59,16 @@
         <img src="https://img.shields.io/badge/◈_yihune--software.vercel.app-00FF94?style=flat-square&labelColor=0A0E1A" alt="Portfolio" />
       </a>
     </td>
-    <td width="30"></td>
+    <td width="20"></td>
     <td valign="top">
       <h4>Hey there, I'm Yihune Belay Sebsibe! 👋</h4>
-      <p>I am a passionate <strong>Full-Stack Software Engineer &amp; Mobile App Developer</strong> currently completing my degree in <strong>Software Engineering at Haramaya University</strong>. I specialize in architecting modern web platforms, high-throughput backend microservices, and fluid cross-platform mobile apps.</p>
+      <p>I am a passionate <strong>Full-Stack Software Engineer &amp; Mobile App Developer</strong> graduating with a B.Sc. in <strong>Software Engineering from Haramaya University</strong>. I specialize in turning complex specifications into scalable, production-ready web platforms and cross-platform mobile apps.</p>
       <ul>
-        <li>🎯 <strong>Core Philosophy:</strong> Clean code, strict type safety, modular microservices, and measurable performance.</li>
-        <li>💡 <strong>Frontend Mastery:</strong> Next.js, React, TypeScript, Tailwind CSS with fluid, responsive UI/UX.</li>
-        <li>📱 <strong>Mobile Engineering:</strong> React Native &amp; Expo with offline caching, high-framerate rendering, and device APIs.</li>
-        <li>🛡️ <strong>Backend Architecture:</strong> NestJS Clean Architecture, Django REST Framework, Node.js, and Laravel.</li>
-        <li>🌍 <strong>Work Preference:</strong> Open to <strong>Full-Time Roles</strong>, <strong>Contract Engineering</strong>, and <strong>Remote Collaboration</strong> across global teams.</li>
+        <li>🎯 <strong>Engineering Philosophy:</strong> Clean code, strict type safety, modular services, and high runtime performance.</li>
+        <li>💡 <strong>Modern Frontend:</strong> Next.js 15, React 18, TypeScript, and Tailwind CSS for snappy, responsive interfaces.</li>
+        <li>📱 <strong>Cross-Platform Mobile:</strong> React Native &amp; Expo with offline caching and native performance.</li>
+        <li>🛡️ <strong>Robust Backends:</strong> NestJS Clean Architecture, Django REST Framework, Node.js, and Laravel.</li>
+        <li>🌍 <strong>Work Preference:</strong> Open to <strong>Full-Time Roles</strong>, <strong>Contract Engineering</strong>, and <strong>Remote Collaboration</strong> globally.</li>
       </ul>
     </td>
   </tr>
@@ -80,7 +80,7 @@
 
 ### 🌟 &nbsp;Flagship Projects & Production Systems
 
-<table width="100%" border="0" cellpadding="10" cellspacing="0">
+<table width="100%" border="0" cellpadding="12" cellspacing="0">
   <tr>
     <td width="50%" valign="top" style="border: 1px solid #1E293B; border-radius: 8px; background: #0A0E1A;">
       <h3>🏢 <a href="https://github.com/yihune1234/InternshipApplicantManagementAPI">Internship Applicant Management REST API</a></h3>
@@ -138,7 +138,7 @@
 
 ### 🛠️ &nbsp;Tech Arsenal & Capabilities
 
-<table width="100%" border="0" cellpadding="10" cellspacing="0">
+<table width="100%" border="0" cellpadding="12" cellspacing="0">
   <tr>
     <td width="50%" valign="top" style="border: 1px solid #1E293B; border-radius: 8px; background: #0A0E1A;">
       <h4>💻 Languages &amp; Core Foundations</h4>
@@ -295,7 +295,7 @@ flowchart TD
   <tr>
     <td width="25%" align="center" style="border: 1px solid #1E293B; border-radius: 8px; background: #0A0E1A;">
       <h3 style="color:#00FF94; margin:0;">20+</h3>
-      <p style="margin:4px 0 0; color:#94A3B8; font-size:12px;">Repositories & Systems</p>
+      <p style="margin:4px 0 0; color:#94A3B8; font-size:12px;">Repositories &amp; Systems</p>
     </td>
     <td width="25%" align="center" style="border: 1px solid #1E293B; border-radius: 8px; background: #0A0E1A;">
       <h3 style="color:#00D2FF; margin:0;">4+</h3>
@@ -340,11 +340,15 @@ flowchart TD
 
 ### 🎯 &nbsp;Current Focus & 2026 Engineering Goals
 
-<table width="100%" border="0" cellpadding="10" cellspacing="0">
+<table width="100%" border="0" cellpadding="12" cellspacing="0">
   <tr>
     <td width="50%" valign="top" style="border: 1px solid #1E293B; border-radius: 8px; background: #0A0E1A;">
       <h4>📱 Track 1: Next-Gen Mobile Architecture</h4>
-      <p><img src="https://img.shields.io/badge/STATUS-ACTIVE_SPRINT-00FF94?style=flat-square&labelColor=0A0E1A" /></p>
+      <p>
+        <img src="https://img.shields.io/badge/PROGRESS-90%25-00FF94?style=flat-square&labelColor=0A0E1A" />
+        &nbsp;
+        <code>█████████░</code>
+      </p>
       <ul>
         <li><strong>React Native New Architecture:</strong> Deep integration with Fabric renderer and TurboModules leveraging native C++ JSI bindings.</li>
         <li><strong>Offline-First Resilience:</strong> Client-side caching and delta data reconciliation via SQLite &amp; WatermelonDB.</li>
@@ -353,7 +357,11 @@ flowchart TD
     </td>
     <td width="50%" valign="top" style="border: 1px solid #1E293B; border-radius: 8px; background: #0A0E1A;">
       <h4>🛡️ Track 2: Enterprise Backend &amp; Microservices</h4>
-      <p><img src="https://img.shields.io/badge/STATUS-IN_PROGRESS-00D2FF?style=flat-square&labelColor=0A0E1A" /></p>
+      <p>
+        <img src="https://img.shields.io/badge/PROGRESS-85%25-00D2FF?style=flat-square&labelColor=0A0E1A" />
+        &nbsp;
+        <code>████████░░</code>
+      </p>
       <ul>
         <li><strong>Clean Architecture &amp; NestJS:</strong> Domain-Driven Design (DDD), CQRS patterns, and decoupled dependency injection.</li>
         <li><strong>Asynchronous Message Queues:</strong> Event-driven communication with Redis Streams, Celery distributed tasks, and RabbitMQ.</li>
@@ -364,7 +372,11 @@ flowchart TD
   <tr>
     <td width="50%" valign="top" style="border: 1px solid #1E293B; border-radius: 8px; background: #0A0E1A;">
       <h4>☁️ Track 3: Cloud Native, DevOps &amp; CI/CD</h4>
-      <p><img src="https://img.shields.io/badge/STATUS-CONTINUOUS-FACC15?style=flat-square&labelColor=0A0E1A" /></p>
+      <p>
+        <img src="https://img.shields.io/badge/PROGRESS-80%25-FACC15?style=flat-square&labelColor=0A0E1A" />
+        &nbsp;
+        <code>████████░░</code>
+      </p>
       <ul>
         <li><strong>Containerization:</strong> Multi-stage Docker builds optimized for minimal production image footprint and zero-leak secrets.</li>
         <li><strong>Automated Workflows:</strong> GitHub Actions CI/CD pipelines enforcing linting, type-checking, Jest testing, and automated deployment.</li>
@@ -373,7 +385,11 @@ flowchart TD
     </td>
     <td width="50%" valign="top" style="border: 1px solid #1E293B; border-radius: 8px; background: #0A0E1A;">
       <h4>⚡ Track 4: Performance &amp; Database Optimization</h4>
-      <p><img src="https://img.shields.io/badge/STATUS-EXPANDING-C084FC?style=flat-square&labelColor=0A0E1A" /></p>
+      <p>
+        <img src="https://img.shields.io/badge/PROGRESS-75%25-C084FC?style=flat-square&labelColor=0A0E1A" />
+        &nbsp;
+        <code>███████░░░</code>
+      </p>
       <ul>
         <li><strong>Query Execution Plans:</strong> Profiling and indexing with <code>EXPLAIN ANALYZE</code> in PostgreSQL/MySQL to eliminate N+1 bottlenecks.</li>
         <li><strong>Multi-Tier Caching:</strong> In-memory Redis caching layers with intelligent TTL invalidation strategies.</li>
