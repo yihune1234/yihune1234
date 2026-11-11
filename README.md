@@ -26,6 +26,10 @@
 &nbsp;
 [![Ariiti Tech](https://img.shields.io/badge/🏢_ORGANIZATION-Ariiti_Technologies-38BDF8?style=for-the-badge&logo=github&logoColor=38BDF8&labelColor=071126)](https://github.com/AriitiTech)
 &nbsp;
+[![Facebook](https://img.shields.io/badge/📘_FACEBOOK-Ariiti_Technologies-1877F2?style=for-the-badge&logo=facebook&logoColor=white&labelColor=071126)](https://www.facebook.com/profile.php?id=61596506150647)
+&nbsp;
+[![Telegram](https://img.shields.io/badge/💬_TELEGRAM-@aritiiteck-229ED9?style=for-the-badge&logo=telegram&logoColor=white&labelColor=071126)](https://t.me/aritiiteck)
+&nbsp;
 [![Location](https://img.shields.io/badge/📍_ETHIOPIA-ADDIS_ABABA-60A5FA?style=for-the-badge&logo=googlemaps&logoColor=60A5FA&labelColor=071126)](https://github.com/yihune1234)
 
 <br/>
@@ -403,6 +407,8 @@ flowchart TD
 [![Email](https://img.shields.io/badge/📧_EMAIL-yihunebelay859@gmail.com-0066FF?style=for-the-badge&logo=gmail&logoColor=white&labelColor=071126)](mailto:yihunebelay859@gmail.com)
 &nbsp;&nbsp;
 [![Organization](https://img.shields.io/badge/🏢_ARIITI_TECH-AriitiTech-38BDF8?style=for-the-badge&logo=github&logoColor=white&labelColor=071126)](https://github.com/AriitiTech)
+&nbsp;&nbsp;
+[![Facebook](https://img.shields.io/badge/📘_FACEBOOK-Ariiti_Technologies-1877F2?style=for-the-badge&logo=facebook&logoColor=white&labelColor=071126)](https://www.facebook.com/profile.php?id=61596506150647)
 &nbsp;&nbsp;
 [![Telegram](https://img.shields.io/badge/💬_TELEGRAM-@aritiiteck-229ED9?style=for-the-badge&logo=telegram&logoColor=white&labelColor=071126)](https://t.me/aritiiteck)
 
