@@ -1,31 +1,30 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="220" viewBox="0 0 880 220" fill="none">
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="auto" viewBox="0 0 870 215" fill="none">
   <defs>
-    <linearGradient id="snake-bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#050B18" />
-      <stop offset="50%" stop-color="#08142C" />
-      <stop offset="100%" stop-color="#040914" />
+    <!-- Background Gradient: Premium Dark Navy -->
+    <linearGradient id="heatmap-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#070D1E" />
+      <stop offset="50%" stop-color="#08142A" />
+      <stop offset="100%" stop-color="#060B18" />
     </linearGradient>
 
-    <linearGradient id="snake-border" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#00D2FF" stop-opacity="0.8" />
-      <stop offset="50%" stop-color="#0066FF" stop-opacity="0.4" />
-      <stop offset="100%" stop-color="#00FFC2" stop-opacity="0.8" />
+    <!-- Subtle Border Gradient -->
+    <linearGradient id="border-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1E3A68" stop-opacity="0.8" />
+      <stop offset="50%" stop-color="#142647" stop-opacity="0.5" />
+      <stop offset="100%" stop-color="#1E3A68" stop-opacity="0.8" />
     </linearGradient>
 
-    <linearGradient id="head-grad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#00FFC2" />
-      <stop offset="100%" stop-color="#00D2FF" />
-    </linearGradient>
-
-    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur stdDeviation="3.5" result="blur" />
+    <!-- Subtle Glow (Used ONLY for Highest Level 4 Contributions) -->
+    <filter id="subtle-glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="2.2" result="blur" />
       <feMerge>
         <feMergeNode in="blur" />
         <feMergeNode in="SourceGraphic" />
       </feMerge>
     </filter>
 
-    <filter id="cell-glow" x="-50%" y="-50%" width="200%" height="200%">
+    <!-- Subtle Motion Runner Glow -->
+    <filter id="runner-glow" x="-50%" y="-50%" width="200%" height="200%">
       <feGaussianBlur stdDeviation="2" result="blur" />
       <feMerge>
         <feMergeNode in="blur" />
@@ -33,27 +32,38 @@
       </feMerge>
     </filter>
 
-    <path id="snakePath" d="M 763.5,61.0 L 763.5,101.5 L 750.0,101.5 L 750.0,142.0 L 723.0,142.0 L 723.0,88.0 L 696.0,88.0 L 696.0,128.5 L 642.0,128.5 L 642.0,74.5 L 574.5,74.5 L 574.5,115.0 L 520.5,115.0 L 520.5,74.5 L 453.0,74.5 L 453.0,128.5 L 385.5,128.5 L 385.5,88.0 L 318.0,88.0 L 318.0,142.0 L 196.5,142.0 L 196.5,74.5 L 129.0,74.5 L 129.0,61.0 L 412.5,61.0 L 763.5,61.0 Z" fill="none" />
+    <path id="activeTrack" d="M 820.0,80.0 L 820.0,125.0 L 805.0,125.0 L 805.0,170.0 L 775.0,170.0 L 775.0,110.0 L 745.0,110.0 L 745.0,155.0 L 685.0,155.0 L 685.0,95.0 L 610.0,95.0 L 610.0,140.0 L 550.0,140.0 L 550.0,95.0 L 475.0,95.0 L 475.0,155.0 L 400.0,155.0 L 400.0,110.0 L 325.0,110.0 L 325.0,170.0 L 190.0,170.0 L 190.0,95.0 L 115.0,95.0 L 115.0,80.0 L 430.0,80.0 L 820.0,80.0 Z" fill="none" />
   </defs>
 
   <style>
-    @keyframes radarBlink {
-      0%, 100% { fill: #00FF88; opacity: 1; }
-      50% { fill: #00D2FF; opacity: 0.4; }
+    @keyframes liveBeacon {
+      0%, 100% { fill: #00D2FF; opacity: 1; }
+      50% { fill: #0066FF; opacity: 0.35; }
     }
-    .title-font {
-      font-family: 'JetBrains Mono', 'Fira Code', monospace;
+    .header-label {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
       font-size: 11px;
       font-weight: 700;
-      letter-spacing: 1.5px;
+      letter-spacing: 1.2px;
       fill: #00D2FF;
     }
-    .sub-font {
+    .header-count {
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      font-size: 13.5px;
+      font-weight: 700;
+      fill: #F1F5F9;
+    }
+    .header-meta {
+      font-family: 'JetBrains Mono', Consolas, monospace;
       font-size: 10px;
       font-weight: 500;
-      fill: #CBD5E1;
-      letter-spacing: 0.5px;
+      fill: #94A3B8;
+    }
+    .header-badge {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      font-size: 11px;
+      font-weight: 600;
+      fill: #38BDF8;
     }
     .month-label {
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
@@ -61,499 +71,1569 @@
       font-weight: 600;
       fill: #7DD3FC;
     }
-    .day-label {
+    .weekday-label {
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-      font-size: 9px;
+      font-size: 9.5px;
       font-weight: 600;
-      fill: #94A3B8;
+      fill: #64748B;
     }
     .legend-text {
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
       font-size: 10px;
-      font-weight: 600;
-      fill: #CBD5E1;
+      font-weight: 500;
+      fill: #94A3B8;
     }
-    .badge-text {
-      font-family: 'JetBrains Mono', monospace;
+    .footer-note {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
       font-size: 10px;
-      font-weight: 600;
-      fill: #00FFC2;
+      font-weight: 500;
+      fill: #64748B;
     }
-    .pulse-dot {
-      animation: radarBlink 2s ease-in-out infinite;
+    .live-dot {
+      animation: liveBeacon 2.5s ease-in-out infinite;
+    }
+    .contrib-cell {
+      transition: transform 0.15s ease, stroke-width 0.15s ease, stroke 0.15s ease;
+      cursor: pointer;
+    }
+    .contrib-cell:hover {
+      stroke: #FFFFFF !important;
+      stroke-width: 2px !important;
+      transform: scale(1.3);
+      transform-origin: center;
     }
   </style>
 
-  <!-- Container Box -->
-  <rect width="880" height="220" rx="12" fill="url(#snake-bg)" />
-  <rect x="0.75" y="0.75" width="878.5" height="218.5" rx="11.25" fill="none" stroke="url(#snake-border)" stroke-width="1.5" />
+  <!-- Card Background -->
+  <rect width="870" height="215" rx="10" fill="url(#heatmap-bg)" />
+  <rect x="0.5" y="0.5" width="869" height="214" rx="9.5" fill="none" stroke="url(#border-grad)" stroke-width="1" />
 
-  <!-- Header Strip (Glow Beacon Dot) -->
-  <g transform="translate(26, 26)">
-    <circle cx="4" cy="-1" r="5" class="pulse-dot" filter="url(#cell-glow)" />
-    <text x="18" y="3" class="title-font">VERIFIED GITHUB CONTRIBUTION CALENDAR // DYNAMIC MOTION</text>
-    <text x="540" y="3" class="sub-font">REAL-TIME COMMITS &amp; VERIFIED DEPLOYMENTS</text>
+  <!-- Header Section -->
+  <g transform="translate(30, 26)">
+    <circle cx="2" cy="-4" r="3.5" class="live-dot" />
+    <text x="14" y="0" class="header-label">GITHUB CONTRIBUTION HEATMAP</text>
+    <text x="14" y="18" class="header-count">428 contributions in the last year</text>
+  </g>
+  <g transform="translate(840, 26)">
+    <text x="0" y="0" text-anchor="end" class="header-meta">Nov 13, 2025 – Nov 11, 2026</text>
+    <text x="0" y="18" text-anchor="end" class="header-badge">⚡ 55 Active Days</text>
   </g>
 
-  <!-- Month Labels -->
+  <!-- Month Labels (Clean Spacing, No Overlaps) -->
   <g id="monthLabels">
-    <text x="70.0" y="47" class="month-label">Nov</text>
-    <text x="110.5" y="47" class="month-label">Dec</text>
-    <text x="164.5" y="47" class="month-label">Jan</text>
-    <text x="232.0" y="47" class="month-label">Feb</text>
-    <text x="286.0" y="47" class="month-label">Mar</text>
-    <text x="340.0" y="47" class="month-label">Apr</text>
-    <text x="407.5" y="47" class="month-label">May</text>
-    <text x="461.5" y="47" class="month-label">Jun</text>
-    <text x="515.5" y="47" class="month-label">Jul</text>
-    <text x="583.0" y="47" class="month-label">Aug</text>
-    <text x="637.0" y="47" class="month-label">Sep</text>
-    <text x="691.0" y="47" class="month-label">Oct</text>
+    <text x="55.0" y="67" class="month-label">Nov</text>
+    <text x="100.0" y="67" class="month-label">Dec</text>
+    <text x="160.0" y="67" class="month-label">Jan</text>
+    <text x="235.0" y="67" class="month-label">Feb</text>
+    <text x="295.0" y="67" class="month-label">Mar</text>
+    <text x="355.0" y="67" class="month-label">Apr</text>
+    <text x="430.0" y="67" class="month-label">May</text>
+    <text x="490.0" y="67" class="month-label">Jun</text>
+    <text x="550.0" y="67" class="month-label">Jul</text>
+    <text x="625.0" y="67" class="month-label">Aug</text>
+    <text x="685.0" y="67" class="month-label">Sep</text>
+    <text x="745.0" y="67" class="month-label">Oct</text>
+    <text x="820.0" y="67" class="month-label">Nov</text>
   </g>
 
-  <!-- Weekday Labels -->
+  <!-- Weekday Labels (Aligned with Mon, Wed, Fri rows) -->
   <g id="weekdayLabels">
-    <text x="38" y="77.5" class="day-label">Mon</text>
-    <text x="38" y="104.5" class="day-label">Wed</text>
-    <text x="38" y="131.5" class="day-label">Fri</text>
+    <text x="44" y="95.0" class="weekday-label" text-anchor="end" dominant-baseline="central">Mon</text>
+    <text x="44" y="125.0" class="weekday-label" text-anchor="end" dominant-baseline="central">Wed</text>
+    <text x="44" y="155.0" class="weekday-label" text-anchor="end" dominant-baseline="central">Fri</text>
   </g>
 
-  <!-- Real Contribution Grid Dots (ALL DOTS VISIBLE, BRIGHT, NOT DARK) -->
+  <!-- Contribution Circles Grid (5px radius, 5px gap, with native hover tooltips) -->
   <g id="contributionGrid">
-    <rect x="70.0" y="56.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="70.0" y="69.5" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="70.0" y="83.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="70.0" y="96.5" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="70.0" y="110.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="70.0" y="123.5" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="70.0" y="137.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="83.5" y="56.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="83.5" y="69.5" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="83.5" y="83.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="83.5" y="96.5" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="83.5" y="110.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="83.5" y="123.5" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="83.5" y="137.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="97.0" y="56.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="97.0" y="69.5" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="97.0" y="83.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="97.0" y="96.5" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="97.0" y="110.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="97.0" y="123.5" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="97.0" y="137.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="110.5" y="56.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="110.5" y="69.5" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="110.5" y="83.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="110.5" y="96.5" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="110.5" y="110.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="110.5" y="123.5" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="110.5" y="137.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="124.0" y="56.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="124.0" y="69.5" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="124.0" y="83.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="124.0" y="96.5" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="124.0" y="110.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="124.0" y="123.5" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="124.0" y="137.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="137.5" y="56.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="137.5" y="69.5" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="137.5" y="83.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="137.5" y="96.5" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="137.5" y="110.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="137.5" y="123.5" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="137.5" y="137.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="151.0" y="56.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="151.0" y="69.5" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="151.0" y="83.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="151.0" y="96.5" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="151.0" y="110.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="151.0" y="123.5" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="151.0" y="137.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="164.5" y="56.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="164.5" y="69.5" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="164.5" y="83.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="164.5" y="96.5" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="164.5" y="110.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="164.5" y="123.5" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="164.5" y="137.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="178.0" y="56.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="178.0" y="69.5" width="10" height="10" rx="5" ry="5" fill="#00FFC2" stroke="#FFFFFF" stroke-width="1.3" stroke-opacity="1.0" filter="url(#cell-glow)" />
-    <rect x="178.0" y="83.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="178.0" y="96.5" width="10" height="10" rx="5" ry="5" fill="#00D2FF" stroke="#E0F2FE" stroke-width="1.2" stroke-opacity="1.0" filter="url(#cell-glow)" />
-    <rect x="178.0" y="110.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="178.0" y="123.5" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="178.0" y="137.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="191.5" y="56.0" width="10" height="10" rx="5" ry="5" fill="#0284C7" stroke="#38BDF8" stroke-width="1.2" stroke-opacity="1.0" />
-    <rect x="191.5" y="69.5" width="10" height="10" rx="5" ry="5" fill="#00D2FF" stroke="#E0F2FE" stroke-width="1.2" stroke-opacity="1.0" filter="url(#cell-glow)" />
-    <rect x="191.5" y="83.0" width="10" height="10" rx="5" ry="5" fill="#00D2FF" stroke="#E0F2FE" stroke-width="1.2" stroke-opacity="1.0" filter="url(#cell-glow)" />
-    <rect x="191.5" y="96.5" width="10" height="10" rx="5" ry="5" fill="#0284C7" stroke="#38BDF8" stroke-width="1.2" stroke-opacity="1.0" />
-    <rect x="191.5" y="110.0" width="10" height="10" rx="5" ry="5" fill="#0284C7" stroke="#38BDF8" stroke-width="1.2" stroke-opacity="1.0" />
-    <rect x="191.5" y="123.5" width="10" height="10" rx="5" ry="5" fill="#00FF88" stroke="#FFFFFF" stroke-width="1.5" stroke-opacity="1.0" filter="url(#cell-glow)" />
-    <rect x="191.5" y="137.0" width="10" height="10" rx="5" ry="5" fill="#0284C7" stroke="#38BDF8" stroke-width="1.2" stroke-opacity="1.0" />
-    <rect x="205.0" y="56.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="205.0" y="69.5" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="205.0" y="83.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="205.0" y="96.5" width="10" height="10" rx="5" ry="5" fill="#0284C7" stroke="#38BDF8" stroke-width="1.2" stroke-opacity="1.0" />
-    <rect x="205.0" y="110.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="205.0" y="123.5" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="205.0" y="137.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="218.5" y="56.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="218.5" y="69.5" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="218.5" y="83.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="218.5" y="96.5" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="218.5" y="110.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="218.5" y="123.5" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="218.5" y="137.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="232.0" y="56.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="232.0" y="69.5" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="232.0" y="83.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="232.0" y="96.5" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="232.0" y="110.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="232.0" y="123.5" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="232.0" y="137.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="245.5" y="56.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="245.5" y="69.5" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="245.5" y="83.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="245.5" y="96.5" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="245.5" y="110.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="245.5" y="123.5" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="245.5" y="137.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="259.0" y="56.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="259.0" y="69.5" width="10" height="10" rx="5" ry="5" fill="#0284C7" stroke="#38BDF8" stroke-width="1.2" stroke-opacity="1.0" />
-    <rect x="259.0" y="83.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="259.0" y="96.5" width="10" height="10" rx="5" ry="5" fill="#0284C7" stroke="#38BDF8" stroke-width="1.2" stroke-opacity="1.0" />
-    <rect x="259.0" y="110.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="259.0" y="123.5" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="259.0" y="137.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="272.5" y="56.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="272.5" y="69.5" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="272.5" y="83.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="272.5" y="96.5" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="272.5" y="110.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="272.5" y="123.5" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="272.5" y="137.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="286.0" y="56.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="286.0" y="69.5" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="286.0" y="83.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="286.0" y="96.5" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="286.0" y="110.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="286.0" y="123.5" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="286.0" y="137.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="299.5" y="56.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="299.5" y="69.5" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="299.5" y="83.0" width="10" height="10" rx="5" ry="5" fill="#00FFC2" stroke="#FFFFFF" stroke-width="1.3" stroke-opacity="1.0" filter="url(#cell-glow)" />
-    <rect x="299.5" y="96.5" width="10" height="10" rx="5" ry="5" fill="#00D2FF" stroke="#E0F2FE" stroke-width="1.2" stroke-opacity="1.0" filter="url(#cell-glow)" />
-    <rect x="299.5" y="110.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="299.5" y="123.5" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="299.5" y="137.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="313.0" y="56.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="313.0" y="69.5" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="313.0" y="83.0" width="10" height="10" rx="5" ry="5" fill="#00D2FF" stroke="#E0F2FE" stroke-width="1.2" stroke-opacity="1.0" filter="url(#cell-glow)" />
-    <rect x="313.0" y="96.5" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="313.0" y="110.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="313.0" y="123.5" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="313.0" y="137.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="326.5" y="56.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="326.5" y="69.5" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="326.5" y="83.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="326.5" y="96.5" width="10" height="10" rx="5" ry="5" fill="#00FFC2" stroke="#FFFFFF" stroke-width="1.3" stroke-opacity="1.0" filter="url(#cell-glow)" />
-    <rect x="326.5" y="110.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="326.5" y="123.5" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="326.5" y="137.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="340.0" y="56.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="340.0" y="69.5" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="340.0" y="83.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="340.0" y="96.5" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="340.0" y="110.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="340.0" y="123.5" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="340.0" y="137.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="353.5" y="56.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="353.5" y="69.5" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="353.5" y="83.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="353.5" y="96.5" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="353.5" y="110.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="353.5" y="123.5" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="353.5" y="137.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="367.0" y="56.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="367.0" y="69.5" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="367.0" y="83.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="367.0" y="96.5" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="367.0" y="110.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="367.0" y="123.5" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="367.0" y="137.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="380.5" y="56.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="380.5" y="69.5" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="380.5" y="83.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="380.5" y="96.5" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="380.5" y="110.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="380.5" y="123.5" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="380.5" y="137.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="394.0" y="56.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="394.0" y="69.5" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="394.0" y="83.0" width="10" height="10" rx="5" ry="5" fill="#0284C7" stroke="#38BDF8" stroke-width="1.2" stroke-opacity="1.0" />
-    <rect x="394.0" y="96.5" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="394.0" y="110.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="394.0" y="123.5" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="394.0" y="137.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="407.5" y="56.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="407.5" y="69.5" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="407.5" y="83.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="407.5" y="96.5" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="407.5" y="110.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="407.5" y="123.5" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="407.5" y="137.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="421.0" y="56.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="421.0" y="69.5" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="421.0" y="83.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="421.0" y="96.5" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="421.0" y="110.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="421.0" y="123.5" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="421.0" y="137.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="434.5" y="56.0" width="10" height="10" rx="5" ry="5" fill="#0284C7" stroke="#38BDF8" stroke-width="1.2" stroke-opacity="1.0" />
-    <rect x="434.5" y="69.5" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="434.5" y="83.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="434.5" y="96.5" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="434.5" y="110.0" width="10" height="10" rx="5" ry="5" fill="#00FFC2" stroke="#FFFFFF" stroke-width="1.3" stroke-opacity="1.0" filter="url(#cell-glow)" />
-    <rect x="434.5" y="123.5" width="10" height="10" rx="5" ry="5" fill="#00FF88" stroke="#FFFFFF" stroke-width="1.5" stroke-opacity="1.0" filter="url(#cell-glow)" />
-    <rect x="434.5" y="137.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="448.0" y="56.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="448.0" y="69.5" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="448.0" y="83.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="448.0" y="96.5" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="448.0" y="110.0" width="10" height="10" rx="5" ry="5" fill="#00FFC2" stroke="#FFFFFF" stroke-width="1.3" stroke-opacity="1.0" filter="url(#cell-glow)" />
-    <rect x="448.0" y="123.5" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="448.0" y="137.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="461.5" y="56.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="461.5" y="69.5" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="461.5" y="83.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="461.5" y="96.5" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="461.5" y="110.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="461.5" y="123.5" width="10" height="10" rx="5" ry="5" fill="#00FFC2" stroke="#FFFFFF" stroke-width="1.3" stroke-opacity="1.0" filter="url(#cell-glow)" />
-    <rect x="461.5" y="137.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="475.0" y="56.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="475.0" y="69.5" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="475.0" y="83.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="475.0" y="96.5" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="475.0" y="110.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="475.0" y="123.5" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="475.0" y="137.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="488.5" y="56.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="488.5" y="69.5" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="488.5" y="83.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="488.5" y="96.5" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="488.5" y="110.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="488.5" y="123.5" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="488.5" y="137.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="502.0" y="56.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="502.0" y="69.5" width="10" height="10" rx="5" ry="5" fill="#00FFC2" stroke="#FFFFFF" stroke-width="1.3" stroke-opacity="1.0" filter="url(#cell-glow)" />
-    <rect x="502.0" y="83.0" width="10" height="10" rx="5" ry="5" fill="#0284C7" stroke="#38BDF8" stroke-width="1.2" stroke-opacity="1.0" />
-    <rect x="502.0" y="96.5" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="502.0" y="110.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="502.0" y="123.5" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="502.0" y="137.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="515.5" y="56.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="515.5" y="69.5" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="515.5" y="83.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="515.5" y="96.5" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="515.5" y="110.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="515.5" y="123.5" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="515.5" y="137.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="529.0" y="56.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="529.0" y="69.5" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="529.0" y="83.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="529.0" y="96.5" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="529.0" y="110.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="529.0" y="123.5" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="529.0" y="137.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="542.5" y="56.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="542.5" y="69.5" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="542.5" y="83.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="542.5" y="96.5" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="542.5" y="110.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="542.5" y="123.5" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="542.5" y="137.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="556.0" y="56.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="556.0" y="69.5" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="556.0" y="83.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="556.0" y="96.5" width="10" height="10" rx="5" ry="5" fill="#0284C7" stroke="#38BDF8" stroke-width="1.2" stroke-opacity="1.0" />
-    <rect x="556.0" y="110.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="556.0" y="123.5" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="556.0" y="137.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="569.5" y="56.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="569.5" y="69.5" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="569.5" y="83.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="569.5" y="96.5" width="10" height="10" rx="5" ry="5" fill="#0284C7" stroke="#38BDF8" stroke-width="1.2" stroke-opacity="1.0" />
-    <rect x="569.5" y="110.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="569.5" y="123.5" width="10" height="10" rx="5" ry="5" fill="#00D2FF" stroke="#E0F2FE" stroke-width="1.2" stroke-opacity="1.0" filter="url(#cell-glow)" />
-    <rect x="569.5" y="137.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="583.0" y="56.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="583.0" y="69.5" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="583.0" y="83.0" width="10" height="10" rx="5" ry="5" fill="#0284C7" stroke="#38BDF8" stroke-width="1.2" stroke-opacity="1.0" />
-    <rect x="583.0" y="96.5" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="583.0" y="110.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="583.0" y="123.5" width="10" height="10" rx="5" ry="5" fill="#00D2FF" stroke="#E0F2FE" stroke-width="1.2" stroke-opacity="1.0" filter="url(#cell-glow)" />
-    <rect x="583.0" y="137.0" width="10" height="10" rx="5" ry="5" fill="#0284C7" stroke="#38BDF8" stroke-width="1.2" stroke-opacity="1.0" />
-    <rect x="596.5" y="56.0" width="10" height="10" rx="5" ry="5" fill="#0284C7" stroke="#38BDF8" stroke-width="1.2" stroke-opacity="1.0" />
-    <rect x="596.5" y="69.5" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="596.5" y="83.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="596.5" y="96.5" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="596.5" y="110.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="596.5" y="123.5" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="596.5" y="137.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="610.0" y="56.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="610.0" y="69.5" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="610.0" y="83.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="610.0" y="96.5" width="10" height="10" rx="5" ry="5" fill="#00D2FF" stroke="#E0F2FE" stroke-width="1.2" stroke-opacity="1.0" filter="url(#cell-glow)" />
-    <rect x="610.0" y="110.0" width="10" height="10" rx="5" ry="5" fill="#0284C7" stroke="#38BDF8" stroke-width="1.2" stroke-opacity="1.0" />
-    <rect x="610.0" y="123.5" width="10" height="10" rx="5" ry="5" fill="#0284C7" stroke="#38BDF8" stroke-width="1.2" stroke-opacity="1.0" />
-    <rect x="610.0" y="137.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="623.5" y="56.0" width="10" height="10" rx="5" ry="5" fill="#0284C7" stroke="#38BDF8" stroke-width="1.2" stroke-opacity="1.0" />
-    <rect x="623.5" y="69.5" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="623.5" y="83.0" width="10" height="10" rx="5" ry="5" fill="#0284C7" stroke="#38BDF8" stroke-width="1.2" stroke-opacity="1.0" />
-    <rect x="623.5" y="96.5" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="623.5" y="110.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="623.5" y="123.5" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="623.5" y="137.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="637.0" y="56.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="637.0" y="69.5" width="10" height="10" rx="5" ry="5" fill="#00FFC2" stroke="#FFFFFF" stroke-width="1.3" stroke-opacity="1.0" filter="url(#cell-glow)" />
-    <rect x="637.0" y="83.0" width="10" height="10" rx="5" ry="5" fill="#0284C7" stroke="#38BDF8" stroke-width="1.2" stroke-opacity="1.0" />
-    <rect x="637.0" y="96.5" width="10" height="10" rx="5" ry="5" fill="#00D2FF" stroke="#E0F2FE" stroke-width="1.2" stroke-opacity="1.0" filter="url(#cell-glow)" />
-    <rect x="637.0" y="110.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="637.0" y="123.5" width="10" height="10" rx="5" ry="5" fill="#0284C7" stroke="#38BDF8" stroke-width="1.2" stroke-opacity="1.0" />
-    <rect x="637.0" y="137.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="650.5" y="56.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="650.5" y="69.5" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="650.5" y="83.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="650.5" y="96.5" width="10" height="10" rx="5" ry="5" fill="#0284C7" stroke="#38BDF8" stroke-width="1.2" stroke-opacity="1.0" />
-    <rect x="650.5" y="110.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="650.5" y="123.5" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="650.5" y="137.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="664.0" y="56.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="664.0" y="69.5" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="664.0" y="83.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="664.0" y="96.5" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="664.0" y="110.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="664.0" y="123.5" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="664.0" y="137.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="677.5" y="56.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="677.5" y="69.5" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="677.5" y="83.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="677.5" y="96.5" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="677.5" y="110.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="677.5" y="123.5" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="677.5" y="137.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="691.0" y="56.0" width="10" height="10" rx="5" ry="5" fill="#0284C7" stroke="#38BDF8" stroke-width="1.2" stroke-opacity="1.0" />
-    <rect x="691.0" y="69.5" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="691.0" y="83.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="691.0" y="96.5" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="691.0" y="110.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="691.0" y="123.5" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="691.0" y="137.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="704.5" y="56.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="704.5" y="69.5" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="704.5" y="83.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="704.5" y="96.5" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="704.5" y="110.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="704.5" y="123.5" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="704.5" y="137.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="718.0" y="56.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="718.0" y="69.5" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="718.0" y="83.0" width="10" height="10" rx="5" ry="5" fill="#00D2FF" stroke="#E0F2FE" stroke-width="1.2" stroke-opacity="1.0" filter="url(#cell-glow)" />
-    <rect x="718.0" y="96.5" width="10" height="10" rx="5" ry="5" fill="#00D2FF" stroke="#E0F2FE" stroke-width="1.2" stroke-opacity="1.0" filter="url(#cell-glow)" />
-    <rect x="718.0" y="110.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="718.0" y="123.5" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="718.0" y="137.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="731.5" y="56.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="731.5" y="69.5" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="731.5" y="83.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="731.5" y="96.5" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="731.5" y="110.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="731.5" y="123.5" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="731.5" y="137.0" width="10" height="10" rx="5" ry="5" fill="#00D2FF" stroke="#E0F2FE" stroke-width="1.2" stroke-opacity="1.0" filter="url(#cell-glow)" />
-    <rect x="745.0" y="56.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="745.0" y="69.5" width="10" height="10" rx="5" ry="5" fill="#00FF88" stroke="#FFFFFF" stroke-width="1.5" stroke-opacity="1.0" filter="url(#cell-glow)" />
-    <rect x="745.0" y="83.0" width="10" height="10" rx="5" ry="5" fill="#00FF88" stroke="#FFFFFF" stroke-width="1.5" stroke-opacity="1.0" filter="url(#cell-glow)" />
-    <rect x="745.0" y="96.5" width="10" height="10" rx="5" ry="5" fill="#00FFC2" stroke="#FFFFFF" stroke-width="1.3" stroke-opacity="1.0" filter="url(#cell-glow)" />
-    <rect x="745.0" y="110.0" width="10" height="10" rx="5" ry="5" fill="#00FF88" stroke="#FFFFFF" stroke-width="1.5" stroke-opacity="1.0" filter="url(#cell-glow)" />
-    <rect x="745.0" y="123.5" width="10" height="10" rx="5" ry="5" fill="#00FFC2" stroke="#FFFFFF" stroke-width="1.3" stroke-opacity="1.0" filter="url(#cell-glow)" />
-    <rect x="745.0" y="137.0" width="10" height="10" rx="5" ry="5" fill="#00FF88" stroke="#FFFFFF" stroke-width="1.5" stroke-opacity="1.0" filter="url(#cell-glow)" />
-    <rect x="758.5" y="56.0" width="10" height="10" rx="5" ry="5" fill="#00FF88" stroke="#FFFFFF" stroke-width="1.5" stroke-opacity="1.0" filter="url(#cell-glow)" />
-    <rect x="758.5" y="69.5" width="10" height="10" rx="5" ry="5" fill="#00FFC2" stroke="#FFFFFF" stroke-width="1.3" stroke-opacity="1.0" filter="url(#cell-glow)" />
-    <rect x="758.5" y="83.0" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="758.5" y="96.5" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="758.5" y="110.0" width="10" height="10" rx="5" ry="5" fill="#00D2FF" stroke="#E0F2FE" stroke-width="1.2" stroke-opacity="1.0" filter="url(#cell-glow)" />
-    <rect x="758.5" y="123.5" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <rect x="758.5" y="137.0" width="10" height="10" rx="5" ry="5" fill="#00FFC2" stroke="#FFFFFF" stroke-width="1.3" stroke-opacity="1.0" filter="url(#cell-glow)" />
+    <g class="cell-group">
+      <circle cx="55.0" cy="80.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2025-11-13 (Thursday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="55.0" cy="95.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2025-11-14 (Friday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="55.0" cy="110.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2025-11-15 (Saturday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="55.0" cy="125.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2025-11-16 (Sunday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="55.0" cy="140.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2025-11-17 (Monday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="55.0" cy="155.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2025-11-18 (Tuesday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="55.0" cy="170.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2025-11-19 (Wednesday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="70.0" cy="80.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2025-11-20 (Thursday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="70.0" cy="95.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2025-11-21 (Friday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="70.0" cy="110.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2025-11-22 (Saturday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="70.0" cy="125.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2025-11-23 (Sunday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="70.0" cy="140.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2025-11-24 (Monday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="70.0" cy="155.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2025-11-25 (Tuesday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="70.0" cy="170.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2025-11-26 (Wednesday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="85.0" cy="80.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2025-11-27 (Thursday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="85.0" cy="95.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2025-11-28 (Friday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="85.0" cy="110.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2025-11-29 (Saturday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="85.0" cy="125.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2025-11-30 (Sunday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="85.0" cy="140.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2025-12-01 (Monday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="85.0" cy="155.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2025-12-02 (Tuesday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="85.0" cy="170.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2025-12-03 (Wednesday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="100.0" cy="80.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2025-12-04 (Thursday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="100.0" cy="95.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2025-12-05 (Friday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="100.0" cy="110.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2025-12-06 (Saturday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="100.0" cy="125.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2025-12-07 (Sunday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="100.0" cy="140.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2025-12-08 (Monday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="100.0" cy="155.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2025-12-09 (Tuesday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="100.0" cy="170.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2025-12-10 (Wednesday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="115.0" cy="80.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2025-12-11 (Thursday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="115.0" cy="95.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2025-12-12 (Friday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="115.0" cy="110.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2025-12-13 (Saturday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="115.0" cy="125.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2025-12-14 (Sunday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="115.0" cy="140.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2025-12-15 (Monday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="115.0" cy="155.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2025-12-16 (Tuesday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="115.0" cy="170.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2025-12-17 (Wednesday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="130.0" cy="80.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2025-12-18 (Thursday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="130.0" cy="95.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2025-12-19 (Friday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="130.0" cy="110.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2025-12-20 (Saturday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="130.0" cy="125.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2025-12-21 (Sunday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="130.0" cy="140.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2025-12-22 (Monday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="130.0" cy="155.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2025-12-23 (Tuesday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="130.0" cy="170.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2025-12-24 (Wednesday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="145.0" cy="80.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2025-12-25 (Thursday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="145.0" cy="95.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2025-12-26 (Friday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="145.0" cy="110.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2025-12-27 (Saturday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="145.0" cy="125.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2025-12-28 (Sunday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="145.0" cy="140.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2025-12-29 (Monday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="145.0" cy="155.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2025-12-30 (Tuesday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="145.0" cy="170.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2025-12-31 (Wednesday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="160.0" cy="80.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-01-01 (Thursday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="160.0" cy="95.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-01-02 (Friday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="160.0" cy="110.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-01-03 (Saturday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="160.0" cy="125.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-01-04 (Sunday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="160.0" cy="140.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-01-05 (Monday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="160.0" cy="155.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-01-06 (Tuesday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="160.0" cy="170.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-01-07 (Wednesday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="175.0" cy="80.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-01-08 (Thursday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="175.0" cy="95.0" r="5.0" fill="#00D2FF" stroke="#BAE6FD" stroke-width="1.0" class="contrib-cell" />
+      <title>11 contributions on 2026-01-09 (Friday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="175.0" cy="110.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-01-10 (Saturday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="175.0" cy="125.0" r="5.0" fill="#0284C7" stroke="#38BDF8" stroke-width="1.0" class="contrib-cell" />
+      <title>5 contributions on 2026-01-11 (Sunday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="175.0" cy="140.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-01-12 (Monday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="175.0" cy="155.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-01-13 (Tuesday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="175.0" cy="170.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-01-14 (Wednesday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="190.0" cy="80.0" r="5.0" fill="#1D4ED8" stroke="#3B82F6" stroke-width="0.9" class="contrib-cell" />
+      <title>1 contribution on 2026-01-15 (Thursday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="190.0" cy="95.0" r="5.0" fill="#0284C7" stroke="#38BDF8" stroke-width="1.0" class="contrib-cell" />
+      <title>4 contributions on 2026-01-16 (Friday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="190.0" cy="110.0" r="5.0" fill="#0284C7" stroke="#38BDF8" stroke-width="1.0" class="contrib-cell" />
+      <title>4 contributions on 2026-01-17 (Saturday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="190.0" cy="125.0" r="5.0" fill="#1D4ED8" stroke="#3B82F6" stroke-width="0.9" class="contrib-cell" />
+      <title>2 contributions on 2026-01-18 (Sunday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="190.0" cy="140.0" r="5.0" fill="#1D4ED8" stroke="#3B82F6" stroke-width="0.9" class="contrib-cell" />
+      <title>2 contributions on 2026-01-19 (Monday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="190.0" cy="155.0" r="5.0" fill="#22C55E" stroke="#86EFAC" stroke-width="1.2" filter="url(#subtle-glow)" class="contrib-cell" />
+      <title>19 contributions on 2026-01-20 (Tuesday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="190.0" cy="170.0" r="5.0" fill="#1D4ED8" stroke="#3B82F6" stroke-width="0.9" class="contrib-cell" />
+      <title>2 contributions on 2026-01-21 (Wednesday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="205.0" cy="80.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-01-22 (Thursday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="205.0" cy="95.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-01-23 (Friday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="205.0" cy="110.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-01-24 (Saturday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="205.0" cy="125.0" r="5.0" fill="#1D4ED8" stroke="#3B82F6" stroke-width="0.9" class="contrib-cell" />
+      <title>1 contribution on 2026-01-25 (Sunday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="205.0" cy="140.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-01-26 (Monday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="205.0" cy="155.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-01-27 (Tuesday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="205.0" cy="170.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-01-28 (Wednesday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="220.0" cy="80.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-01-29 (Thursday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="220.0" cy="95.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-01-30 (Friday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="220.0" cy="110.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-01-31 (Saturday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="220.0" cy="125.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-02-01 (Sunday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="220.0" cy="140.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-02-02 (Monday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="220.0" cy="155.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-02-03 (Tuesday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="220.0" cy="170.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-02-04 (Wednesday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="235.0" cy="80.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-02-05 (Thursday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="235.0" cy="95.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-02-06 (Friday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="235.0" cy="110.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-02-07 (Saturday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="235.0" cy="125.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-02-08 (Sunday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="235.0" cy="140.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-02-09 (Monday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="235.0" cy="155.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-02-10 (Tuesday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="235.0" cy="170.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-02-11 (Wednesday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="250.0" cy="80.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-02-12 (Thursday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="250.0" cy="95.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-02-13 (Friday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="250.0" cy="110.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-02-14 (Saturday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="250.0" cy="125.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-02-15 (Sunday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="250.0" cy="140.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-02-16 (Monday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="250.0" cy="155.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-02-17 (Tuesday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="250.0" cy="170.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-02-18 (Wednesday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="265.0" cy="80.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-02-19 (Thursday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="265.0" cy="95.0" r="5.0" fill="#1D4ED8" stroke="#3B82F6" stroke-width="0.9" class="contrib-cell" />
+      <title>2 contributions on 2026-02-20 (Friday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="265.0" cy="110.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-02-21 (Saturday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="265.0" cy="125.0" r="5.0" fill="#1D4ED8" stroke="#3B82F6" stroke-width="0.9" class="contrib-cell" />
+      <title>3 contributions on 2026-02-22 (Sunday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="265.0" cy="140.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-02-23 (Monday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="265.0" cy="155.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-02-24 (Tuesday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="265.0" cy="170.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-02-25 (Wednesday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="280.0" cy="80.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-02-26 (Thursday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="280.0" cy="95.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-02-27 (Friday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="280.0" cy="110.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-02-28 (Saturday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="280.0" cy="125.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-03-01 (Sunday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="280.0" cy="140.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-03-02 (Monday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="280.0" cy="155.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-03-03 (Tuesday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="280.0" cy="170.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-03-04 (Wednesday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="295.0" cy="80.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-03-05 (Thursday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="295.0" cy="95.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-03-06 (Friday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="295.0" cy="110.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-03-07 (Saturday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="295.0" cy="125.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-03-08 (Sunday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="295.0" cy="140.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-03-09 (Monday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="295.0" cy="155.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-03-10 (Tuesday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="295.0" cy="170.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-03-11 (Wednesday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="310.0" cy="80.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-03-12 (Thursday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="310.0" cy="95.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-03-13 (Friday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="310.0" cy="110.0" r="5.0" fill="#00D2FF" stroke="#BAE6FD" stroke-width="1.0" class="contrib-cell" />
+      <title>10 contributions on 2026-03-14 (Saturday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="310.0" cy="125.0" r="5.0" fill="#0284C7" stroke="#38BDF8" stroke-width="1.0" class="contrib-cell" />
+      <title>6 contributions on 2026-03-15 (Sunday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="310.0" cy="140.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-03-16 (Monday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="310.0" cy="155.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-03-17 (Tuesday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="310.0" cy="170.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-03-18 (Wednesday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="325.0" cy="80.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-03-19 (Thursday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="325.0" cy="95.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-03-20 (Friday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="325.0" cy="110.0" r="5.0" fill="#0284C7" stroke="#38BDF8" stroke-width="1.0" class="contrib-cell" />
+      <title>5 contributions on 2026-03-21 (Saturday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="325.0" cy="125.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-03-22 (Sunday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="325.0" cy="140.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-03-23 (Monday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="325.0" cy="155.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-03-24 (Tuesday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="325.0" cy="170.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-03-25 (Wednesday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="340.0" cy="80.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-03-26 (Thursday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="340.0" cy="95.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-03-27 (Friday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="340.0" cy="110.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-03-28 (Saturday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="340.0" cy="125.0" r="5.0" fill="#00D2FF" stroke="#BAE6FD" stroke-width="1.0" class="contrib-cell" />
+      <title>11 contributions on 2026-03-29 (Sunday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="340.0" cy="140.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-03-30 (Monday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="340.0" cy="155.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-03-31 (Tuesday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="340.0" cy="170.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-04-01 (Wednesday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="355.0" cy="80.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-04-02 (Thursday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="355.0" cy="95.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-04-03 (Friday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="355.0" cy="110.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-04-04 (Saturday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="355.0" cy="125.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-04-05 (Sunday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="355.0" cy="140.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-04-06 (Monday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="355.0" cy="155.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-04-07 (Tuesday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="355.0" cy="170.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-04-08 (Wednesday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="370.0" cy="80.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-04-09 (Thursday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="370.0" cy="95.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-04-10 (Friday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="370.0" cy="110.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-04-11 (Saturday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="370.0" cy="125.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-04-12 (Sunday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="370.0" cy="140.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-04-13 (Monday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="370.0" cy="155.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-04-14 (Tuesday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="370.0" cy="170.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-04-15 (Wednesday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="385.0" cy="80.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-04-16 (Thursday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="385.0" cy="95.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-04-17 (Friday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="385.0" cy="110.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-04-18 (Saturday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="385.0" cy="125.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-04-19 (Sunday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="385.0" cy="140.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-04-20 (Monday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="385.0" cy="155.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-04-21 (Tuesday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="385.0" cy="170.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-04-22 (Wednesday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="400.0" cy="80.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-04-23 (Thursday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="400.0" cy="95.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-04-24 (Friday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="400.0" cy="110.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-04-25 (Saturday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="400.0" cy="125.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-04-26 (Sunday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="400.0" cy="140.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-04-27 (Monday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="400.0" cy="155.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-04-28 (Tuesday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="400.0" cy="170.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-04-29 (Wednesday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="415.0" cy="80.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-04-30 (Thursday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="415.0" cy="95.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-05-01 (Friday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="415.0" cy="110.0" r="5.0" fill="#1D4ED8" stroke="#3B82F6" stroke-width="0.9" class="contrib-cell" />
+      <title>1 contribution on 2026-05-02 (Saturday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="415.0" cy="125.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-05-03 (Sunday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="415.0" cy="140.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-05-04 (Monday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="415.0" cy="155.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-05-05 (Tuesday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="415.0" cy="170.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-05-06 (Wednesday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="430.0" cy="80.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-05-07 (Thursday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="430.0" cy="95.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-05-08 (Friday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="430.0" cy="110.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-05-09 (Saturday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="430.0" cy="125.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-05-10 (Sunday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="430.0" cy="140.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-05-11 (Monday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="430.0" cy="155.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-05-12 (Tuesday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="430.0" cy="170.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-05-13 (Wednesday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="445.0" cy="80.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-05-14 (Thursday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="445.0" cy="95.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-05-15 (Friday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="445.0" cy="110.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-05-16 (Saturday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="445.0" cy="125.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-05-17 (Sunday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="445.0" cy="140.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-05-18 (Monday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="445.0" cy="155.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-05-19 (Tuesday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="445.0" cy="170.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-05-20 (Wednesday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="460.0" cy="80.0" r="5.0" fill="#1D4ED8" stroke="#3B82F6" stroke-width="0.9" class="contrib-cell" />
+      <title>3 contributions on 2026-05-21 (Thursday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="460.0" cy="95.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-05-22 (Friday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="460.0" cy="110.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-05-23 (Saturday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="460.0" cy="125.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-05-24 (Sunday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="460.0" cy="140.0" r="5.0" fill="#00D2FF" stroke="#BAE6FD" stroke-width="1.0" class="contrib-cell" />
+      <title>10 contributions on 2026-05-25 (Monday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="460.0" cy="155.0" r="5.0" fill="#22C55E" stroke="#86EFAC" stroke-width="1.2" filter="url(#subtle-glow)" class="contrib-cell" />
+      <title>19 contributions on 2026-05-26 (Tuesday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="460.0" cy="170.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-05-27 (Wednesday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="475.0" cy="80.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-05-28 (Thursday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="475.0" cy="95.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-05-29 (Friday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="475.0" cy="110.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-05-30 (Saturday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="475.0" cy="125.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-05-31 (Sunday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="475.0" cy="140.0" r="5.0" fill="#00D2FF" stroke="#BAE6FD" stroke-width="1.0" class="contrib-cell" />
+      <title>14 contributions on 2026-06-01 (Monday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="475.0" cy="155.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-06-02 (Tuesday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="475.0" cy="170.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-06-03 (Wednesday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="490.0" cy="80.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-06-04 (Thursday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="490.0" cy="95.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-06-05 (Friday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="490.0" cy="110.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-06-06 (Saturday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="490.0" cy="125.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-06-07 (Sunday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="490.0" cy="140.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-06-08 (Monday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="490.0" cy="155.0" r="5.0" fill="#00D2FF" stroke="#BAE6FD" stroke-width="1.0" class="contrib-cell" />
+      <title>10 contributions on 2026-06-09 (Tuesday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="490.0" cy="170.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-06-10 (Wednesday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="505.0" cy="80.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-06-11 (Thursday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="505.0" cy="95.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-06-12 (Friday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="505.0" cy="110.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-06-13 (Saturday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="505.0" cy="125.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-06-14 (Sunday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="505.0" cy="140.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-06-15 (Monday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="505.0" cy="155.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-06-16 (Tuesday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="505.0" cy="170.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-06-17 (Wednesday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="520.0" cy="80.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-06-18 (Thursday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="520.0" cy="95.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-06-19 (Friday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="520.0" cy="110.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-06-20 (Saturday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="520.0" cy="125.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-06-21 (Sunday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="520.0" cy="140.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-06-22 (Monday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="520.0" cy="155.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-06-23 (Tuesday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="520.0" cy="170.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-06-24 (Wednesday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="535.0" cy="80.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-06-25 (Thursday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="535.0" cy="95.0" r="5.0" fill="#00D2FF" stroke="#BAE6FD" stroke-width="1.0" class="contrib-cell" />
+      <title>11 contributions on 2026-06-26 (Friday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="535.0" cy="110.0" r="5.0" fill="#1D4ED8" stroke="#3B82F6" stroke-width="0.9" class="contrib-cell" />
+      <title>1 contribution on 2026-06-27 (Saturday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="535.0" cy="125.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-06-28 (Sunday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="535.0" cy="140.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-06-29 (Monday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="535.0" cy="155.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-06-30 (Tuesday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="535.0" cy="170.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-07-01 (Wednesday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="550.0" cy="80.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-07-02 (Thursday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="550.0" cy="95.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-07-03 (Friday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="550.0" cy="110.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-07-04 (Saturday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="550.0" cy="125.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-07-05 (Sunday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="550.0" cy="140.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-07-06 (Monday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="550.0" cy="155.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-07-07 (Tuesday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="550.0" cy="170.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-07-08 (Wednesday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="565.0" cy="80.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-07-09 (Thursday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="565.0" cy="95.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-07-10 (Friday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="565.0" cy="110.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-07-11 (Saturday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="565.0" cy="125.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-07-12 (Sunday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="565.0" cy="140.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-07-13 (Monday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="565.0" cy="155.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-07-14 (Tuesday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="565.0" cy="170.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-07-15 (Wednesday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="580.0" cy="80.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-07-16 (Thursday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="580.0" cy="95.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-07-17 (Friday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="580.0" cy="110.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-07-18 (Saturday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="580.0" cy="125.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-07-19 (Sunday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="580.0" cy="140.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-07-20 (Monday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="580.0" cy="155.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-07-21 (Tuesday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="580.0" cy="170.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-07-22 (Wednesday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="595.0" cy="80.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-07-23 (Thursday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="595.0" cy="95.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-07-24 (Friday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="595.0" cy="110.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-07-25 (Saturday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="595.0" cy="125.0" r="5.0" fill="#1D4ED8" stroke="#3B82F6" stroke-width="0.9" class="contrib-cell" />
+      <title>1 contribution on 2026-07-26 (Sunday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="595.0" cy="140.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-07-27 (Monday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="595.0" cy="155.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-07-28 (Tuesday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="595.0" cy="170.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-07-29 (Wednesday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="610.0" cy="80.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-07-30 (Thursday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="610.0" cy="95.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-07-31 (Friday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="610.0" cy="110.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-08-01 (Saturday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="610.0" cy="125.0" r="5.0" fill="#1D4ED8" stroke="#3B82F6" stroke-width="0.9" class="contrib-cell" />
+      <title>1 contribution on 2026-08-02 (Sunday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="610.0" cy="140.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-08-03 (Monday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="610.0" cy="155.0" r="5.0" fill="#0284C7" stroke="#38BDF8" stroke-width="1.0" class="contrib-cell" />
+      <title>7 contributions on 2026-08-04 (Tuesday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="610.0" cy="170.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-08-05 (Wednesday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="625.0" cy="80.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-08-06 (Thursday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="625.0" cy="95.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-08-07 (Friday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="625.0" cy="110.0" r="5.0" fill="#1D4ED8" stroke="#3B82F6" stroke-width="0.9" class="contrib-cell" />
+      <title>3 contributions on 2026-08-08 (Saturday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="625.0" cy="125.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-08-09 (Sunday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="625.0" cy="140.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-08-10 (Monday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="625.0" cy="155.0" r="5.0" fill="#0284C7" stroke="#38BDF8" stroke-width="1.0" class="contrib-cell" />
+      <title>5 contributions on 2026-08-11 (Tuesday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="625.0" cy="170.0" r="5.0" fill="#1D4ED8" stroke="#3B82F6" stroke-width="0.9" class="contrib-cell" />
+      <title>1 contribution on 2026-08-12 (Wednesday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="640.0" cy="80.0" r="5.0" fill="#1D4ED8" stroke="#3B82F6" stroke-width="0.9" class="contrib-cell" />
+      <title>3 contributions on 2026-08-13 (Thursday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="640.0" cy="95.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-08-14 (Friday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="640.0" cy="110.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-08-15 (Saturday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="640.0" cy="125.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-08-16 (Sunday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="640.0" cy="140.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-08-17 (Monday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="640.0" cy="155.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-08-18 (Tuesday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="640.0" cy="170.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-08-19 (Wednesday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="655.0" cy="80.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-08-20 (Thursday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="655.0" cy="95.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-08-21 (Friday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="655.0" cy="110.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-08-22 (Saturday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="655.0" cy="125.0" r="5.0" fill="#0284C7" stroke="#38BDF8" stroke-width="1.0" class="contrib-cell" />
+      <title>4 contributions on 2026-08-23 (Sunday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="655.0" cy="140.0" r="5.0" fill="#1D4ED8" stroke="#3B82F6" stroke-width="0.9" class="contrib-cell" />
+      <title>1 contribution on 2026-08-24 (Monday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="655.0" cy="155.0" r="5.0" fill="#1D4ED8" stroke="#3B82F6" stroke-width="0.9" class="contrib-cell" />
+      <title>1 contribution on 2026-08-25 (Tuesday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="655.0" cy="170.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-08-26 (Wednesday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="670.0" cy="80.0" r="5.0" fill="#1D4ED8" stroke="#3B82F6" stroke-width="0.9" class="contrib-cell" />
+      <title>3 contributions on 2026-08-27 (Thursday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="670.0" cy="95.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-08-28 (Friday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="670.0" cy="110.0" r="5.0" fill="#1D4ED8" stroke="#3B82F6" stroke-width="0.9" class="contrib-cell" />
+      <title>2 contributions on 2026-08-29 (Saturday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="670.0" cy="125.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-08-30 (Sunday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="670.0" cy="140.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-08-31 (Monday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="670.0" cy="155.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-09-01 (Tuesday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="670.0" cy="170.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-09-02 (Wednesday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="685.0" cy="80.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-09-03 (Thursday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="685.0" cy="95.0" r="5.0" fill="#00D2FF" stroke="#BAE6FD" stroke-width="1.0" class="contrib-cell" />
+      <title>15 contributions on 2026-09-04 (Friday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="685.0" cy="110.0" r="5.0" fill="#1D4ED8" stroke="#3B82F6" stroke-width="0.9" class="contrib-cell" />
+      <title>1 contribution on 2026-09-05 (Saturday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="685.0" cy="125.0" r="5.0" fill="#0284C7" stroke="#38BDF8" stroke-width="1.0" class="contrib-cell" />
+      <title>4 contributions on 2026-09-06 (Sunday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="685.0" cy="140.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-09-07 (Monday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="685.0" cy="155.0" r="5.0" fill="#1D4ED8" stroke="#3B82F6" stroke-width="0.9" class="contrib-cell" />
+      <title>1 contribution on 2026-09-08 (Tuesday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="685.0" cy="170.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-09-09 (Wednesday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="700.0" cy="80.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-09-10 (Thursday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="700.0" cy="95.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-09-11 (Friday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="700.0" cy="110.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-09-12 (Saturday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="700.0" cy="125.0" r="5.0" fill="#1D4ED8" stroke="#3B82F6" stroke-width="0.9" class="contrib-cell" />
+      <title>1 contribution on 2026-09-13 (Sunday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="700.0" cy="140.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-09-14 (Monday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="700.0" cy="155.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-09-15 (Tuesday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="700.0" cy="170.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-09-16 (Wednesday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="715.0" cy="80.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-09-17 (Thursday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="715.0" cy="95.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-09-18 (Friday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="715.0" cy="110.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-09-19 (Saturday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="715.0" cy="125.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-09-20 (Sunday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="715.0" cy="140.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-09-21 (Monday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="715.0" cy="155.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-09-22 (Tuesday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="715.0" cy="170.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-09-23 (Wednesday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="730.0" cy="80.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-09-24 (Thursday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="730.0" cy="95.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-09-25 (Friday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="730.0" cy="110.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-09-26 (Saturday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="730.0" cy="125.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-09-27 (Sunday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="730.0" cy="140.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-09-28 (Monday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="730.0" cy="155.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-09-29 (Tuesday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="730.0" cy="170.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-09-30 (Wednesday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="745.0" cy="80.0" r="5.0" fill="#1D4ED8" stroke="#3B82F6" stroke-width="0.9" class="contrib-cell" />
+      <title>1 contribution on 2026-10-01 (Thursday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="745.0" cy="95.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-10-02 (Friday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="745.0" cy="110.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-10-03 (Saturday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="745.0" cy="125.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-10-04 (Sunday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="745.0" cy="140.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-10-05 (Monday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="745.0" cy="155.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-10-06 (Tuesday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="745.0" cy="170.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-10-07 (Wednesday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="760.0" cy="80.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-10-08 (Thursday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="760.0" cy="95.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-10-09 (Friday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="760.0" cy="110.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-10-10 (Saturday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="760.0" cy="125.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-10-11 (Sunday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="760.0" cy="140.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-10-12 (Monday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="760.0" cy="155.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-10-13 (Tuesday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="760.0" cy="170.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-10-14 (Wednesday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="775.0" cy="80.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-10-15 (Thursday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="775.0" cy="95.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-10-16 (Friday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="775.0" cy="110.0" r="5.0" fill="#0284C7" stroke="#38BDF8" stroke-width="1.0" class="contrib-cell" />
+      <title>4 contributions on 2026-10-17 (Saturday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="775.0" cy="125.0" r="5.0" fill="#0284C7" stroke="#38BDF8" stroke-width="1.0" class="contrib-cell" />
+      <title>7 contributions on 2026-10-18 (Sunday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="775.0" cy="140.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-10-19 (Monday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="775.0" cy="155.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-10-20 (Tuesday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="775.0" cy="170.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-10-21 (Wednesday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="790.0" cy="80.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-10-22 (Thursday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="790.0" cy="95.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-10-23 (Friday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="790.0" cy="110.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-10-24 (Saturday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="790.0" cy="125.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-10-25 (Sunday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="790.0" cy="140.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-10-26 (Monday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="790.0" cy="155.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-10-27 (Tuesday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="790.0" cy="170.0" r="5.0" fill="#0284C7" stroke="#38BDF8" stroke-width="1.0" class="contrib-cell" />
+      <title>5 contributions on 2026-10-28 (Wednesday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="805.0" cy="80.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-10-29 (Thursday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="805.0" cy="95.0" r="5.0" fill="#22C55E" stroke="#86EFAC" stroke-width="1.2" filter="url(#subtle-glow)" class="contrib-cell" />
+      <title>32 contributions on 2026-10-30 (Friday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="805.0" cy="110.0" r="5.0" fill="#22C55E" stroke="#86EFAC" stroke-width="1.2" filter="url(#subtle-glow)" class="contrib-cell" />
+      <title>17 contributions on 2026-10-31 (Saturday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="805.0" cy="125.0" r="5.0" fill="#00D2FF" stroke="#BAE6FD" stroke-width="1.0" class="contrib-cell" />
+      <title>13 contributions on 2026-11-01 (Sunday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="805.0" cy="140.0" r="5.0" fill="#22C55E" stroke="#86EFAC" stroke-width="1.2" filter="url(#subtle-glow)" class="contrib-cell" />
+      <title>28 contributions on 2026-11-02 (Monday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="805.0" cy="155.0" r="5.0" fill="#00D2FF" stroke="#BAE6FD" stroke-width="1.0" class="contrib-cell" />
+      <title>9 contributions on 2026-11-03 (Tuesday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="805.0" cy="170.0" r="5.0" fill="#22C55E" stroke="#86EFAC" stroke-width="1.2" filter="url(#subtle-glow)" class="contrib-cell" />
+      <title>49 contributions on 2026-11-04 (Wednesday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="820.0" cy="80.0" r="5.0" fill="#22C55E" stroke="#86EFAC" stroke-width="1.2" filter="url(#subtle-glow)" class="contrib-cell" />
+      <title>22 contributions on 2026-11-05 (Thursday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="820.0" cy="95.0" r="5.0" fill="#00D2FF" stroke="#BAE6FD" stroke-width="1.0" class="contrib-cell" />
+      <title>12 contributions on 2026-11-06 (Friday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="820.0" cy="110.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-11-07 (Saturday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="820.0" cy="125.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-11-08 (Sunday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="820.0" cy="140.0" r="5.0" fill="#0284C7" stroke="#38BDF8" stroke-width="1.0" class="contrib-cell" />
+      <title>6 contributions on 2026-11-09 (Monday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="820.0" cy="155.0" r="5.0" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" class="contrib-cell" />
+      <title>No contributions on 2026-11-10 (Tuesday)</title>
+    </g>
+    <g class="cell-group">
+      <circle cx="820.0" cy="170.0" r="5.0" fill="#00D2FF" stroke="#BAE6FD" stroke-width="1.0" class="contrib-cell" />
+      <title>12 contributions on 2026-11-11 (Wednesday)</title>
+    </g>
   </g>
 
-  <!-- Dynamic Snake Motion (Crawling Real Activity) -->
-  <g filter="url(#glow)">
-    <circle r="7" fill="url(#head-grad)">
-      <animateMotion dur="14s" repeatCount="indefinite" rotate="auto">
-        <mpath href="#snakePath" />
-      </animateMotion>
-    </circle>
-    <circle r="2.2" fill="#040814" cx="2.5" cy="-1.5">
-      <animateMotion dur="14s" repeatCount="indefinite" rotate="auto">
-        <mpath href="#snakePath" />
-      </animateMotion>
-    </circle>
+  <!-- Subtle Dynamic Motion (Single minimal photon runner, no visual clutter) -->
+  <circle r="3.2" fill="#00D2FF" opacity="0.8" filter="url(#runner-glow)">
+    <animateMotion dur="18s" repeatCount="indefinite" rotate="auto">
+      <mpath href="#activeTrack" />
+    </animateMotion>
+  </circle>
+  <circle r="2.2" fill="#38BDF8" opacity="0.45">
+    <animateMotion dur="18s" begin="-0.2s" repeatCount="indefinite" rotate="auto">
+      <mpath href="#activeTrack" />
+    </animateMotion>
+  </circle>
+
+  <!-- Footer Section: Synchronized note & Less-to-More Legend -->
+  <g transform="translate(30, 195)">
+    <circle cx="2" cy="0" r="3" fill="#00D2FF" opacity="0.8" />
+    <text x="12" y="0" class="footer-note" dominant-baseline="central">Verified GitHub activity &amp; project history</text>
   </g>
 
-  <!-- Glowing Snake Trail Dots -->
-  <circle r="6" fill="#00FF88" opacity="1.0" filter="url(#cell-glow)">
-    <animateMotion dur="14s" begin="-0.12s" repeatCount="indefinite" rotate="auto">
-      <mpath href="#snakePath" />
-    </animateMotion>
-  </circle>
-
-  <circle r="5.5" fill="#00FFC2" opacity="1.0" filter="url(#cell-glow)">
-    <animateMotion dur="14s" begin="-0.24s" repeatCount="indefinite" rotate="auto">
-      <mpath href="#snakePath" />
-    </animateMotion>
-  </circle>
-
-  <circle r="5" fill="#00D2FF" opacity="0.95">
-    <animateMotion dur="14s" begin="-0.36s" repeatCount="indefinite" rotate="auto">
-      <mpath href="#snakePath" />
-    </animateMotion>
-  </circle>
-
-  <circle r="4.5" fill="#38BDF8" opacity="0.9">
-    <animateMotion dur="14s" begin="-0.48s" repeatCount="indefinite" rotate="auto">
-      <mpath href="#snakePath" />
-    </animateMotion>
-  </circle>
-
-  <circle r="4" fill="#60A5FA" opacity="0.85">
-    <animateMotion dur="14s" begin="-0.60s" repeatCount="indefinite" rotate="auto">
-      <mpath href="#snakePath" />
-    </animateMotion>
-  </circle>
-
-  <circle r="3.5" fill="#818CF8" opacity="0.8">
-    <animateMotion dur="14s" begin="-0.72s" repeatCount="indefinite" rotate="auto">
-      <mpath href="#snakePath" />
-    </animateMotion>
-  </circle>
-
-  <!-- Footer Legend (All Dots Clear, Bright, High-Contrast) -->
-  <g transform="translate(35, 198)">
-    <text x="0" y="-3" class="badge-text">⚡ 55+ Verified Active Dates // Continuous Development Cadence</text>
-  </g>
-
-  <g transform="translate(705, 198)">
-    <text x="-32" y="-3" class="legend-text">Less</text>
-    <!-- Level 0 (Visible Dot) -->
-    <rect x="0" y="-11" width="10" height="10" rx="5" ry="5" fill="#223659" stroke="#3B82F6" stroke-width="0.9" stroke-opacity="0.6" />
-    <!-- Level 1 (Light Dot) -->
-    <rect x="14" y="-11" width="10" height="10" rx="5" ry="5" fill="#0284C7" stroke="#38BDF8" stroke-width="1.2" />
-    <!-- Level 2 (Medium Dot) -->
-    <rect x="28" y="-11" width="10" height="10" rx="5" ry="5" fill="#00D2FF" stroke="#E0F2FE" stroke-width="1.2" filter="url(#cell-glow)" />
-    <!-- Level 3 (High Dot) -->
-    <rect x="42" y="-11" width="10" height="10" rx="5" ry="5" fill="#00FFC2" stroke="#FFFFFF" stroke-width="1.3" filter="url(#cell-glow)" />
-    <!-- Level 4 (Peak Dot) -->
-    <rect x="56" y="-11" width="10" height="10" rx="5" ry="5" fill="#00FF88" stroke="#FFFFFF" stroke-width="1.5" filter="url(#cell-glow)" />
-    <text x="73" y="-3" class="legend-text">More</text>
+  <!-- Less-to-More Legend -->
+  <g transform="translate(840, 195)">
+    <text x="-105" y="0" class="legend-text" text-anchor="end" dominant-baseline="central">Less</text>
+    <!-- Level 0: dark muted blue -->
+    <circle cx="-88" cy="0" r="5" fill="#131F37" stroke="#1B2B4C" stroke-width="0.8" />
+    <!-- Level 1: subtle blue -->
+    <circle cx="-70" cy="0" r="5" fill="#1D4ED8" stroke="#3B82F6" stroke-width="0.9" />
+    <!-- Level 2: medium blue -->
+    <circle cx="-52" cy="0" r="5" fill="#0284C7" stroke="#38BDF8" stroke-width="1.0" />
+    <!-- Level 3: bright cyan -->
+    <circle cx="-34" cy="0" r="5" fill="#00D2FF" stroke="#BAE6FD" stroke-width="1.0" />
+    <!-- Level 4: vibrant green -->
+    <circle cx="-16" cy="0" r="5" fill="#22C55E" stroke="#86EFAC" stroke-width="1.2" filter="url(#subtle-glow)" />
+    <text x="0" y="0" class="legend-text" dominant-baseline="central">More</text>
   </g>
 </svg>

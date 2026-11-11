@@ -314,8 +314,10 @@ flowchart TD
 
 <br/><br/>
 
-<!-- DYNAMIC CONTRIBUTION MOTION -->
-<img src="https://raw.githubusercontent.com/yihune1234/yihune1234/main/snake.svg" width="100%" alt="Contribution Graph Snake Motion" />
+<!-- GITHUB CONTRIBUTION HEATMAP (RESPONSIVE WRAPPER) -->
+<div style="overflow-x: auto; -webkit-overflow-scrolling: touch; max-width: 100%; border-radius: 10px; margin: 0 auto;">
+  <img src="https://raw.githubusercontent.com/yihune1234/yihune1234/main/snake.svg" width="100%" style="min-width: 760px; max-width: 870px; display: block;" alt="GitHub Contribution Heatmap" />
+</div>
 
 </div>
 
